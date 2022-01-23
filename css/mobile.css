@@ -1,0 +1,206 @@
+@media only screen and (max-width: 450px) {
+  body {
+    background-color: #f3eaea;
+  }
+
+  /* Landing Page */
+
+  .index-main {
+    height: 100vh !important;
+  }
+
+  .landing-page {
+    display: none;
+  }
+
+  .landing-page.mobile {
+    display: block;
+  }
+
+  .landing-page img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .homepage-text {
+    font-family: "Merienda One", cursive;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Main */
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* About Me Page */
+
+@media screen and (max-width: 450px) {
+  .words-div {
+    padding: 0.5rem;
+  }
+  .developer {
+    width: 350px;
+    margin-bottom: 3rem;
+    padding: auto;
+  }
+  .about-page {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .biography-section {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bio-image {
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 5px;
+  }
+}
+
+/* Project Page */
+
+@media screen and (max-width: 450px) {
+  .jumbotron {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    border: 1px solid steelblue;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .exhibitions-info {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .blockquote-div {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  blockquote {
+    display: none;
+  }
+
+  .blockquote-footer {
+    display: none;
+  }
+}
+
+/* Project Individual Mobile Page */
+
+@media screen and (max-width: 450px) {
+  .boy-fraternity-div {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .boy-fraternity-title {
+    color: #800020;
+    display: inline-block;
+    position: relative;
+  }
+
+  .boy-fraternity-div p {
+    line-height: 2.5rem;
+  }
+
+  .boy-fraternity-title.boys::after {
+    width: 60% !important;
+  }
+
+  .main-exhibition {
+    height: 10vh;
+  }
+  .carousel {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-container {
+    flex-direction: column-reverse;
+    height: 100vh;
+    margin-bottom: 3rem;
+  }
+
+  .contact-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 3rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+  }
+  .image-div img {
+    max-width: 350px;
+    height: auto;
+  }
+
+  .designer {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 450px) {
+ .footer-content {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  color: #800020;
+}
+}

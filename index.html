@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Neec Nonso | Documentary Photographer</title>
+    <meta name="description" content=" 150 words">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+
+    <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
+    <meta property="og:title" content="Neec Nonso | Documentary Photographer">
+    <meta property="og:description" content="Site Content short description">
+    <meta property="og:image" content="http://example.com/thumbnail.jpg">
+    <meta property="og:url" content="http://neecnonso.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!-- Style Links -->
+
+    <!-- Gsap Links -->
+
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+
+</head>
+
+<body>
+
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+
+    <!--- Start of Navbar -->
+
+    <div>
+
+        <nav class='navbar'>
+
+            <div>
+                <a href='index.html'>
+                    <img width="40px" src="images/logo-instagram.svg" class='App-logo' alt='logo' />
+                </a>
+            </div>
+
+            <ul class='nav-list'>
+
+                <li class='list-item'>
+                    <a href='bio.html'> bio</a>
+                </li>
+                <li class='list-item'>
+                    <a href='exhibition.html'>exhibition </a>
+                </li>
+                <li class='list-item'>
+                    <a href='projects.html'>projects </a>
+                </li>
+                <li class='list-item'>
+                    <a href='contact.html'>contact </a>
+                </li>
+
+            </ul>
+
+            <div class="menu">
+                <div class="menu-line1"></div>
+                <div class="menu-line2"></div>
+                <div class="menu-line3"></div>
+            </div>
+
+        </nav>
+
+        <ul class='extra'>
+            <li class='list-item extra'>
+                <a rel='noreferrer noopener' target='_blank' href=''>
+                    <img width="40px" src="images/logo-instagram.svg" alt='logo' />
+                </a>
+            </li>
+            <li class='list-item extra'>
+                <a rel='noreferrer noopener' target='_blank' href=''>
+                    <img width="40px" src="images/logo-facebook.svg" alt='logo' />
+                </a>
+            </li>
+            <li class='list-item extra'>
+                <a rel='noreferrer noopener' target='_blank' href=''>
+                    <img width="40px" src="images/logo-linkedin.svg" alt='logo' />
+                </a>
+            </li>
+            <li class='list-item extra'>
+                <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
+                    <img width="40px" src="images/logo-twitter.svg" alt='logo' />
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- End of Navbar-->
+
+    <!--- Start of Main Content -->
+
+    <main class="index-main">
+        <div class="landing-page mobile">
+            <img src="images/the boys fraternity/contact-page-photo.jpg" alt="">
+            <p class="homepage-text">the boys fraternity</p>
+        </div>
+
+        <div class="landing-page">
+            <img src="images/homepage.jpg" alt="">
+            <p class="homepage-text">the boys fraternity</p>
+        </div>
+
+    </main>
+
+    <!--- End of Main Content -->
+
+    <!-- Start of Footer -->
+
+    <footer class="footer-container">
+
+        <div class="footer-content">
+
+            <div class="footer-content-left">
+                <p class="footer-words"> &copy; Copyright 2022 NeecNonso, <br> All rights reserved.</p>
+            </div>
+
+
+            <div class="footer-content-right">
+
+                <ul class='footer-icons'>
+                    <li class='list-item extra'>
+                        <a rel='noreferrer noopener' target='_blank' href=''>
+                            <img width="40px" src="images/logo-instagram.svg" alt='logo' />
+                        </a>
+                    </li>
+                    <li class='list-item extra'>
+                        <a rel='noreferrer noopener' target='_blank' href=''>
+                            <img width="40px" src="images/logo-facebook.svg" alt='logo' />
+                        </a>
+                    </li>
+                    <li class='list-item extra'>
+                        <a rel='noreferrer noopener' target='_blank' href=''>
+                            <img width="40px" src="images/logo-linkedin.svg" alt='logo' />
+                        </a>
+                    </li>
+                    <li class='list-item extra'>
+                        <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
+                            <img width="40px" src="images/logo-twitter.svg" alt='logo' />
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="designer">
+        <p class=""> Designed by <a href="https://www.scriptsandtags.com/">ScriptsandTags</a></p>
+    </div>
+
+    <!-- End of Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from(".extra", {
+            scrollTrigger: {
+                trigger: ".index-main",
+                start: -50, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 1.1,
+            duration: 1,
+            ease: "power1.inOut"
+        });
+        gsap.from(".footer-container", {
+            scrollTrigger: {
+                trigger: ".index-main",
+                start: -50, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.5,
+            duration: 1,
+            ease: "power1.inOut"
+        });
+        gsap.from(".index-main", {
+            scrollTrigger: {
+                trigger: ".index-main",
+                start: -100, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.8,
+            duration: 1,
+            ease: "power1.inOut"
+        });
+    </script>
+
+    <script src="script.js" async defer></script>
+    <!-- <script src="countdown.js" async defer></script> -->
+</body>
+
+</html>
