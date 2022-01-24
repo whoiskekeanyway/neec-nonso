@@ -134,13 +134,11 @@
 
                 <ul class="carousel-track">
                     <li class="carousel-slide current-slide"><img class="carousel-image"
-                            src="images/the last burial/tinified/1.jpg" alt=" Temple Image" loading="lazy"></li>
-                    <li class="carousel-slide"><img class="carousel-image" src="images/the last burial/tinified/2.jpg"
-                            alt=" Temple Image" loading="lazy"></li>
-                    <li class="carousel-slide"><img class="carousel-image" src="images/the last burial/tinified/3.jpg"
-                            alt=" Temple Image" loading="lazy"></li>
-
-
+                            src="images/the last burial/tinified/1.webp" alt=" thelastburial" loading="lazy"></li>
+                    <li class="carousel-slide"><img class="carousel-image" src="images/the last burial/tinified/2.webp"
+                            alt=" thelastburial" loading="lazy"></li>
+                    <li class="carousel-slide"><img class="carousel-image" src="images/the last burial/tinified/3.webp"
+                            alt="thelastburial" loading="lazy"></li>
                 </ul>
 
             </div>
@@ -162,9 +160,9 @@
 
     <div class="mobile">
 
-        <img class="carousel-image" src="images/the last burial/1350px.jpg" alt="">
-        <img class="carousel-image" src="images/the last burial/1350px.jpg" alt="">
-        <img class="carousel-image" src="images/the last burial/1350px.jpg" alt="">
+        <img class="carousel-image" src="images/the last burial/Mobile/1.webp" alt="thelastburial mobile">
+        <img class="carousel-image" src="images/the last burial/Mobile/2.webp" alt="thelastburial mobile">
+        <img class="carousel-image" src="images/the last burial/Mobile/3.webp" alt="thelastburial mobile">
 
     </div>
 
@@ -228,7 +226,7 @@
                 end: "bottom bottom",
                 scrub: 1,
                 pin: true,
-                markers: true,
+                //markers: true,
                 id: "carousel"
             },
             x: -20,
@@ -236,7 +234,7 @@
             ease: "power1.inOut"
         });
 
-       gsap.from(".extra", {
+        gsap.from(".extra", {
             scrollTrigger: {
                 trigger: ".exhibitions-info",
                 start: -50, // when the top of the trigger hits the top of the viewport
@@ -249,33 +247,48 @@
             duration: 1
         });
 
-              gsap.from(".boy-fraternity-div", {
-                    scrollTrigger: {
-                        trigger: ".boy-fraternity-div",
-                        start: -50, // when the top of the trigger hits the top of the viewport
-                        end: "+=300", // end after scrolling 100px beyond the start
-                        // markers: true
-                        scrub: 1
-                    },
-                    stagger: { amount: 0.5 },
-                    scale: 0.9,
-                    duration: 1,
-                    ease: "power1.inOut"
-                });
+        gsap.from(".boy-fraternity-div", {
+            scrollTrigger: {
+                trigger: ".boy-fraternity-div",
+                start: -50, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.9,
+            duration: 1,
+            ease: "power1.inOut"
+        });
 
-                gsap.from(".thelastburial-paragraph", {
-                    scrollTrigger: {
-                        trigger: ".boy-fraternity-div",
-                        start: -50, // when the top of the trigger hits the top of the viewport
-                        end: "+=300", // end after scrolling 100px beyond the start
-                        // markers: true
-                        scrub: 1
-                    },
-                    stagger: { amount: 0.5 },
-                    scale: 0.9,
-                    duration: 1,
-                    ease: "power1.inOut"
-                });
+        gsap.from(".thelastburial-paragraph", {
+            scrollTrigger: {
+                trigger: ".boy-fraternity-div",
+                start: -50, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.9,
+            duration: 1,
+            ease: "power1.inOut"
+        });
+
+        gsap.from(".footer-container", {
+            scrollTrigger: {
+                trigger: ".carousel",
+                start: "top top",// when the top of the trigger hits the top of the viewport
+                end: "+=30", // end after scrolling 100px beyond the start
+                // markers: true,
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.7,
+            duration: 1,
+            ease: "power1.inOut"
+
+        });
 
     </script>
     <script src="projects.js" async defer></script>

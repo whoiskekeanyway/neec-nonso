@@ -93,7 +93,7 @@
 
     <div class='about-page'>
 
-        <aside><img class="bio-image" src="images/the boys fraternity/_MG_7455.jpg" width="400px" alt=""></aside>
+        <aside><img class="bio-image" src="images/neec.nonso-bio.webp" width="400px" alt=""></aside>
 
         <section class="biography-section">
 
@@ -266,6 +266,19 @@
             duration: 1,
              ease: "power1.inOut"
         });
+
+         let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".bio-image",
+
+
+                    //   markers: true,
+
+                }
+            });
+
+            tl.from(".bio-image", { x: 200, opacity: 0, duration: 1.5 })
+            .from(".biography-section", { x: -200, opacity: 0, duration: 1.5 })
 
 
     </script>

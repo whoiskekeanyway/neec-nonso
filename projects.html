@@ -121,7 +121,7 @@
 
         <div class="card">
             <a href="theboysfraternity.html">
-                <img class="card-image" src="images/homepage 350px.jpg" alt="projects-image">
+                <img class="card-image" src="images/the boys fraternity/homepage 350px.jpg" alt="projects-image">
             </a>
             <a class="card-description" href="theboysfraternity.html">
                 <p class="project-title">the boys fraternity.</p>
@@ -130,7 +130,7 @@
 
         <div class="card">
             <a href="thelastburial.html">
-                <img class="card-image" src="images/the last burial/1350px.jpg" alt="projects-image">
+                <img class="card-image" src="images/the last burial/Mobile/1.webp" alt="projects-image">
             </a>
             <a class="card-description" href="thelastburial.html">
                 <p class="project-title">the last burial.</p>
@@ -139,7 +139,7 @@
 
         <div class="card">
             <a href="whatwasdeadwasneverdead.html">
-                <img class="card-image" src="images/homepage-two350px.jpg" alt="projects-image">
+                <img class="card-image" src="images/what was dead was never dead/Mobile/1.jpg" alt="projects-image">
             </a>
             <a class="card-description" href="whatwasdeadwasneverdead.html">
                 <p class="project-title">what was dead was never dead.</p>
@@ -148,7 +148,7 @@
 
         <div class="card">
             <a href="christmasandclothes.html">
-                <img class="card-image" src="images/christmas and clothes/christmas350px.jpg" alt="projects-image">
+                <img class="card-image" src="images/christmas and clothes/Mobile/1.webp" alt="projects-image">
             </a>
             <a class="card-description" href="christmasandclothes.html">
                 <p class="project-title">christmas and clothes.</p>
@@ -255,6 +255,19 @@
             duration: 1,
              ease: "power1.inOut"
         });
+
+           let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".blockquote-div",
+
+
+                    //   markers: true,
+
+                }
+            });
+
+            tl.from(".blockquote-div", { x: 200, opacity: 0, duration: 1.5 })
+            tl.from(".card-container", { x: -200, opacity: 0, duration: 1.5 })
     </script>
 
 

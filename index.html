@@ -109,7 +109,7 @@
         </div>
 
         <div class="landing-page">
-            <img src="images/homepage.jpg" alt="">
+            <img src="images/homepage.webp" alt="">
             <p class="homepage-text">the boys fraternity</p>
         </div>
 
@@ -124,7 +124,9 @@
         <div class="footer-content">
 
             <div class="footer-content-left">
-                <p class="footer-words"> &copy; Copyright 2022 NeecNonso, <br> All rights reserved.</p>
+                <p class="footer-words"> &copy; Copyright 2022 NeecNonso, <br>
+                    All rights reserved.
+                </p>
             </div>
 
 
@@ -206,7 +208,22 @@
             duration: 1,
             ease: "power1.inOut"
         });
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".index-main",
+                //   markers: true,
+
+            }
+        });
+
+        tl.from(".landing-page", { x: -200, opacity: 0.5, duration: 1.5 })
+            .from(".homepage-text", { x: 200, opacity: 0.5, duration: 1.5 })
+            .from(".footer-content", { x: -200, opacity: 0, duration: 1.5 })
+            .from(".designer", { y: 200, opacity: 0, duration: 1.5 });
     </script>
+
+
 
     <script src="script.js" async defer></script>
     <!-- <script src="countdown.js" async defer></script> -->
