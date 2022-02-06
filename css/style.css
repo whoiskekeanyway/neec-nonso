@@ -8,6 +8,14 @@ body {
   margin: 0 auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Navbar */
 
 .navbar {
@@ -19,15 +27,18 @@ body {
   position: fixed;
   top: 0;
   z-index: 1;
+  background-color: rgb(255, 255, 255);
 }
 
 .App-logo {
   pointer-events: auto;
-  width: 50px;
+  width: 100px;
   margin-left: 3rem;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
+
+/* Navbar Links 
 
 .App-logo:hover {
   animation: App-logo-scale 0.5s ease-in;
@@ -57,6 +68,8 @@ body {
   }
 }
 
+*/
+
 .nav-list {
   list-style-type: none;
   height: 100%;
@@ -75,9 +88,8 @@ body {
 
 .list-item a {
   text-decoration: none;
-  color: #ee6352;
   position: relative;
-  font-size: 2rem;
+  font-size: 16px;
 }
 
 .list-item a::after {
@@ -123,7 +135,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 0.5rem;
+  margin-top:1rem;
 }
 
 .App-logos {
@@ -142,12 +154,13 @@ body {
 }
 
 .menu {
+  pointer-events: auto;
   display: none;
   cursor: pointer;
 }
 
 .menu div {
-  width: 25px;
+  width: 35px;
   height: 5px;
   background-color: #800020;
   margin-bottom: 4px;
@@ -162,93 +175,6 @@ body {
 }
 .toggle .menu-line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
-
-@media all and (max-width: 450px) {
-  .App-logo {
-    pointer-events: none;
-    width: 50px;
-    margin-left: 2rem;
-    margin-top: 1rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-    position: relative;
-    padding: 5px;
-  }
-  .container-icon {
-    width: 100%;
-  }
-  .menu {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-  }
-
-  .list-item {
-    display: block;
-    padding: 20px 10px;
-  }
-
-  .navbar a {
-    color: blue;
-  }
-
-  .nav-list {
-    position: relative;
-    list-style-type: none;
-    width: 100%;
-    text-align: center;
-    padding: 10%;
-    margin-top: 8%;
-    display: none;
-    background: white;
-    z-index: 1;
-  }
-
-  .nav-list::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: -10%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 150px 150px;
-    border-color: transparent transparent white transparent;
-  }
-
-  .container-icon a {
-    font-size: 2.5vh;
-    font-weight: 900;
-    line-height: 50px;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: black;
-  }
-
-  .list-item.contact a {
-    background-color: rgb(231, 231, 17);
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-  }
-
-  .active {
-    display: block;
-  }
-
-  .extra {
-    display: none;
-  }
 }
 
 /* Buttons */
@@ -269,7 +195,7 @@ body {
 }
 
 #myBtn:hover {
-  background-color: orangered;
+  background-color: rgb(0, 0, 0);
 }
 #myBtn:after {
   content: " \21E1";
@@ -282,8 +208,6 @@ body {
 }
 
 .landing-page {
-  background-color: #f2f2f2;
-  padding: 1rem 1rem 1rem 1rem;
   max-width: 1440px;
   margin: 0 auto;
   height: auto;
@@ -294,15 +218,10 @@ body {
 }
 
 .landing-page img {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   height: auto;
-}
-
-.homepage-text {
-  font-family: "Merienda One", cursive;
-  font-size: 4rem;
-  text-align: center;
 }
 
 /* Main */
@@ -314,6 +233,7 @@ main {
   justify-content: center;
   height: 100vh;
   width: 100%;
+  padding: 20px;
 }
 
 /* About Me Page */
@@ -327,6 +247,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
+  margin-top: 4rem;
 }
 
 .biography-section {
@@ -348,175 +269,20 @@ main {
   padding: 5px;
 }
 
-/* Exhibition Page */
-
-.exhibitions-info {
-  font-family: "Roboto Mono", monospace;
-  display: flex;
-  flex-direction: row-reverse;
-  max-width: 1400px;
-  margin: 0 auto;
-  height: auto;
-  margin-bottom: 10rem;
-  margin-top: 10rem;
-}
-
-.exhibitions-info section {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  max-width: 330px;
-  margin: 0 auto;
-}
-
-.exhibitions-info section div {
-  margin-bottom: 2rem;
-}
-
-.exhibitions-info section p {
-  min-width: 300px;
-}
-
-.exhibition-year {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 1rem;
-  color: #800020;
-}
-
-.exhibition-title {
+.biography-title {
   font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 1rem;
-}
-
-.exhibition-venue {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.exhibition-location {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-
-.exhibition-location.link {
-  text-decoration: none;
-  color: #800020;
-}
-
-hr {
-  color: #800020 !important;
-}
-
-/* Projects Page */
-
-.blockquote-div {
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-  padding: 50px;
-}
-
-blockquote {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.5rem;
-  position: relative;
-  padding: 50px;
   text-align: center;
-}
-/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
-blockquote:before {
-  font-family: Georgia, serif;
-  position: absolute;
-  font-size: 8em;
-  line-height: 1;
-  top: 0;
-  left: 0;
-  content: "\201C";
   color: #800020;
-}
-blockquote:after {
-  font-family: Georgia, serif;
-  position: absolute;
-  /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
-  float: right;
-  font-size: 8em;
-  line-height: 1;
-  right: 0;
-  bottom: -0.5em;
-  content: "\201D";
-  color: #800020;
-}
-.blockquote-footer {
-  padding: 1em;
-  color: #800020;
-  font-size: 1.5rem;
-  font-weight: 900;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.blockquote-link {
-  text-decoration: none;
-  color: black;
-}
-
-.jumbotron-button {
-  color: #800020;
-  text-decoration: none;
-}
-
-blockquote cite:before {
-  content: "\2013";
-}
-
-/* Project Page Contact Card */
-
-.card-container {
-  font-family: "Roboto Mono", monospace;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0.5rem;
-  margin-top: rem;
-}
-
-.card {
-  max-width: 350px;
-  height: auto;
-  margin: 10px;
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
-}
-
-.card-description {
-  text-decoration: none;
-  display: inline-block;
   position: relative;
 }
 
-.project-title {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #800020;
-  margin-bottom: 1rem;
-  text-decoration: none;
+.biography-title:hover {
+  color: black;
+  text-transform: capitalize;
+  transition: transform 250ms;
 }
 
-.project-title::after {
+.biography-title::after {
   content: "";
   position: absolute;
   left: 0;
@@ -529,115 +295,78 @@ blockquote cite:before {
   transition: transform 250ms ease-in;
 }
 
-.project-title:hover::after {
+.biography-title:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* Contact Page */
+/* Exhibition Page */
 
-.contact-container {
+.exhibitions-info {
   font-family: "Roboto Mono", monospace;
-  display: flex;
-  flex-direction: row;
-  max-width: 1440px;
-  margin: 0 auto;
-  height: 100vh;
-}
-
-.image-div {
-  max-width: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin: 0 auto;
-  padding: auto;
-}
-
-.image-div img {
-  max-width: 600px;
-  height: auto;
-}
-
-.contact-main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: steelblue;
-  position: absolute;
-  top: 40%;
-  left: 80%;
-  transform: translate(-100%, -50%);
-}
-
-.email-contact {
-  text-decoration: none;
-  color: #800020;
-}
-
-.phone-contact {
-  text-decoration: none;
-  color: #800020;
-}
-
-/* Footer */
-
-.footer-content {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 300;
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-around;
+  max-width: 1440px;
+  margin: 0 auto;
   height: auto;
-  width: 100%;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+  display: relative;
+}
+
+.exhibitions-info section {
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+.exhibitions-info section div {
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
+}
+
+.exhibitions-info section div:hover {
+  border-left: 2px solid currentColor;
+}
+
+.exhibitions-info section p {
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.exhibition-year {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
   color: #800020;
 }
 
-.footer-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 0.5rem;
+.exhibition-title {
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
 }
 
-.footer-words {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 0.5rem;
-  font-size: 1.5rem;
-}
-
-.designer {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1rem;
+.exhibition-venue {
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 1rem;
-  padding: 5px;
-  text-align: center;
-  align-self: center;
-  align-items: center;
-  max-width: 100%;
-  color: steelblue;
 }
 
-.designer a {
+.exhibition-location {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.exhibition-location.link {
   text-decoration: none;
-  color: steelblue;
+  color: #800020;
+}
+
+hr {
+  color: #800020 !important;
 }
 
 /* Carousel */
@@ -657,8 +386,6 @@ blockquote cite:before {
   height: 700px;
   width: 1000px;
   margin: 0 auto;
-  padding: 3rem;
-  background-color: whitesmoke;
   margin-bottom: 5rem;
 }
 
@@ -667,8 +394,6 @@ blockquote cite:before {
   height: 800px !important;
   width: 600px !important;
   margin: 0 auto;
-  padding: 3rem;
-  background-color: whitesmoke;
   margin-bottom: 5rem;
 }
 
@@ -719,7 +444,7 @@ blockquote cite:before {
 }
 
 .carousel-button img {
-  width: 12px;
+  width: 20px;
 }
 
 .carousel-nav {
@@ -733,14 +458,14 @@ blockquote cite:before {
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background: rgba(0, 0, 0, 0.3);
+  background: #f8cdd8;
   margin: 0 12px;
   cursor: pointer;
   margin-top: 5rem;
 }
 
 .carousel-indicator.current-slide {
-  background: rgba(0, 0, 0, 0.75);
+  background: #800020;
 }
 
 .is-hidden {
@@ -752,15 +477,22 @@ blockquote cite:before {
 }
 
 /* Project Individual Page */
+.topline {
+  margin-bottom: 3rem;
+}
 
+.bottom-line {
+  margin-top: 3rem;
+}
 .boy-fraternity-div {
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 16px;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
   padding: 10px;
+  margin-top: 5rem;
 }
 
 .boy-fraternity-title {
@@ -789,4 +521,303 @@ blockquote cite:before {
 
 .boy-fraternity-div p {
   line-height: 2.5rem;
+}
+
+/* Projects Page */
+
+.blockquote-div {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 50px;
+}
+
+blockquote {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  position: relative;
+  padding: 40px;
+  text-align: center;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 8em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+  color: #800020;
+}
+blockquote:after {
+  position: absolute;
+  /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+  float: right;
+  font-size: 8em;
+  line-height: 1;
+  right: 0;
+  bottom: -0.5em;
+  content: "\201D";
+  color: #800020;
+}
+.blockquote-footer {
+  padding: 1em;
+  color: #800020;
+  font-size: 1.2rem;
+  font-weight: 900;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.blockquote-link {
+  text-decoration: none;
+  color: black;
+}
+
+.jumbotron-button {
+  color: #800020;
+  text-decoration: none;
+}
+
+blockquote cite:before {
+  content: "\2013";
+}
+
+/* Project Page Contact Card */
+
+.card-container {
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  max-width: 350px;
+  height: auto;
+  margin: 10px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-description {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.project-title {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  color: #800020;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.project-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.project-title:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Contact Page */
+
+.contact-container {
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.image-div {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: auto;
+}
+
+.image-div img {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 600px !important;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 500;
+  color: steelblue;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translate(-100%, -50%);
+}
+
+.email-contact {
+  text-decoration: none;
+  color: #800020;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.phone-contact {
+  text-decoration: none;
+  color: #800020;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+/* Footer */
+
+.footer-content {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  color: #800020;
+}
+
+.footer-words {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0.5rem;
+  font-size: 16px;
+}
+
+.designer {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 5px;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  max-width: 100%;
+  color: steelblue;
+}
+
+.designer a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+/* Error Page  */
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+}
+
+.brandtitle {
+  text-align: center;
+  margin: 2%;
+}
+
+.error-icon {
+  margin-bottom: 5%;
+}
+.errorimage {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-page-title {
+  font-size: 16px;
+  color: #800020;
+  margin-bottom: 10rem;
+}
+
+.css-button-arrow--black {
+  min-width: 130px;
+  height: 40px;
+  color: #800020;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #fbfdff;
+}
+.css-button-arrow--black:hover {
+  border-radius: 5px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+.css-button-arrow--black:hover:after {
+  opacity: 1;
+  left: 10px;
+}
+.css-button-arrow--black:after {
+  content: "\00AB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  left: -20px;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 767px) {
+  .error-container {
+    text-align: center;
+    height: 80vh;
+  }
 }

@@ -4,15 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Contact | Neec Nonso | Documentary Photographer</title>
+    <title> contact | neec nonso | Documentary Photographer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="shortcut icon" type="image/png" href="images/neec nonso logo.png">
+
     <!-- Style Links -->
+
+
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="/css/tablet.css">
 
 </head>
 
@@ -27,11 +31,9 @@
 
         <nav class='navbar'>
 
-            <div>
-                <a href='index.html'>
-                    <img width="40px" src="images/logo-instagram.svg" class='App-logo' alt='logo' />
-                </a>
-            </div>
+            <a href='index.html'>
+                <img width="40px" src="images/neec nonso logo.png" class='App-logo' alt='logo' />
+            </a>
 
             <ul class='nav-list'>
 
@@ -59,18 +61,19 @@
         </nav>
 
         <ul class='extra'>
+
             <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href=''>
+                <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
                     <img width="40px" src="images/logo-instagram.svg" alt='logo' />
                 </a>
             </li>
             <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href=''>
+                <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
                     <img width="40px" src="images/logo-facebook.svg" alt='logo' />
                 </a>
             </li>
             <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href=''>
+                <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
                     <img width="40px" src="images/logo-linkedin.svg" alt='logo' />
                 </a>
             </li>
@@ -82,6 +85,7 @@
 
         </ul>
 
+
     </div>
 
     <!-- End of Navbar-->
@@ -89,7 +93,7 @@
     <div class="contact-container">
 
         <div class="image-div">
-            <img class="contact-image" src="images/the boys fraternity/contact-page-photo.jpg" alt="">
+            <img class="contact-image" src="images/contact-photo.webp" alt="">
         </div>
 
 
@@ -122,54 +126,37 @@
 
         <div class="footer-content">
 
-            <div class="footer-content-left">
-                <p class="footer-words"> &copy; Copyright 2022 Neec Nonso. <br> All rights reserved.</p>
+
+            <div class="copyright">
+                <p class="footer-words"> &copy; copyright 2022 neec nonso, <br>
+                    all rights reserved.
+                </p>
             </div>
 
-
-            <div class="footer-content-right">
-
-                <ul class='footer-icons'>
-                    <li class='list-item extra'>
-                        <a rel='noreferrer noopener' target='_blank' href=''>
-                            <img width="40px" src="images/logo-instagram.svg" alt='logo' />
-                        </a>
-                    </li>
-                    <li class='list-item extra'>
-                        <a rel='noreferrer noopener' target='_blank' href=''>
-                            <img width="40px" src="images/logo-facebook.svg" alt='logo' />
-                        </a>
-                    </li>
-                    <li class='list-item extra'>
-                        <a rel='noreferrer noopener' target='_blank' href=''>
-                            <img width="40px" src="images/logo-linkedin.svg" alt='logo' />
-                        </a>
-                    </li>
-                    <li class='list-item extra'>
-                        <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
-                            <img width="40px" src="images/logo-twitter.svg" alt='logo' />
-                        </a>
-                    </li>
-                </ul>
-
+            <!-- 
+            <div class="designer">
+                <p class=""> Designed by <a rel='noreferrer noopener' target="_blank"
+                        href="https://www.scriptsandtags.com/">ScriptsandTags</a></p>
             </div>
+            -->
+
+
 
         </div>
 
     </footer>
-    <div class="designer">
-        <p class=""> Designed by <a href="https://www.scriptsandtags.com/">ScriptsandTags</a></p>
-    </div>
+
 
     <!-- End of Footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script>
-        gsap.from(".contact-main", {
+
+        gsap.from(".extra", {
             scrollTrigger: {
-                trigger: ".contact-container",
-                start: -100, // when the top of the trigger hits the top of the viewport
+                trigger: ".contact-main",
+                start: -50, // when the top of the trigger hits the top of the viewport
                 end: "+=300", // end after scrolling 100px beyond the start
                 // markers: true
                 scrub: 1
@@ -179,6 +166,20 @@
             duration: 1,
             ease: "power1.inOut"
         });
+
+      //  gsap.from(".contact-main", {
+      //      scrollTrigger: {
+      //          trigger: ".contact-container",
+      //          start: -100, // when the top of the trigger hits the top of the viewport
+      //          end: "+=300", // end after scrolling 100px beyond the start
+      //          // markers: true
+      //          scrub: 1
+      //      },
+      //      stagger: { amount: 0.5 },
+      //      scale: 1.5,
+      //      duration: 1,
+      //      ease: "power1.inOut"
+      //  });
 
         gsap.from(".footer-container", {
             scrollTrigger: {
@@ -193,50 +194,40 @@
             duration: 1,
             ease: "power1.inOut"
         });
-        gsap.from(".contact-image", {
+     //   gsap.from(".contact-image", {
+     //       scrollTrigger: {
+     //           trigger: ".contact-container",
+     //           start: -50, // when the top of the trigger hits the top of the viewport
+     //           end: "+=300", // end after scrolling 100px beyond the start
+     //           // markers: true
+     //           scrub: 1
+     //       },
+     //       stagger: { amount: 0.5 },
+     //       scale: 0.7,
+     //       duration: 1,
+     //       ease: "power1.inOut"
+     //   });
+
+
+        let tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".contact-container",
-                start: -50, // when the top of the trigger hits the top of the viewport
-                end: "+=300", // end after scrolling 100px beyond the start
-                // markers: true
-                scrub: 1
-            },
-            stagger: { amount: 0.5 },
-            scale: 0.7,
-            duration: 1,
-            ease: "power1.inOut"
+                trigger: ".contact-main",
+
+
+                //   markers: true,
+
+            }
         });
-        gsap.from(".extra", {
-                scrollTrigger: {
-                    trigger: ".exhibitions-info",
-                    start: -50, // when the top of the trigger hits the top of the viewport
-                    end: "+=300", // end after scrolling 100px beyond the start
-                    // markers: true
-                    scrub: 1
-                },
-                stagger: { amount: 0.5 },
-                scale: 1.1,
-                duration: 1
-            });
 
-               let tl = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: ".contact-main",
-
-
-                        //   markers: true,
-
-                    }
-                });
-
-                tl.from(".contact-main", { x: 200, opacity: 0, duration: 1.5 })
-                    .from(".image-div", { x: -200, opacity: 0, duration: 1.5 })
+        tl.from(".contact-main", { x: 200, opacity: 0, duration: 1.5 })
+            .from(".image-div", { x: -200, opacity: 0, duration: 1.5 })
+            .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
+            .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
+       //     .from(".designer", { y: 10, opacity: 0, duration: 1.5 });
 
     </script>
 
     <script src="script.js" async defer></script>
-
-
 </body>
 
 </html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> page not found | neec nonso | Documentary Photographer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/png" href="images/neec nonso logo.png">
+
+    <!-- Style Links -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+
+</head>
+
+<body>
+
+    <!-- Back to top button -->
+    
+    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+
+    <!-- logo -->
+
+    <div class="brandtitle">
+
+        <a href='index.html'>
+            <img width="40px" src="images/neec nonso logo.png" class='App-logo' alt='logo' />
+        </a>
+
+    </div>
+
+    <!-- End of logo Logo -->
+
+    <!-- Error Container -->
+
+    <div class="error-container">
+        <p class="error-page-title"> page not found</p>
+        <img class="errorimage" src="images/404.svg" alt="">
+        <a class="css-button-arrow--black " href="index.html"> return home</a>
+    </div>
+
+    <!-- End of Error Container -->
+
+    <!-- Start of Footer -->
+
+    <footer class="footer-container">
+
+        <div class="footer-content">
+
+
+        <div class="copyright">
+            <p class="footer-words"> &copy; copyright 2022 neec nonso, <br>
+                all rights reserved.
+            </p>
+        </div>
+
+            <div class="designer">
+                <p class=""> designed by <a href="https://www.scriptsandtags.com/">scriptsandtags</a></p>
+            </div>
+
+
+
+        </div>
+
+    </footer>
+
+    <!-- End of Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+
+
+        gsap.from(".footer-container", {
+            scrollTrigger: {
+                trigger: ".App-logo",
+                start: 50, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.5,
+            duration: 1,
+            ease: "power1.inOut"
+        });
+
+
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".error-container",
+
+
+                //   markers: true,
+
+            }
+        });
+
+        tl.from(".error-container", { x: -200, opacity: 0, duration: 1.5 })
+        tl.from(".App-logo", { y: -200, opacity: 0, duration: 1.5 })
+            .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
+            .from(".designer", { y: 10, opacity: 0, duration: 1.5 });
+
+    </script>
+
+    <script>
+        //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+    </script>
+
+   
+</body>
+
+</html>

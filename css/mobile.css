@@ -1,3 +1,65 @@
+@media all and (max-width: 450px) {
+  .App-logo {
+    cursor: pointer;
+    max-width: 80px;
+    margin: 0 auto;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    padding: 5px;
+  }
+  .menu div {
+    margin-bottom: 5px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 40px;
+  }
+
+  .list-item {
+    display: block;
+    padding: 20px 10px;
+  }
+
+  .nav-list {
+    position: relative;
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+    margin-top: 8%;
+    display: none;
+    pointer-events: auto;
+  }
+
+  .list-item.contact a {
+    background-color: rgb(231, 231, 17);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .extra {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   body {
     background-color: #f3eaea;
@@ -17,16 +79,11 @@
     display: block;
   }
 
-  .landing-page img {
+  .landing-page.mobile img {
     display: block;
     max-width: 100%;
     margin: 0 auto;
-  }
-
-  .homepage-text {
-    font-family: "Merienda One", cursive;
-    font-size: 2rem;
-    text-align: center;
+    padding: 5px;
   }
 
   /* Main */
@@ -101,9 +158,15 @@
   .exhibitions-info {
     display: flex;
     flex-direction: column-reverse;
-    max-width: 1400px;
+    max-width: 100%;
+    flex-wrap: wrap;
     margin: 0 auto;
     height: auto;
+    padding: 2rem;
+  }
+
+  .exhibitions-info section div {
+    padding-left: 0;
   }
 }
 
@@ -129,7 +192,7 @@
   .boy-fraternity-div {
     font-family: "Roboto Mono", monospace;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 16px;
     max-width: 800px;
     margin: 0 auto;
     position: relative;
@@ -158,49 +221,71 @@
 
   .mobile {
     display: block;
-    padding: 5px;
+    padding: 10px;
+    margin-bottom: 2rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .contact-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 100vh;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .contact-main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 3rem;
-    margin-right: 4rem;
-    margin-bottom: 2rem;
+    margin-right: 6rem;
+    margin-bottom: 3rem;
   }
   .image-div img {
-    max-width: 350px;
-    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
   }
 
-  .designer {
-    float: left;
+  .contact-image {
+    max-width: 350px;
+    margin: 0 auto;
+    max-height: 500px;
   }
 }
 
 @media screen and (max-width: 450px) {
- .footer-content {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 300;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  width: 100%;
-  color: #800020;
+  .footer-content {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    color: #800020;
+  }
 }
+
+@media screen and (max-width: 450px) {
+  .contact-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    color: steelblue;
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translate(-100%, -50%);
+  }
+
+  .image-div {
+    width: 50%;
+  }
+  footer {
+    float: left;
+  }
 }
