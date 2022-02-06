@@ -31,12 +31,6 @@ Project discription on Project main page
 # neec-nonso
 
 
-  <title> Contact | Neec Nonso | Documentary Photographer</title>
-  <title> Bio | Neec Nonso | Documentary Photographer</title>
-  <title> Exhibition | Neec Nonso | Documentary Photographer</title>
-  <title> Projects | Neec Nonso | Documentary Photographer</title>
-  <title> Contact | Neec Nonso | Documentary Photographer</title>
-  <title> <- Insert Project Name -> | Neec Nonso | Documentary Photographer</title
 
 
   <meta charset="utf-8">
@@ -84,3 +78,62 @@ Bold 700
 
 
 #800020
+
+
+
+//Bio Link back to homepage
+//stop rotating logo
+
+Change the mobile home picture
+//change to small letters in bio
+//nudge down the title of bloquote
+
+put second picture in how to photography lagos
+how to photography lagos two
+correct picture in mobile toilet in toilet out
+// change cover of toilet in toilet out to third picture
+// fix navbar on toilet in toilet out
+
+Make animations faster
+
+// pain; correct title and add new images
+cover photo
+
+// contact font size to 16px
+
+align homepage picture to center
+
+// overflow hidden on homepage mobile
+
+one liner homepage
+
+
+// Favicon
+Projects before exhibition in navbar 
+exhibitions
+
+Fix Mobile images
+
+Second image in how  to photography lagos
+
+Potrait image cropped on Laptop
+the another beginning mobile image / back to top button
+
+New Bio Image
+contact Info
+
+Fix Navbar
+
+
+AR Project
+ 
+
+ Fix Footer
+ Change the all right reserved to black
+
+
+
+
+
+
+# neec-nonso
