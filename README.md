@@ -124,6 +124,8 @@ Potrait image cropped on Laptop
 
 // Fix Navbar
 
+// Fix exhibition Mobile page
+
 
 AR Project 
  

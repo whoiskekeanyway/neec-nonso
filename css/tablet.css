@@ -101,20 +101,10 @@
 
 @media only screen and (max-width: 820px) {
   .contact-container {
-    font-family: "Roboto Mono", monospace;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0 auto;
-    height: 100vh;
+   
   }
 
-  .image-div img {
-    max-width: 500px;
-    margin-top: 6rem;
-    height: auto;
+
   }
 }
 

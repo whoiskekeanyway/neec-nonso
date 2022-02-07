@@ -135,7 +135,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
 .App-logos {
@@ -305,7 +305,7 @@ main {
 .exhibitions-info {
   font-family: "Roboto Mono", monospace;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   max-width: 1440px;
   margin: 0 auto;
   height: auto;
@@ -649,48 +649,40 @@ blockquote cite:before {
 /* Contact Page */
 
 .contact-container {
-  font-family: "Roboto Mono", monospace;
-  display: flex;
-  flex-direction: row;
   max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+}
+
+.contact-container div {
+  margin: 10px;
+  padding: 10px;
 }
 
 .image-div {
   max-width: 600px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: auto;
+  height: auto;
+  flex: 50%;
 }
 
 .image-div img {
-  max-width: 600px;
-  margin: 0 auto;
-  height: 600px !important;
+  max-width: 350px;
 }
 
 .contact-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 600px;
-  margin: 0 auto;
+
 }
 
 .contact {
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-  font-weight: 500;
-  color: steelblue;
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  transform: translate(-100%, -50%);
+
 }
 
 .email-contact {
@@ -729,6 +721,7 @@ blockquote cite:before {
   justify-content: flex-start;
   margin-left: 0.5rem;
   font-size: 16px;
+  letter-spacing: 0.2px;
 }
 
 .designer {

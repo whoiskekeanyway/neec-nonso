@@ -17,7 +17,6 @@
     flex-direction: column;
     position: relative;
     padding: 5px;
-
   }
   .menu div {
     margin-bottom: 5px;
@@ -67,10 +66,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-  body {
-    background-color: #f3eaea;
-  }
-
+ 
   /* Landing Page */
 
   .index-main {
@@ -235,63 +231,16 @@
 @media screen and (max-width: 450px) {
   .contact-container {
     flex-direction: column;
-    height: 100vh;
-    margin-bottom: 2rem;
-  }
-
-  .contact-main {
-    margin-right: 6rem;
-    margin-bottom: 3rem;
-  }
-  .image-div img {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 5px;
-  }
-
-  .contact-image {
-    max-width: 350px;
-    margin: 0 auto;
-    max-height: 500px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .footer-content {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 300;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: auto;
-    width: 100%;
-    color: #800020;
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .contact-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact {
-    font-family: "Roboto Mono", monospace;
-    font-size: 16px;
-    font-weight: 500;
-    color: steelblue;
-    position: absolute;
-    top: 50%;
-    right: -100px;
-    transform: translate(-100%, -50%);
-  }
-
-  .image-div {
-    width: 50%;
-  }
   footer {
     float: left;
   }
+}
+
+@media screen and (max-width: 450px) {
 }

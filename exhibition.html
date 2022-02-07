@@ -28,27 +28,27 @@
 
         <nav class='navbar'>
 
-    <a class="logo-link" href='index.html'>
-        <img src="images/neec nonso logo.png" class='App-logo' alt='logo' />
-    </a>
+            <a class="logo-link" href='index.html'>
+                <img src="images/neec nonso logo.png" class='App-logo' alt='logo' />
+            </a>
 
-        <ul class='nav-list'>
-        
-            <li class='list-item'>
-                <a href='bio.html'> bio</a>
-            </li>
-        
-            <li class='list-item'>
-                <a href='projects.html'>projects </a>
-            </li>
-            <li class='list-item'>
-                <a href='exhibition.html'>exhibitions </a>
-            </li>
-            <li class='list-item'>
-                <a href='contact.html'>contact </a>
-            </li>
-        
-        </ul>
+            <ul class='nav-list'>
+
+                <li class='list-item'>
+                    <a href='bio.html'> bio</a>
+                </li>
+
+                <li class='list-item'>
+                    <a href='projects.html'>projects </a>
+                </li>
+                <li class='list-item'>
+                    <a href='exhibition.html'>exhibitions </a>
+                </li>
+                <li class='list-item'>
+                    <a href='contact.html'>contact </a>
+                </li>
+
+            </ul>
 
             <div class="menu">
                 <div class="menu-line1"></div>
@@ -93,47 +93,23 @@
 
     <div class="exhibitions-info">
 
-        <section>
+        <section class="fromleft one">
 
-            <p class="exhibition-year">2019</p>
-
-            <div>
-                <p class="exhibition-title">yanga.</p>
-                <p class="exhibition-venue">african artists foundation,</p>
-                <p class="exhibition-location">lagos, nigeria.</p>
-                <hr color="#800020">
-            </div>
-
-            <div class="firsthr">
-                <p class="exhibition-title">afro futures.</p>
-                <p class="exhibition-venue">kungstgewerber museum,</p>
-                <p class="exhibition-location">berlin,germany.</p>
-                <hr class="" color="#800020">
-
-            </div>
-
-        </section>
-
-        <section>
-
-            <p class="exhibition-year">2020</p>
+            <p class="exhibition-year">2022</p>
 
             <div>
-                <p class="exhibition-title">nigeria trending,<br>
-                    lagos fringe </p>
-
-                <p class="exhibition-venue">freedom park kongi’s harvest gallery,</p>
-
-                <p class="exhibition-venue">lagos,nigeria.</p>
-
+                <p class="exhibition-title">wa na wari</p>
+                <p>wa na wari</p>
+                <p class="exhibition-venue">art space</p>
+                <p class="exhibition-location">seatle,usa</p>
                 <hr color="#800020">
             </div>
 
             <div>
-                <p class="exhibition-title">pain: a discomfort or a trigger,</p>
-                <p class="exhibition-venue">virtual exhibition,</p>
-                <a class="exhibition-location link" target="_blank" rel="noreferrer"
-                    href="https://thepeaceexhibit.com/">thepeaceexhibit.com</a>
+                <p class="exhibition-title">rele arts foundation <br>
+                    young contemporaries.</p>
+                <p class="exhibition-venue">national museum,</p>
+                <p class="exhibition-location">lagos,nigeria</p>
                 <hr color="#800020">
             </div>
 
@@ -183,27 +159,52 @@
 
         </section>
 
-        <section class="fromleft one">
+        <section class="fromright">
 
-            <p class="exhibition-year">2022</p>
+            <p class="exhibition-year">2020</p>
 
             <div>
-                <p class="exhibition-title">wa na wari</p>
-                <p>wa na wari</p>
-                <p class="exhibition-venue">art space</p>
-                <p class="exhibition-location">seatle,usa</p>
+                <p class="exhibition-title">nigeria trending,<br>
+                    lagos fringe </p>
+
+                <p class="exhibition-venue">freedom park kongi’s harvest gallery,</p>
+
+                <p class="exhibition-venue">lagos,nigeria.</p>
+
                 <hr color="#800020">
             </div>
 
             <div>
-                <p class="exhibition-title">rele arts foundation <br>
-                    young contemporaries.</p>
-                <p class="exhibition-venue">national museum,</p>
-                <p class="exhibition-location">lagos,nigeria</p>
+                <p class="exhibition-title">pain: a discomfort or a trigger,</p>
+                <p class="exhibition-venue">virtual exhibition,</p>
+                <a class="exhibition-location link" target="_blank" rel="noreferrer"
+                    href="https://thepeaceexhibit.com/">thepeaceexhibit.com</a>
                 <hr color="#800020">
             </div>
 
         </section>
+
+        <section class="fromright">
+
+            <p class="exhibition-year">2019</p>
+
+            <div>
+                <p class="exhibition-title">yanga.</p>
+                <p class="exhibition-venue">african artists foundation,</p>
+                <p class="exhibition-location">lagos, nigeria.</p>
+                <hr color="#800020">
+            </div>
+
+            <div class="firsthr">
+                <p class="exhibition-title">afro futures.</p>
+                <p class="exhibition-venue">kungstgewerber museum,</p>
+                <p class="exhibition-location">berlin,germany.</p>
+                <hr class="" color="#800020">
+
+            </div>
+
+        </section>
+
 
     </div>
 
@@ -269,15 +270,14 @@
 
         let tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".exhibitions-info",
+                trigger: ".fromleft",
 
                 //   markers: true,
 
             }
         });
-
-        tl.from(".exhibitions-info", { x: 200, opacity: 0, duration: 1.5 })
         tl.from(".fromleft", { x: -200, opacity: 0, duration: 1.5 })
+            .from(".fromright", { x: 200, opacity: 0, duration: 1.5 })
             .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
             .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
          //   .from(".designer", { y: 10, opacity: 0, duration: 1.5 });
