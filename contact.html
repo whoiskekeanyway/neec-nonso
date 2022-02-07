@@ -31,8 +31,8 @@
 
         <nav class='navbar'>
 
-            <a href='index.html'>
-                <img width="40px" src="images/neec nonso logo.png" class='App-logo' alt='logo' />
+            <a class="logo-link" href='index.html'>
+                <img src="images/neec nonso logo.png" class='App-logo' alt='logo' />
             </a>
 
             <ul class='nav-list'>
@@ -40,11 +40,12 @@
                 <li class='list-item'>
                     <a href='bio.html'> bio</a>
                 </li>
-                <li class='list-item'>
-                    <a href='exhibition.html'>exhibition </a>
-                </li>
+
                 <li class='list-item'>
                     <a href='projects.html'>projects </a>
+                </li>
+                <li class='list-item'>
+                    <a href='exhibition.html'>exhibitions </a>
                 </li>
                 <li class='list-item'>
                     <a href='contact.html'>contact </a>
@@ -101,18 +102,31 @@
 
             <div class="contact">
 
+
+
                 <p>
+
+                    contact<br> <br>
+                    neec nonso<br>
+                    lagos,<br> nigeria<br> <br>
                     <a class="email-contact" href="mailto:neecnonso@gmail.com">
-                        send email
-                    </a> neecnonso@gmail.com
+                        neecnonso@gmail.com
+                    </a> <br>
+                    <a class="phone-contact" href="tel:+2348081117654">
+                        +2348081117654
+                    </a>
                 </p>
 
                 <p>
-                    <a class="phone-contact" href="tel:+2348081117654">
-                        phone
-                    </a>
-                    +2348081117654
+
+
                 </p>
+                <p>gallery</p>
+                <p  class="email-contact">rele gallery</p>
+
+                <p>32 thompson avenue ikoyi, <br>lagos, <br> nigeria.</p>
+                <p></p>
+                <p  class="email-contact">www.rele.co</p>
 
             </div>
 
@@ -167,19 +181,19 @@
             ease: "power1.inOut"
         });
 
-      //  gsap.from(".contact-main", {
-      //      scrollTrigger: {
-      //          trigger: ".contact-container",
-      //          start: -100, // when the top of the trigger hits the top of the viewport
-      //          end: "+=300", // end after scrolling 100px beyond the start
-      //          // markers: true
-      //          scrub: 1
-      //      },
-      //      stagger: { amount: 0.5 },
-      //      scale: 1.5,
-      //      duration: 1,
-      //      ease: "power1.inOut"
-      //  });
+        //  gsap.from(".contact-main", {
+        //      scrollTrigger: {
+        //          trigger: ".contact-container",
+        //          start: -100, // when the top of the trigger hits the top of the viewport
+        //          end: "+=300", // end after scrolling 100px beyond the start
+        //          // markers: true
+        //          scrub: 1
+        //      },
+        //      stagger: { amount: 0.5 },
+        //      scale: 1.5,
+        //      duration: 1,
+        //      ease: "power1.inOut"
+        //  });
 
         gsap.from(".footer-container", {
             scrollTrigger: {
@@ -194,19 +208,19 @@
             duration: 1,
             ease: "power1.inOut"
         });
-     //   gsap.from(".contact-image", {
-     //       scrollTrigger: {
-     //           trigger: ".contact-container",
-     //           start: -50, // when the top of the trigger hits the top of the viewport
-     //           end: "+=300", // end after scrolling 100px beyond the start
-     //           // markers: true
-     //           scrub: 1
-     //       },
-     //       stagger: { amount: 0.5 },
-     //       scale: 0.7,
-     //       duration: 1,
-     //       ease: "power1.inOut"
-     //   });
+        //   gsap.from(".contact-image", {
+        //       scrollTrigger: {
+        //           trigger: ".contact-container",
+        //           start: -50, // when the top of the trigger hits the top of the viewport
+        //           end: "+=300", // end after scrolling 100px beyond the start
+        //           // markers: true
+        //           scrub: 1
+        //       },
+        //       stagger: { amount: 0.5 },
+        //       scale: 0.7,
+        //       duration: 1,
+        //       ease: "power1.inOut"
+        //   });
 
 
         let tl = gsap.timeline({

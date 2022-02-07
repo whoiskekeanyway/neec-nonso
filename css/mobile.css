@@ -1,16 +1,23 @@
 @media all and (max-width: 450px) {
   .App-logo {
     cursor: pointer;
-    max-width: 80px;
+    max-width: 100px;
     margin: 0 auto;
     margin-left: 2rem;
     margin-top: 3rem;
+    display: inline;
+  }
+
+  .logo-link {
+    display: inline-block;
+    width: 30%;
   }
 
   .navbar {
     flex-direction: column;
     position: relative;
     padding: 5px;
+
   }
   .menu div {
     margin-bottom: 5px;
@@ -35,7 +42,6 @@
     padding: 1%;
     margin-top: 8%;
     display: none;
-    pointer-events: auto;
   }
 
   .list-item.contact a {

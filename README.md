@@ -88,9 +88,9 @@ Change the mobile home picture
 //change to small letters in bio
 //nudge down the title of bloquote
 
-put second picture in how to photography lagos
+//put second picture in how to photography lagos
 how to photography lagos two
-correct picture in mobile toilet in toilet out
+//correct picture in mobile toilet in toilet out
 // change cover of toilet in toilet out to third picture
 // fix navbar on toilet in toilet out
 
@@ -105,31 +105,50 @@ align homepage picture to center
 
 // overflow hidden on homepage mobile
 
-one liner homepage
 
 
-// Favicon
-Projects before exhibition in navbar 
-exhibitions
+
+Favicon
+// Projects before exhibition in navbar 
+// exhibitions
 
 Fix Mobile images
 
-Second image in how  to photography lagos
+// Second image in how  to photography lagos
 
 Potrait image cropped on Laptop
-the another beginning mobile image / back to top button
+// the another beginning mobile image / back to top button
 
-New Bio Image
-contact Info
+// New Bio Image
+//contact Info
 
-Fix Navbar
+// Fix Navbar
 
 
-AR Project
+AR Project 
  
 
- Fix Footer
- Change the all right reserved to black
+// Fix Footer
+// Change the all right reserved to black
+
+
+contact
+neec nonso
+ 
+lagos, nigeria
+neecnonso@gmail.com
++2348081117654
+ 
+ 
+ 
+gallery
+rele gallery
+ 
+32 thompson avenue ikoyi,
+lagos, nigeria.
+www.rele.co
+ 
+
 
 
 
