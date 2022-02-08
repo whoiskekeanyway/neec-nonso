@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> contact | neec nonso | Documentary Photographer</title>
+    <title> contact | neec nonso | visual artist</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -102,15 +102,13 @@
 
             <div class="contact">
                 <p>
-                    contact<br> <br>
+                    <span>contact</span><br> <br>
                     neec nonso<br>
                     lagos,<br> nigeria<br> <br>
                     <a class="email-contact" href="mailto:neecnonso@gmail.com">
                         neecnonso@gmail.com
-                    </a> <br>
-                    <a class="phone-contact" href="tel:+2348081117654">
-                        +2348081117654
-                    </a>
+                    </a> <br> <br> <br>
+
                 </p>
                 <p>gallery</p>
                 <p class="email-contact">rele gallery</p>
@@ -170,19 +168,7 @@
             ease: "power1.inOut"
         });
 
-        //  gsap.from(".contact-main", {
-        //      scrollTrigger: {
-        //          trigger: ".contact-container",
-        //          start: -100, // when the top of the trigger hits the top of the viewport
-        //          end: "+=300", // end after scrolling 100px beyond the start
-        //          // markers: true
-        //          scrub: 1
-        //      },
-        //      stagger: { amount: 0.5 },
-        //      scale: 1.5,
-        //      duration: 1,
-        //      ease: "power1.inOut"
-        //  });
+
 
         gsap.from(".footer-container", {
             scrollTrigger: {
@@ -221,9 +207,9 @@
 
             }
         });
+        tl.from(".image-div", { x: -200, opacity: 0, duration: 1.5 })
+        tl.from(".contact-main", { x: 200, opacity: 0, duration: 1.5 })
 
-        //  tl.from(".contact-main", { x: 200, opacity: 0, duration: 1.5 })
-        //     .from(".image-div", { x: -200, opacity: 0, duration: 1.5 })
         tl.from(".extra", { x: 200, opacity: 0, duration: 1.5 })
             .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
        //     .from(".designer", { y: 10, opacity: 0, duration: 1.5 });

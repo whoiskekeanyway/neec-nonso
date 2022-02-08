@@ -153,8 +153,12 @@ www.rele.co
 
 
 
-
+Visual artist in place of documentary photograher
 
 
 
 # neec-nonso
+
+boys franternity 
+fix exhibition
+homepage image to project
