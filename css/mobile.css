@@ -120,7 +120,7 @@
     font-family: "Roboto Mono", monospace;
     font-size: 16px;
     font-weight: 500;
-    max-width: 800px;
+    max-width: 350px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -244,9 +244,6 @@
 
 @media screen and (max-width: 450px) {
   .boy-fraternity-div {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 500;
-    font-size: 16px;
     max-width: 350px;
     margin: 0 auto;
     position: relative;
@@ -259,7 +256,10 @@
   }
 
   .boy-fraternity-div p {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
     line-height: 2rem;
+    font-size: 16px;
   }
 
   .boy-fraternity-title.boys::after {
