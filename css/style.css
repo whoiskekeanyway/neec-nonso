@@ -557,6 +557,7 @@ blockquote {
   position: relative;
   padding: 40px;
   text-align: center;
+  line-height: 1.5rem;
 }
 /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
 blockquote:before {
