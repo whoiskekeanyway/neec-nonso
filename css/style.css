@@ -251,15 +251,19 @@ main {
 }
 
 .biography-section {
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-  font-weight: 500;
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.biography {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2rem;
 }
 
 .bio-image {
@@ -535,10 +539,10 @@ hr {
   transform-origin: left;
 }
 
-.boy-fraternity-div p {
-  line-height: 2rem;
+.thelastburial-paragraph {
   font-family: "Roboto Mono", monospace;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 2rem;
   font-size: 16px;
 }
 
