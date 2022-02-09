@@ -267,6 +267,14 @@ main {
   margin: 0 auto;
   height: auto;
   padding: 5px;
+  display: none;
+}
+
+.bio-imagelaptop {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  padding: 5px;
 }
 
 .biography-title {
@@ -407,7 +415,6 @@ hr {
 }
 
 .carousel-image.square {
-
 }
 
 .carousel-image {

@@ -133,6 +133,14 @@
     margin: 0 auto;
     height: auto;
     padding: 5px;
+    display: block;
+  }
+  .bio-image-laptop {
+    max-width: 400px;
+    margin: 0 auto;
+    height: auto;
+    padding: 5px;
+    display: none;
   }
 }
 
@@ -172,64 +180,64 @@
 }
 
 @media screen and (max-width: 450px) {
- .blockquote-div {
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
+  .blockquote-div {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
 
-blockquote {
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
-}
-/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
-blockquote:before {
-  font-family: Georgia, serif;
-  position: absolute;
-  font-size: 8em;
-  line-height: 1;
-  top: 0;
-  left: 0;
-  content: "\201C";
-  color: #800020;
-}
-blockquote:after {
-  position: absolute;
-  /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
-  float: right;
-  font-size: 8em;
-  line-height: 1;
-  right: 0;
-  bottom: -0.5em;
-  content: "\201D";
-  color: #800020;
-}
-.blockquote-footer {
-  padding: 1em;
-  color: #800020;
-  font-size: 1.2rem;
-  font-weight: 900;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+  blockquote {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+  }
+  /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+  blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 8em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+    color: #800020;
+  }
+  blockquote:after {
+    position: absolute;
+    /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float: right;
+    font-size: 8em;
+    line-height: 1;
+    right: 0;
+    bottom: -0.5em;
+    content: "\201D";
+    color: #800020;
+  }
+  .blockquote-footer {
+    padding: 1em;
+    color: #800020;
+    font-size: 1.2rem;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
-.blockquote-link {
-  text-decoration: none;
-  color: black;
-}
+  .blockquote-link {
+    text-decoration: none;
+    color: black;
+  }
 
-.jumbotron-button {
-  color: #800020;
-  text-decoration: none;
-}
+  .jumbotron-button {
+    color: #800020;
+    text-decoration: none;
+  }
 
-blockquote cite:before {
-  content: "\2013";
-}
+  blockquote cite:before {
+    content: "\2013";
+  }
 }
 
 /* Project Individual Mobile Page */
