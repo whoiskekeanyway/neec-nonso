@@ -271,7 +271,7 @@ main {
 }
 
 .bio-imagelaptop {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   height: auto;
   padding: 5px;
@@ -539,7 +539,7 @@ hr {
 }
 
 .boy-fraternity-div p {
-  line-height: 2.5rem;
+  line-height: 2rem;
 }
 
 /* Projects Page */
@@ -689,7 +689,6 @@ blockquote cite:before {
   justify-content: center;
   align-items: center;
   height: auto;
-  flex: 50%;
 }
 
 .image-div img {
