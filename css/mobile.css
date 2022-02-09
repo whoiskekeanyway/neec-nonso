@@ -117,20 +117,15 @@
   }
 
   .biography-section {
-   width: 100%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .biography {
-    max-width: 350px;
-     margin: 0 auto;
-    font-family: "Roboto Mono", monospace;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 2rem;
   }
 
   .bio-image {
@@ -249,7 +244,11 @@
 
 @media screen and (max-width: 450px) {
   .boy-fraternity-div {
-    width: 100%;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 350px;
+    margin: 0 auto;
     position: relative;
   }
 
@@ -259,13 +258,8 @@
     position: relative;
   }
 
-  .thelastburial-paragraph {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 500;
+  .boy-fraternity-div p {
     line-height: 2rem;
-    font-size: 16px;
-    max-width: 350px;
-    margin: 0 auto;
   }
 
   .boy-fraternity-title.boys::after {

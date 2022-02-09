@@ -247,22 +247,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script>
 
-
-
-        gsap.from(".boy-fraternity-div", {
-            scrollTrigger: {
-                trigger: ".boy-fraternity-div",
-                start: -50, // when the top of the trigger hits the top of the viewport
-                end: "+=300", // end after scrolling 100px beyond the start
-                // markers: true
-                scrub: 1
-            },
-            stagger: { amount: 0.5 },
-            scale: 0.9,
-            duration: 1,
-            ease: "power1.inOut"
-        });
-
         gsap.from(".thelastburial-paragraph", {
             scrollTrigger: {
                 trigger: ".boy-fraternity-div",
@@ -272,7 +256,7 @@
                 scrub: 1
             },
             stagger: { amount: 0.5 },
-            scale: 0.9,
+            scale: 0.8,
             duration: 1,
             ease: "power1.inOut"
         });
