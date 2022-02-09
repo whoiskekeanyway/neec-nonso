@@ -1,10 +1,12 @@
-@media all and (max-width: 450px) {
+/* Navbar */
+
+@media only screen and (max-width: 450px) {
   .App-logo {
     cursor: pointer;
     max-width: 100px;
     margin: 0 auto;
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     display: inline;
   }
 
@@ -65,6 +67,7 @@
   }
 }
 
+/* Landing Page */
 @media only screen and (max-width: 450px) {
   /* Landing Page */
 
@@ -146,7 +149,7 @@
 
 /* Project Page */
 
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .jumbotron {
     max-width: 100%;
     margin: 0 auto;
@@ -161,25 +164,7 @@
     padding: 1rem;
     width: 90%;
   }
-}
 
-@media screen and (max-width: 450px) {
-  .exhibitions-info {
-    display: flex;
-    flex-direction: column-reverse;
-    max-width: 100%;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    height: auto;
-    padding: 2rem;
-  }
-
-  .exhibitions-info section div {
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 450px) {
   .blockquote-div {
     max-width: 100%;
     margin: 0 auto;
@@ -193,11 +178,10 @@
     width: 320px;
     margin: 0 auto;
   }
-  /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+
   blockquote:before {
-    font-family: Georgia, serif;
     position: absolute;
-    font-size: 8em;
+    font-size: 6em;
     line-height: 1;
     top: 0;
     left: 0;
@@ -206,9 +190,8 @@
   }
   blockquote:after {
     position: absolute;
-    /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
     float: right;
-    font-size: 8em;
+    font-size: 6em;
     line-height: 1;
     right: 0;
     bottom: -0.5em;
@@ -218,7 +201,7 @@
   .blockquote-footer {
     padding: 1em;
     color: #800020;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 900;
     position: absolute;
     bottom: 0;
@@ -240,9 +223,33 @@
   }
 }
 
+/* Exhibition Page */
+
+@media only screen and (max-width: 450px) {
+  .exhibitions-info {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .exhibitions-info section div {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media only screen and (max-width: 450px) {
+}
+
 /* Project Individual Mobile Page */
 
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .boy-fraternity-div {
     font-family: "Roboto Mono", monospace;
     font-weight: 600;
@@ -284,19 +291,41 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+/* Contact Page */
+
+@media only screen and (max-device-width: 480px) {
+  
+}
+
+@media only screen and (max-width: 450px) {
   .contact-container {
-    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
     height: auto;
-    max-width: 100%;
+    flex-direction: column;
+
+  }
+
+  .image-div {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+  }
+
+  .contact-main {
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 450px) {
+/* Footer */
+
+@media only screen and (max-width: 450px) {
   footer {
     float: left;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 }

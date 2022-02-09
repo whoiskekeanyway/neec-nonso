@@ -560,7 +560,7 @@ blockquote {
 }
 /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
 blockquote:before {
-  font-family: Georgia, serif;
+  font-family: "Roboto Mono", monospace;
   position: absolute;
   font-size: 8em;
   line-height: 1;
@@ -570,6 +570,7 @@ blockquote:before {
   color: #800020;
 }
 blockquote:after {
+  font-family: "Roboto Mono", monospace;
   position: absolute;
   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
   float: right;
