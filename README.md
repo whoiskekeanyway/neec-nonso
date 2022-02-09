@@ -25,25 +25,6 @@ Exhibition
 
 5 Projects 
 
-Titles 
-No Captions
-Project discription on Project main page
-# neec-nonso
-
-
-
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title> Contact | Neec Nonso | Documentary Photographer</title>
-  <meta name="description" content="Neec Nonso is a documentary photographer based in Lagos, Nigeria. He specializes in documentary photography, video editing, and photography">
-
-
-
-
-
 
 
 
