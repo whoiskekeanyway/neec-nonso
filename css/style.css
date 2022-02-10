@@ -222,6 +222,7 @@ html {
   max-width: 1200px;
   margin: 0 auto;
   height: auto;
+  margin-bottom: 4rem;
 }
 
 /* Main */
@@ -542,7 +543,7 @@ hr {
 }
 
 .thelastburial-paragraph {
-  line-height: 2rem;
+  line-height: 1rem;
 }
 
 /* Projects Page */
