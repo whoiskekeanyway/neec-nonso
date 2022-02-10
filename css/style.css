@@ -406,6 +406,11 @@ hr {
   margin-bottom: 5rem;
 }
 
+.carousel-image.potrait {
+  width: 100%;
+  height: auto;
+}
+
 .carousel.square {
   position: relative;
   height: 1000px !important;
@@ -416,6 +421,8 @@ hr {
 }
 
 .carousel-image.square {
+  width: 100%;
+  height: auto;
 }
 
 .carousel-image {
@@ -505,8 +512,7 @@ hr {
   margin-top: 3rem;
 }
 
-
-.boy-fraternity-div{
+.boy-fraternity-div {
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   font-weight: 500;
