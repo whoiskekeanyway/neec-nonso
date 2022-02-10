@@ -401,14 +401,14 @@ hr {
 .carousel.potrait {
   position: relative;
   height: 800px !important;
-  width: 600px !important;
+  width: 100%;
+  max-width: 600px !important;
   margin: 0 auto;
   margin-bottom: 5rem;
 }
 
 .carousel-image.potrait {
-  width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .carousel.square {
