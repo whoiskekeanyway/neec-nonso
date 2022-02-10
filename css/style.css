@@ -386,52 +386,33 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 1440px;
+  margin: 0 auto;
   height: 100vh;
 }
 
 .carousel {
   position: relative;
   height: 700px;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 5rem;
 }
 
-.carousel.potrait {
+#carousel-square {
   position: relative;
-  height: 800px !important;
-  width: 600px !important;
-  width: 100%;
-  margin: 0 auto;
+  width: 600px;
+  height: 600px;
   margin-bottom: 5rem;
-}
-
-.carousel-image.potrait {
-  height: 100%;
-}
-
-.carousel.square {
-  position: relative;
-  width: 100%;
-  max-width: 800px !important;
-  height: 100%;
-  max-height: 800px !important;
-  margin: 0 auto;
-  margin-bottom: 10rem;
 }
 
 .carousel-image.square {
-  max-width: 800px;
-  max-width: 800px;
-  margin: 0 auto;
-  height: auto;
+   width: 600px;
+  height: 600px; 
 }
 
-.carousel-image {
-  width: 100%;
-  height: 100%;
-}
+
+
 
 .carousel-track-container {
   background: steelblue;
@@ -454,6 +435,32 @@ hr {
   top: 0;
   bottom: 0;
   width: 100%;
+  height: 100%;
+}
+
+.carousel.potrait {
+  position: relative;
+  height: 800px !important;
+  width: 600px !important;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.carousel-image.potrait {
+  height: 100%;
+}
+
+.carousel.square {
+}
+
+.carousel.square:after {
+}
+
+.carousel-image.square {
+}
+
+.carousel-image {
 }
 
 .carousel-button {
