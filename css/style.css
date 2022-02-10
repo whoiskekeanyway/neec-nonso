@@ -408,7 +408,7 @@ hr {
 
 .carousel-image.potrait {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .carousel.square {
@@ -422,7 +422,7 @@ hr {
 
 .carousel-image.square {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .carousel-image {
