@@ -386,6 +386,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 1440px;
   width: 100%;
   height: 100vh;
 }
@@ -414,6 +415,7 @@ hr {
 .carousel.square {
   position: relative;
   width: 1000px !important;
+  max-width: fit-content;
   height: 1000px !important;
   margin: 0 auto;
   margin-bottom: 10rem;
