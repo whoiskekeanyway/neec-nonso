@@ -30,10 +30,10 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// Function to dynamically change the date
+ //Function to dynamically change the date
 
-// const footerYear = document.querySelectorAll(".year");
-// footerYear.forEach((copyright) => {
-//   copyright.innerHTML = new Date().getFullYear();
-// });
+ // const footerYear = document.querySelectorAll(".year");
+ // footerYear.forEach((copyright) => {
+ //   copyright.innerHTML = new Date().getFullYear();
+ // });
 

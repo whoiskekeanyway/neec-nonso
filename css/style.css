@@ -33,9 +33,10 @@ html {
 .App-logo {
   pointer-events: auto;
   width: 100px;
-  margin-left: 3rem;
+  margin-left: 5rem;
   cursor: pointer;
   margin-top: 3rem;
+
 }
 
 /* Navbar Links 
@@ -386,33 +387,38 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1440px;
-  margin: 0 auto;
+  width: 100%;
   height: 100vh;
 }
 
 .carousel {
   position: relative;
   height: 700px;
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
   margin-bottom: 5rem;
 }
 
+.carousel.potrait {
+  position: relative;
+  height: 800px !important;
+  width: 600px !important;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
 #carousel-square {
   position: relative;
-  width: 600px;
-  height: 600px;
-  margin-bottom: 5rem;
+  height: 600px !important;
+  width: 600px !important;
+  margin: 0 auto;
+  margin-bottom: 10rem;
 }
 
-.carousel-image.square {
-   width: 600px;
-  height: 600px; 
+.carousel-image {
+  width: 100%;
+  height: 100%;
 }
-
-
-
 
 .carousel-track-container {
   background: steelblue;
@@ -435,32 +441,6 @@ hr {
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
-}
-
-.carousel.potrait {
-  position: relative;
-  height: 800px !important;
-  width: 600px !important;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-}
-
-.carousel-image.potrait {
-  height: 100%;
-}
-
-.carousel.square {
-}
-
-.carousel.square:after {
-}
-
-.carousel-image.square {
-}
-
-.carousel-image {
 }
 
 .carousel-button {
@@ -502,7 +482,7 @@ hr {
 }
 
 .carousel-indicator.current-slide {
-  background: #800020;
+  background: orangered;
 }
 
 .is-hidden {
@@ -512,7 +492,6 @@ hr {
 .mobile {
   display: none;
 }
-
 /* Project Individual Page */
 .topline {
   margin-bottom: 3rem;
@@ -559,7 +538,7 @@ hr {
 }
 
 .thelastburial-paragraph {
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 /* Projects Page */
@@ -637,7 +616,7 @@ blockquote cite:before {
   margin: 0 auto;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 2rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
@@ -778,6 +757,8 @@ blockquote cite:before {
   text-decoration: none;
   color: steelblue;
 }
+
+
 
 /* Error Page  */
 
