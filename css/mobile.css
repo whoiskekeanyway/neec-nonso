@@ -318,6 +318,9 @@
 
   .mobile li {
     list-style: none;
+  }
+
+  .carousel-image {
     margin-bottom: 2rem;
   }
 }
