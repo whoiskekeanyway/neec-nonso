@@ -1,6 +1,35 @@
 /* Navbar */
 
 @media only screen and (max-width: 450px) {
+  ::-webkit-scrollbar {
+    width: 1em;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border: 0.25em solid black;
+    border-radius: 100vw;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #800020;
+    border: 0.25em solid rgb(15, 15, 15);
+  }
+
+  @supports (scrollbar-color: red blue) {
+    * {
+      scrollbar-color: #f1f1f1 #800020;
+      scrollbar-width: thin;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .App-logo {
     cursor: pointer;
     max-width: 100px;
@@ -20,7 +49,6 @@
     flex-direction: column;
     position: relative;
     padding: 5px;
-
   }
   .menu div {
     margin-bottom: 5px;
@@ -30,7 +58,6 @@
     position: absolute;
     right: 15px;
     top: 35px;
-
   }
 
   .list-item {
@@ -297,7 +324,6 @@
 /* Contact Page */
 
 @media only screen and (max-device-width: 480px) {
-  
 }
 
 @media only screen and (max-width: 450px) {
@@ -306,14 +332,12 @@
     margin: 0 auto;
     height: auto;
     flex-direction: column;
-
   }
 
   .image-div {
     max-width: 350px;
     margin: 0 auto;
     margin-top: 2rem;
-
   }
 
   .contact-main {
