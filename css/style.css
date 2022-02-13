@@ -1,6 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  border: 0.25em solid black;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #800020;
+   border: 0.25em solid rgb(15, 15, 15);
+}
+
+@supports (scrollbar-color: red blue) {
+* {
+  scrollbar-color: #f1f1f1 #800020;
+  scrollbar-width: thin;
+}
+}
+
+::-webkit-scrollbar {
+}
+
+::-webkit-scrollbar {
+}
+
+::-webkit-scrollbar {
+}
+
 body {
   background-color: #ffffff;
   font-family: "Roboto Mono", monospace;
@@ -489,7 +527,7 @@ hr {
 }
 
 .carousel-indicator.current-slide {
-  background: #800020;;
+  background: #800020;
 }
 
 .is-hidden {
@@ -764,8 +802,6 @@ blockquote cite:before {
   text-decoration: none;
   color: steelblue;
 }
-
-
 
 /* Error Page  */
 
