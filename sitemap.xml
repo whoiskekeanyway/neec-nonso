@@ -1,71 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.neecnonso.com/</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/projects</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/bio</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/thelastburial</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/projects.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/pain-a-discomfort-or-a-trigger</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/theanotherbeginning</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/index.html</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/waitingforchineke</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/contact</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/howtophotographylagos</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/exhibition</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/whatwasdeadwasneverdead</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/christmasandclothes</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/toiletintoiletout</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/theboysfraternity</loc>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.neecnonso.com/howtophotographylagostwo</loc>
-    <changefreq>daily</changefreq>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.neecnonso.com/</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/bio</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/video</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibition</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/contact</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects.html</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects/theboysfraternity</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects/thelastburial</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects/christmasandclothes</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects/howtophotographylagos</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects/howtophotographylagostwo</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects/theanotherbeginning</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects/toiletintoiletout.html</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects/waitingforchineke</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/projects/pain-a-discomfort-or-a-trigger</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/wanawari</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/youngcontemporaries</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/taste-mystique</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/boundariesofreason</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/no-victor-no-vanquished:theworldatthecrossroads</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/youngphotographers.html</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/agathering</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/nigeria-trending-lagos-fringe.html</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/pain:a-discomfort-or-a-trigger</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/yanga</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.neecnonso.com/exhibitions/afrofutures.html</loc>
+  <lastmod>2022-04-03T14:01:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
