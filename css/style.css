@@ -791,6 +791,11 @@ iframe {
   padding: 10px;
 }
 
+.contact-title {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  font-size: 16px;
+}
 .image-div {
   max-width: 600px;
   margin: 0 auto;

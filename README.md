@@ -118,7 +118,7 @@ Nigeria photographer
 
 Nigeria
 
-neec nonso is a nigerian visual artist. he was born in 1990 in aguleri, anambra state. he captures everyday life and its nuances in communities across nigeria. he works predominantly with photography and aims to inspire conversations
+neec nonso is a nigerian visual artist. he was born in aguleri, anambra state. he captures everyday life and its nuances in communities across nigeria. he works predominantly with photography and aims to inspire conversations
 
 NeeC nonso is a Nigeria visual artist. He was born in 1990 in Aguleri. He captures everyday life and its nuances in communities across Nigeria. Works predominantly with photography, aims to inspire conversations, evoking deep emotions and compelling observers
 
