@@ -1,0 +1,36 @@
+.exhibition-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.row {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: auto;
+  height: auto;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 0.5rem;
+}
+.column.potrait {
+  flex: 25%;
+  padding: 0.5rem;
+}
+
+.exhibition-intro-title {
+  max-width: 1200px;
+  margin: 0 auto;
+margin-top: 5rem;
+}
+
+article {
+    margin-top: 5rem;
+}

@@ -5,6 +5,8 @@ toggleBtn.addEventListener("click", () => {
   nav.classList.toggle("active");
   burger.classList.toggle("toggle");
 });
+
+
 var mybutton = document.getElementById("myBtn");
 window.onscroll = function () {
   scrollFunction();

@@ -83,11 +83,11 @@
 //   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 // });
 
-
-
-var i = 0; // Start Point
-var images = []; // Images Array
-var time = 3000; // Time Between Switch
+// 
+// 
+// var i = 0; // Start Point
+// var images = []; // Images Array
+// var time = 3000; // Time Between Switch
 
 // Image List
 // images[0] = "images/containers.jpeg";

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -29,9 +29,11 @@
 
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
-    <!-- Style Links -->
-
-    <link rel="stylesheet" href="minify.css">
+    <!-- Style Links 
+    
+        <link rel="stylesheet" href="minify.css"> 
+    -->
+    <link rel="stylesheet" href="./css/style.css">
 
 
 </head>
@@ -42,22 +44,24 @@
 
     <!--- Start of Navbar -->
 
-    <div>
+    <div class="header">
 
         <nav class='navbar'>
-
-            <a class="logo-link" href='index'>
+            <a class="logo-link" href='/'>
                 <img src="images/neec nonso logo.png" class='App-logo' alt='logo' />
             </a>
 
             <ul class='nav-list'>
-            
+
                 <li class='list-item'>
                     <a href='bio'> bio</a>
                 </li>
-            
+
                 <li class='list-item'>
                     <a href='projects'>projects </a>
+                </li>
+                <li class='list-item'>
+                    <a href='video'>video </a>
                 </li>
                 <li class='list-item'>
                     <a href='exhibition'>exhibitions </a>
@@ -65,9 +69,8 @@
                 <li class='list-item'>
                     <a href='contact'>contact </a>
                 </li>
-            
-            </ul>
 
+            </ul>
             <div class="menu">
                 <div class="menu-line1"></div>
                 <div class="menu-line2"></div>
@@ -80,27 +83,26 @@
 
             <li class='list-item extra'>
                 <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
-                    <img class="extra-icon-image"  src="images/logo-instagram.svg" alt='extra-icon-image' />
+                    <img class="extra-icon-image" src="images/logo-instagram.svg" alt='extra-icon-image' />
                 </a>
             </li>
             <li class='list-item extra'>
                 <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
-                    <img  class="extra-icon-image"  src="images/logo-facebook.svg" alt='extra-icon-image' />
+                    <img class="extra-icon-image" src="images/logo-facebook.svg" alt='extra-icon-image' />
                 </a>
             </li>
             <li class='list-item extra'>
                 <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
-                    <img  class="extra-icon-image" src="images/logo-linkedin.svg" alt='extra-icon-image' />
+                    <img class="extra-icon-image" src="images/logo-linkedin.svg" alt='extra-icon-image' />
                 </a>
             </li>
             <li class='list-item extra'>
                 <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
-                    <img  class="extra-icon-image" src="images/logo-twitter.svg" alt='extra-icon-image' />
+                    <img class="extra-icon-image" src="images/logo-twitter.svg" alt='extra-icon-image' />
                 </a>
             </li>
 
         </ul>
-
 
     </div>
 
@@ -109,122 +111,130 @@
 
     <!-- Start of Exhibition -->
 
-    <div class="exhibitions-info">
+    <main class="exhibition-container">
 
-        <section class="fromleft one">
+        <div class="exhibitions-info">
 
-            <p class="exhibition-year">2022</p>
+            <section class="fromleft one">
 
-            <div>
-                <p class="exhibition-title">wa na wari <br>
-                    wa na wari</p>
-                <p class="exhibition-venue">art space</p>
-                <p class="exhibition-location">seatle,usa</p>
-                <hr color="#800020">
-            </div>
+                <p class="exhibition-year">2022</p>
 
-            <div>
-                <p class="exhibition-title">rele arts foundation <br>
-                    young contemporaries.</p>
-                <p class="exhibition-venue">national museum,</p>
-                <p class="exhibition-location">lagos,nigeria</p>
-                <hr color="#800020">
-            </div>
+                <div class="exhibitions">
+                    <p class="exhibition-title"><a href="./exhibitions/wanawari">wa na wari</a> </p>
+                    <p class="exhibition-venue"> wa na wari art space</p>
+                    <p class="exhibition-location">seatle,usa</p>
+                    <hr color="#800020">
+                </div>
 
-        </section>
+                <div class="exhibitions">
+                    <p class="exhibition-title"> <a href="./exhibitions/youngcontemporaries">young contemporaries.</a>
+                    </p>
+                    <p class="exhibition-venue">rele arts foundation </p>
+                    <p class="exhibition-location">lagos,nigeria</p>
+                    <hr color="#800020">
+                </div>
 
-        <section class="fromleft one">
+            </section>
 
-            <p class="exhibition-year">2021</p>
+            <section class="fromleft one">
 
-            <div>
-                <p class="exhibition-title">taste: mystique, smithsonian/ <br>
-                    lagos photo festival.</p>
-                <p class="exhibition-location">lagos,nigeria</p>
-                <hr color="#800020">
-            </div>
+                <p class="exhibition-year">2021</p>
 
-            <div>
-                <p class="exhibition-title">boundaries of reason,</p>
-                <p class="exhibition-venue">abuja photo festival,</p>
-                <p class="exhibition-location">abuja,nigeria</p>
+                <div class="exhibitions">
+                    <p class="exhibition-title"><a href="./exhibitions/taste-mystique"> taste:mystique <br> smithsonian </a>
+                    </p>
+                    <p class="exhibition-venue">lagos photo festival,</p>
+                    <p class="exhibition-location">lagos,nigeria</p>
+                    <hr color="#800020">
+                </div>
 
-                <hr color="#800020">
-            </div>
+                <div class="exhibitions">
+                    <p class="exhibition-title"><a href="./exhibitions/boundariesofreason">boundaries of reason,</a></p>
+                    <p class="exhibition-venue">abuja photo festival,</p>
+                    <p class="exhibition-location">abuja,nigeria</p>
+                    <hr color="#800020">
+                </div>
 
-            <div>
-                <p class="exhibition-title">no victor,<br>
-                    no vanquished: <br>
-                    the world at the crossroads.</p>
-                <p class="exhibition-venue">iwaya community art biennale,</p>
-                <p class="exhibition-location">lagos,nigeria</p>
-                <hr color="#800020">
-            </div>
+                <div class="exhibitions">
+                    <p class="exhibition-title"><a href="./exhibitions/no-victor-no-vanquished:theworldatthecrossroads">
+                            no
+                            victor,no vanquished:<br>
+                            the world at the crossroads.</a></p>
+                    <p class="exhibition-venue">iwaya community art biennale,</p>
+                    <p class="exhibition-location">lagos,nigeria</p>
+                    <hr color="#800020">
+                </div>
 
-            <div>
-                <p class="exhibition-title">young photographers,</p>
-                <p class="exhibition-venue">alliance francaise,</p>
-                <p class="exhibition-location">lagos,nigeria</p>
-                <hr color="#800020">
-            </div>
+                <div class="exhibitions">
+                    <p class="exhibition-title"><a href="./exhibitions/youngphotographers.html">young photographers</a>
+                    </p>
+                    <p class="exhibition-venue">alliance francaise,</p>
+                    <p class="exhibition-location">lagos,nigeria</p>
+                    <hr color="#800020">
+                </div>
 
-            <div>
-                <p class="exhibition-title">a gathering</p>
-                <p class="exhibition-venue">ikollo gallery,</p>
-                <p class="exhibition-location">lagos, nigeria.</p>
-                <hr color="#800020">
-            </div>
+                <div class="exhibitions">
+                    <p class="exhibition-title"><a href="./exhibitions/agathering">a gathering</a></p>
+                    <p class="exhibition-venue">ikollo gallery,</p>
+                    <p class="exhibition-location">lagos, nigeria.</p>
+                    <hr color="#800020">
+                </div>
 
-        </section>
+            </section>
 
-        <section class="fromright">
+            <section class="fromright">
 
-            <p class="exhibition-year">2020</p>
+                <p class="exhibition-year">2020</p>
 
-            <div>
-                <p class="exhibition-title">nigeria trending,<br>
-                    lagos fringe </p>
+                <div class="exhibitions">
+                    <p class="exhibition-title"> <a href="./exhibitions/nigeria-trending-lagos-fringe.html">nigeria
+                            trending,<br>
+                            lagos fringe</a> </p>
 
-                <p class="exhibition-venue">freedom park kongi’s harvest gallery,</p>
+                    <p class="exhibition-venue">freedom park kongi`s harvest gallery,</p>
 
-                <p class="exhibition-venue">lagos,nigeria.</p>
+                    <p class="exhibition-venue">lagos,nigeria.</p>
 
-                <hr color="#800020">
-            </div>
+                    <hr color="#800020">
+                </div>
 
-            <div>
-                <p class="exhibition-title">pain: a discomfort or a trigger,</p>
-                <p class="exhibition-venue">virtual exhibition,</p>
-                <a class="exhibition-location link" target="_blank" rel="noreferrer"
-                    href="https://thepeaceexhibit.com/">thepeaceexhibit.com</a>
-                <hr color="#800020">
-            </div>
+                <div class="exhibitions">
+                    <p class="exhibition-title"><a href="./exhibitions/pain:a-discomfort-or-a-trigger">pain: a
+                            discomfort or a
+                            trigger</a></p>
+                    <p class="exhibition-venue">virtual exhibition,</p>
+                    <a class="exhibition-location link" target="_blank" rel="noreferrer"
+                        href="https://thepeaceexhibit.com/">thepeaceexhibit.com</a>
+                    <hr color="#800020">
+                </div>
 
-        </section>
+            </section>
 
-        <section class="fromright">
+            <section class="fromright">
 
-            <p class="exhibition-year">2019</p>
+                <p class="exhibition-year">2019</p>
 
-            <div>
-                <p class="exhibition-title">yanga.</p>
-                <p class="exhibition-venue">african artists foundation,</p>
-                <p class="exhibition-location">lagos, nigeria.</p>
-                <hr color="#800020">
-            </div>
+                <div class="exhibitions">
+                    <p class="exhibition-title"><a href="./exhibitions/yanga">yanga.</a></p>
+                    <p class="exhibition-venue">african artists foundation,</p>
+                    <p class="exhibition-location">lagos, nigeria.</p>
+                    <hr color="#800020">
+                </div>
 
-            <div class="firsthr">
-                <p class="exhibition-title">afro futures.</p>
-                <p class="exhibition-venue">kungstgewerber museum,</p>
-                <p class="exhibition-location">berlin,germany.</p>
-                <hr class="" color="#800020">
+                <div class="exhibitions">
+                    <p class="exhibition-title"><a href="./exhibitions/afrofutures.html">afro futures.</a></p>
+                    <p class="exhibition-venue">kungstgewerber museum,</p>
+                    <p class="exhibition-location">berlin,germany.</p>
+                    <hr class="" color="#800020">
 
-            </div>
+                </div>
 
-        </section>
+            </section>
 
+        </div>
 
-    </div>
+    </main>
+
 
     <!-- End of Exhibition -->
 
@@ -239,7 +249,7 @@
                     all rights reserved.
                 </p>
             </div>
-            
+
         </div>
 
     </footer>
