@@ -39,6 +39,7 @@
         <link rel="stylesheet" href="minify.css"> 
     -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
 
 
 </head>
@@ -296,17 +297,17 @@
 
         let tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".fromleft",
+                trigger: ".extra",
 
                 //   markers: true,
 
             }
         });
-        tl.from(".fromleft", { x: -200, opacity: 0, duration: 1.5 })
-            .from(".fromright", { x: 200, opacity: 0, duration: 1.5 })
-            .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
+        tl.from(".extra", { x: 200, opacity: 0, duration: 1.5 })
             .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
-         //   .from(".designer", { y: 10, opacity: 0, duration: 1.5 });
+            .from(".fromleft", { x: -200, opacity: 0, duration: 1.5 })
+            .from(".fromright", { x: 200, opacity: 0, duration: 1.5 })
+
     </script>
 
     <script src="script.js" async defer></script>

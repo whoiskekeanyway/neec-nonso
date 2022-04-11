@@ -21,9 +21,11 @@
     position: relative;
     padding: 5px;
   }
+
   .menu div {
     margin-bottom: 5px;
   }
+
   .menu {
     display: block;
     position: absolute;
@@ -85,10 +87,8 @@
   }
 
   .landing-page.mobile img {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 5px;
+    padding: 0.5rem;
+    height: fit-content;
   }
 
   /* Main */
@@ -108,11 +108,13 @@
   .words-div {
     padding: 0.5rem;
   }
+
   .developer {
     width: 350px;
     margin-bottom: 3rem;
     padding: auto;
   }
+
   .about-page {
     flex-direction: column;
     max-width: 100%;
@@ -139,6 +141,7 @@
     padding: 5px;
     display: block;
   }
+
   .bio-image-laptop {
     max-width: 400px;
     margin: 0 auto;
@@ -189,6 +192,7 @@
     content: "\201C";
     color: #800020;
   }
+
   blockquote:after {
     position: absolute;
     float: right;
@@ -199,6 +203,7 @@
     content: "\201D";
     color: #800020;
   }
+
   .blockquote-footer {
     padding: 1em;
     color: #800020;
@@ -227,37 +232,50 @@
 /* Exhibition Page */
 
 @media only screen and (max-width: 450px) {
+  .exhibition-container {
+
+    height: auto;
+
+  }
+
   .exhibitions-info {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
-    max-width: 350px;
     margin: 0 auto;
     height: auto;
-    padding: 2rem;
+    padding: 0.1rem;
+
   }
+
 
   .exhibitions-info section div {
     padding-left: 0;
   }
+
+  .exhibition-year {
+    font-size: 22px;
+    margin-bottom: 2rem !important;
+    color: black;
+    text-decoration: underline;
+    padding-left: 2rem;
+  }
 }
 
-@media screen and (min-width: 480px) {
-}
+@media screen and (min-width: 480px) {}
 
-@media only screen and (max-width: 450px) {
-}
+@media only screen and (max-width: 450px) {}
 
 /* Project Individual Mobile Page */
 
 @media only screen and (max-width: 450px) {
   .boy-fraternity-div {
     font-family: "Roboto Mono", monospace;
-    font-weight: 600;
-    font-size: 16px;
-    max-width: 350px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
+    background-color: aqua;
+    height: auto;
   }
 
   .boy-fraternity-title {
@@ -266,9 +284,12 @@
     position: relative;
   }
 
-  .boy-fraternity-div p {
+  .thelastburial-paragraph {
     line-height: 2rem;
+    width: 100%;
   }
+
+
 
   .boy-fraternity-title.boys::after {
     width: 60% !important;
@@ -277,6 +298,7 @@
   .main-exhibition {
     height: 10vh;
   }
+
   .carousel {
     display: none;
   }
@@ -298,8 +320,7 @@
 
 /* Contact Page */
 
-@media only screen and (max-device-width: 480px) {
-}
+@media only screen and (max-device-width: 480px) {}
 
 @media only screen and (max-width: 450px) {
   .contact-container {
@@ -329,5 +350,4 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
-}
+@media only screen and (max-width: 450px) {}
