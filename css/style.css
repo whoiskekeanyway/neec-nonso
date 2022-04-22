@@ -782,37 +782,16 @@ blockquote:after {
   transform-origin: left;
 }
 
-/* Videos */
 
-.video-main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  max-width: 1440px;
-  margin: 0 auto;
-  gap: 5rem;
-}
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-iframe {
-  width: 700px;
-  height: 400px;
-}
-
+/* Video Portfolio Page */
 
 .video-main {
   display: flex;
   flex-direction: column;
   gap: 5rem;
   height: 100vh;
-  padding: 10rem;
+  padding-top: 5rem;
 }
 
 .container-video {
@@ -828,6 +807,88 @@ iframe {
 .projects-video {
   max-width: 350px !important;
   height: 230px;
+}
+
+/* Videos Items */
+
+.video-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  height: 100vh;
+}
+
+.video-item {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem;
+
+}
+
+.video-item-title {
+  color: #800020;
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+
+.video-item-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.video-item-title:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.video-item-paragraph {
+  line-height: 2rem;
+  padding: 5px;
+}
+
+.video-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 5rem;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 600px;
+  height: 400px;
 }
 
 /* Contact Page */

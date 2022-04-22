@@ -5,28 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> wa na wari | neec nonso | visual artist</title>
+    <title>video1 | neec nonso | visual artist</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
-    
+
     <meta name="robots" content="index, follow">
     <meta name="description" content="neec nonso is a nigerian visual artist">
     <meta name="keywords"
         content="photographer, documentaryphotographer, visualartist, lagos, nigeria, northisnotnot, streetphotography, ekoforsale, neec, neecnonso, photography, abuja, documentary">
-    
-    
+
+
     <!-- Open Graph Meta Tags -->
-    
+
     <meta property="og:type" content="article" />
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
     <meta property="og:url" content="http://neecnonso.com" />
     <meta property="og:image" content="images/ogimage.png" />
-    
-    
+
+
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
-    
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@neecnonso" />
     <meta name="twitter:title" content="neec nonso | visual artist">
@@ -37,6 +37,7 @@
         <link rel="stylesheet" href="minify.css"> 
     -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
 
 
 </head>
@@ -48,19 +49,19 @@
     <!--- Start of Navbar -->
 
     <div class="header">
-    
+
         <nav class='navbar'>
-    
+
             <a class="logo-link" href='../'>
                 <img src="../images/neec nonso logo.png" class='App-logo' alt='logo' />
             </a>
-    
+
             <ul class='nav-list'>
-    
+
                 <li class='list-item'>
                     <a href='../bio'> bio</a>
                 </li>
-    
+
                 <li class='list-item'>
                     <a href='../projects'>projects </a>
                 </li>
@@ -73,18 +74,18 @@
                 <li class='list-item'>
                     <a href='../contact'>contact </a>
                 </li>
-    
+
             </ul>
             <div class="menu">
                 <div class="menu-line1"></div>
                 <div class="menu-line2"></div>
                 <div class="menu-line3"></div>
             </div>
-    
+
         </nav>
-    
+
         <ul class='extra'>
-    
+
             <li class='list-item extra'>
                 <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
                     <img class="extra-icon-image" src="../images/logo-instagram.svg" alt='extra-icon-image' />
@@ -105,24 +106,30 @@
                     <img class="extra-icon-image" src="../images/logo-twitter.svg" alt='extra-icon-image' />
                 </a>
             </li>
-    
+
         </ul>
-    
-    
+
+
     </div>
 
     <!-- End of Navbar-->
 
     <main class="video-main-container">
 
+        <div class="video-item">
+
+            <h1 class="video-item-title">Video 1.</h1> <br>
 
 
-        <div class="boy-fraternity-div">
-            <h1 class="boy-fraternity-title">Video 1.</h1> <br>
-
-
-            <p class="thelastburial-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat dicta culpa consequuntur deleniti quod repudiandae quia perspiciatis labore, rem molestiae magni at ipsam, quisquam ducimus enim tempora quam, recusandae aliquam consectetur aperiam tenetur! Consequuntur accusantium, eius asperiores at autem velit a modi atque adipisci corporis, nesciunt distinctio sunt praesentium enim porro nihil ullam numquam doloribus rerum, dolore voluptas saepe quo sapiente dicta? Atque harum minima necessitatibus repellendus adipisci enim soluta porro et consectetur amet, ex possimus eligendi temporibus ratione libero beatae officia quidem dignissimos commodi nemo. Dolores, unde voluptates. Iusto atque soluta quaerat debitis reiciendis officiis quis expedita dignissimos.
+            <p class="video-item-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat dicta culpa consequuntur
+                deleniti quod repudiandae quia perspiciatis labore, rem molestiae magni at ipsam, quisquam ducimus enim
+                tempora quam, recusandae aliquam consectetur aperiam tenetur! Consequuntur accusantium, eius asperiores
+                at autem velit a modi atque adipisci corporis, nesciunt distinctio sunt praesentium enim porro nihil
+                ullam numquam doloribus rerum, dolore voluptas saepe quo sapiente dicta? Atque harum minima
+                necessitatibus repellendus adipisci enim soluta porro et consectetur amet, ex possimus eligendi
+                temporibus ratione libero beatae officia quidem dignissimos commodi nemo. Dolores, unde voluptates.
+                Iusto atque soluta quaerat debitis reiciendis officiis quis expedita dignissimos.
             </p>
 
 
@@ -134,6 +141,7 @@
         </div>
 
     </main>
+
     <!-- Start of Footer -->
 
     <footer class="footer-container">
@@ -159,18 +167,34 @@
     <script>
 
 
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".header",
-            //   markers: true,
+        gsap.from(".footer-container", {
+            scrollTrigger: {
+                trigger: ".video-item-title",
+                start: 50, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.8,
+            duration: 1,
+            ease: "power1.inOut"
+        });
 
-        }
-    });
+
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".header",
+                //   markers: true,
+
+            }
+        });
 
 
         tl.from(".App-logo", { y: -200, opacity: 0.5, duration: 1.5 })
-        .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
-        .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
+            .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
+            .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
           //  .from(".designer", { y: 10, opacity: 0, duration: 1.5 });
     </script>
 

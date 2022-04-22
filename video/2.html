@@ -5,39 +5,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> wa na wari | neec nonso | visual artist</title>
+    <title>video1 | neec nonso | visual artist</title>
 
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
 
-<meta name="robots" content="index, follow">
-<meta name="description" content="neec nonso is a nigerian visual artist">
-<meta name="keywords"
-    content="photographer, documentaryphotographer, visualartist, lagos, nigeria, northisnotnot, streetphotography, ekoforsale, neec, neecnonso, photography, abuja, documentary">
-
-
-<!-- Open Graph Meta Tags -->
-
-<meta property="og:type" content="article" />
-<meta property="og:title" content="homepage | neec nonso | visual artist">
-<meta property="og:description" content="neec nonso is a nigerian visual artist">
-<meta property="og:url" content="http://neecnonso.com" />
-<meta property="og:image" content="images/ogimage.png" />
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="neec nonso is a nigerian visual artist">
+    <meta name="keywords"
+        content="photographer, documentaryphotographer, visualartist, lagos, nigeria, northisnotnot, streetphotography, ekoforsale, neec, neecnonso, photography, abuja, documentary">
 
 
-<!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
+    <!-- Open Graph Meta Tags -->
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@neecnonso" />
-<meta name="twitter:title" content="neec nonso | visual artist">
-<meta property="og:description" content="neec nonso is a nigerian visual artist based in lagos,nigeria">
-<meta name="twitter:image" content="images/ogimage.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="homepage | neec nonso | visual artist">
+    <meta property="og:description" content="neec nonso is a nigerian visual artist">
+    <meta property="og:url" content="http://neecnonso.com" />
+    <meta property="og:image" content="images/ogimage.png" />
 
+
+    <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@neecnonso" />
+    <meta name="twitter:title" content="neec nonso | visual artist">
+    <meta property="og:description" content="neec nonso is a nigerian visual artist based in lagos,nigeria">
+    <meta name="twitter:image" content="images/ogimage.png" />
     <!-- Style Links 
     
         <link rel="stylesheet" href="minify.css"> 
     -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
 
 
 </head>
@@ -52,7 +52,7 @@
 
         <nav class='navbar'>
 
-            <a class="logo-link" href='index'>
+            <a class="logo-link" href='../'>
                 <img src="../images/neec nonso logo.png" class='App-logo' alt='logo' />
             </a>
 
@@ -116,13 +116,12 @@
 
     <main class="video-main-container">
 
+        <div class="video-item">
+
+            <h1 class="video-item-title">Video 1.</h1> <br>
 
 
-        <div class="boy-fraternity-div">
-            <h1 class="boy-fraternity-title">Video 1.</h1> <br>
-
-
-            <p class="thelastburial-paragraph">
+            <p class="video-item-paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat dicta culpa consequuntur
                 deleniti quod repudiandae quia perspiciatis labore, rem molestiae magni at ipsam, quisquam ducimus enim
                 tempora quam, recusandae aliquam consectetur aperiam tenetur! Consequuntur accusantium, eius asperiores
@@ -137,11 +136,12 @@
         </div>
 
         <div class="video-container">
-            <iframe rel="preload" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            <iframe rel="preload" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
             </iframe>
         </div>
 
     </main>
+
     <!-- Start of Footer -->
 
     <footer class="footer-container">
@@ -165,6 +165,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
     <script>
+
+
+        gsap.from(".footer-container", {
+            scrollTrigger: {
+                trigger: ".video-item-title",
+                start: 50, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.8,
+            duration: 1,
+            ease: "power1.inOut"
+        });
+
 
 
         let tl = gsap.timeline({
