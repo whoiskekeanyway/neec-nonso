@@ -1,5 +1,75 @@
 /* Navbar */
-@media screen and (min-width: 450px) and (max-width: 1024px) {
+@media screen and (max-width: 450px)  {
+  .App-logo {
+    cursor: pointer;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    display: inline;
+  }
+
+  .logo-link {
+    display: inline-block;
+    width: 30%;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    padding: 5px;
+  }
+
+  .menu div {
+    margin-bottom: 5px;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+  }
+
+  .list-item {
+    display: block;
+    padding: 20px 10px;
+  }
+
+  .nav-list {
+    position: relative;
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+    margin-top: 8%;
+    display: none;
+  }
+
+  .list-item.contact a {
+    background-color: rgb(231, 231, 17);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .extra {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1020px) {
   .App-logo {
     cursor: pointer;
     max-width: 100px;
@@ -264,9 +334,6 @@
   }
 }
 
-
-@media only screen and (max-width: 450px) {}
-
 /* Project Individual Mobile Page */
 
 @media only screen and (max-width: 450px) {
@@ -366,8 +433,6 @@
 
 /* Contact Page */
 
-@media only screen and (max-device-width: 480px) {}
-
 @media only screen and (max-width: 450px) {
   .contact-container {
     max-width: 100%;
@@ -420,3 +485,5 @@
     height: 230px;
   }
 }
+
+@media only screen and (max-width: 450px) {}
