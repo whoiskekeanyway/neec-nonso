@@ -1,5 +1,5 @@
 /* Navbar */
-@media screen and (max-width: 450px)  {
+@media screen and (max-width: 450px) {
   .App-logo {
     cursor: pointer;
     max-width: 100px;
@@ -157,7 +157,8 @@
 
   .landing-page.mobile img {
     padding: 0.5rem;
-    max-height: 450px;;
+    max-height: 450px;
+    ;
   }
 
   /* Main */
@@ -240,7 +241,6 @@
     width: 320px;
     margin: 0 auto;
     height: auto;
-    background-color: #800020;
   }
 
   blockquote:before {
@@ -414,21 +414,22 @@
     display: block;
   }
 
-    .thelastburial-paragraph {
-      line-height: 2rem;
-      width: 100%;
-      padding: 2rem;
-    }
-    .main-exhibition {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      width: 100%;
-      height: 80vh;
-      padding-top: 0;
-    }
+  .thelastburial-paragraph {
+    line-height: 2rem;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .main-exhibition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 80vh;
+    padding-top: 0;
+  }
 }
 
 /* Contact Page */
