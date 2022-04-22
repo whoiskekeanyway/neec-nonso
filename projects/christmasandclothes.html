@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> christmas and clothes | neec nonso | visual artist</title>
-  
+
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
-    
+
     <meta name="robots" content="index, follow">
     <meta name="description" content="neec nonso is a nigerian visual artist">
     <meta name="keywords"
         content="photographer, documentaryphotographer, visualartist, lagos, nigeria, northisnotnot, streetphotography, ekoforsale, neec, neecnonso, photography, abuja, documentary">
-    
-    
+
+
     <!-- Open Graph Meta Tags -->
-    
+
     <meta property="og:type" content="article" />
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
     <meta property="og:url" content="http://neecnonso.com" />
     <meta property="og:image" content="../images/ogimage.png" />
-    
-    
+
+
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
-    
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@neecnonso" />
     <meta name="twitter:title" content="neec nonso | visual artist">
@@ -262,7 +262,7 @@
 
         gsap.from(".extra", {
             scrollTrigger: {
-                trigger: ".exhibitions-info",
+                trigger: ".thelastburial-paragraph",
                 start: -50, // when the top of the trigger hits the top of the viewport
                 end: "+=300", // end after scrolling 100px beyond the start
                 // markers: true
@@ -318,18 +318,15 @@
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".boy-fraternity-div",
-
-
                 //   markers: true,
-
             }
         });
         tl.from(".boy-fraternity-title", { x: -200, opacity: 0, duration: 1 })
-        tl.from(".thelastburial-paragraph", { x: 200, opacity: 0, duration: 1.5 })
-        tl.from(".extra", { x: 200, opacity: 0, duration: 1.5 })
-        tl.from(".carousel", { y: 200, opacity: 0, duration: 1.5 })
+            .from(".thelastburial-paragraph", { x: 200, opacity: 0, duration: 1.5 })
+            .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
+            .from(".carousel", { y: 200, opacity: 0, duration: 1.5 })
             .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
-            .from(".designer", { y: 10, opacity: 0, duration: 1.5 });
+
 
 
     </script>

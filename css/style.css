@@ -286,7 +286,6 @@ html {
 .landing-page img {
   width: 100%;
   max-width: 1200px;
-  height: 800px;
   max-height: 800px;
   margin: 0 auto;
   margin-bottom: 4rem;
@@ -464,7 +463,7 @@ hr {
   gap: 5rem;
   width: 100%;
   height: 100vh;
-padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 .carousel {
@@ -473,6 +472,7 @@ padding-top: 5rem;
   width: 1000px;
   margin: 0 auto;
   margin-bottom: 5rem;
+  display: block;
 }
 
 .carousel.potrait {
@@ -497,6 +497,14 @@ padding-top: 5rem;
 .carousel-image {
   width: 100%;
   height: 100%;
+}
+
+.landing-page img {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 800px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 }
 
 .carousel-track-container {
