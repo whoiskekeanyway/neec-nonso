@@ -154,25 +154,14 @@
 /* Project Page */
 
 @media only screen and (max-width: 450px) {
-  .jumbotron {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-    border: 1px solid steelblue;
-  }
-
-  .jumbotron p {
-    font-size: 1rem;
-    padding: 1rem;
-    width: 90%;
-  }
 
   .blockquote-div {
-    max-width: 100%;
+    max-width: 800px;
+    height: auto;
     margin: 0 auto;
     position: relative;
+    padding: 50px;
+
   }
 
   blockquote {
@@ -181,6 +170,8 @@
     position: relative;
     width: 320px;
     margin: 0 auto;
+    height: auto;
+    background-color: #800020;
   }
 
   blockquote:before {
@@ -233,9 +224,7 @@
 
 @media only screen and (max-width: 450px) {
   .exhibition-container {
-
     height: auto;
-
   }
 
   .exhibitions-info {
@@ -246,6 +235,20 @@
     height: auto;
     padding: 0.1rem;
 
+  }
+
+  .exhibitions {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .exhibition-venue {
+    margin: 0;
+    padding: 0;
+  }
+
+  .exhibition-location.link {
+    padding-left: 2rem;
   }
 
 
@@ -269,12 +272,28 @@
 /* Project Individual Mobile Page */
 
 @media only screen and (max-width: 450px) {
+
+  .projects-each {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .main-exhibition.square {
+    display: none;
+  }
+
   .boy-fraternity-div {
     font-family: "Roboto Mono", monospace;
     width: 100%;
     margin: 0 auto;
     position: relative;
-    background-color: aqua;
     height: auto;
   }
 
@@ -282,11 +301,13 @@
     color: #800020;
     display: inline-block;
     position: relative;
+    font-size: 20px;
   }
 
   .thelastburial-paragraph {
     line-height: 2rem;
     width: 100%;
+    padding: 1rem;
   }
 
 
@@ -324,10 +345,12 @@
 
 @media only screen and (max-width: 450px) {
   .contact-container {
-    max-width: 350px;
+    max-width: 100%;
     margin: 0 auto;
     height: auto;
     flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .image-div {
@@ -350,4 +373,25 @@
   }
 }
 
-@media only screen and (max-width: 450px) {}
+/* Videos */
+
+@media only screen and (max-width: 450px) {
+  .video-main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    height: auto;
+    padding: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .container-video {
+    gap: 2rem;
+  }
+
+  .projects-video {
+    max-width: 350px !important;
+    height: 230px;
+  }
+}
