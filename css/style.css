@@ -437,6 +437,7 @@ main {
 .exhibition-title a {
   text-decoration: none;
   color: #800020;
+  font-weight: bold;
 }
 
 
@@ -452,6 +453,82 @@ main {
 hr {
   color: #800020 !important;
 }
+
+/* Exhibition Page Items */
+
+
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding: 1rem;
+}
+
+.exhibition-intro {
+  padding: 2.5rem;
+}
+
+.taste-mystique-folder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.slider-image {
+  max-width: 500px;
+  margin: 0 auto;
+  height: auto;
+  padding: 5px;
+  width: 100%;
+}
+
+.child-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.potrait-images-exhibition {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 1rem;
+
+}
+
+.potrait-images-exhibition img {
+  width: 100%;
+  max-width: 425px;
+  height: auto;
+}
+
+.wana-wari-image-container {
+max-width: 700px;
+width: 100%;
+}
+
+.child-images img {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 
 /* Carousel */
 

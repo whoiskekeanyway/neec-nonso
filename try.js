@@ -42,3 +42,6 @@ function changeQuotes() {
 
 // Run function when page loads
 window.onload = changeQuotes;
+
+
+
