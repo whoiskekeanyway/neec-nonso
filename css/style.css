@@ -470,6 +470,15 @@ hr {
   padding: 1rem;
 }
 
+.nigeria-trending-lagos-fringe {
+  max-width: 1440px;
+}
+
+.nigeria-trending-lagos-fringe img {
+  width: 100%;
+  max-width: 400px;
+}
+
 .exhibition-intro {
   padding: 2.5rem;
 }
@@ -477,6 +486,7 @@ hr {
 .taste-mystique-folder {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -519,8 +529,15 @@ hr {
 }
 
 .wana-wari-image-container {
-max-width: 700px;
-width: 100%;
+  max-width: 800px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.wana-wari-image-container img {
+  max-width: 620px;
+  width: 100%;
+  padding: 10px;
 }
 
 .child-images img {
@@ -824,9 +841,6 @@ blockquote:after {
   width: 100%;
   height: auto;
 }
-
-
-
 
 .card-description {
   text-decoration: none;

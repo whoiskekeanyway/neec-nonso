@@ -25,8 +25,8 @@ function topFunction() {
 var i = 0; // Start Point
 var time = 3000; // Time Between Switch
 var images = [
-  "../exhibition/young contemporaries - rele arts foundation lagos, nigeria/1.jpg",
-  "../exhibition/young contemporaries - rele arts foundation lagos, nigeria/111.jpeg"
+  "../exhibition/young contemporaries/1.webp",
+  "../exhibition/young contemporaries/11.webp",
 ];
 
 
