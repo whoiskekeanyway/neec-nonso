@@ -456,7 +456,13 @@ hr {
 
 /* Exhibition Page Items */
 
-
+.exhibition-main-container {
+  background-color: inherit;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 100vh;
+}
 
 .items-container {
   display: flex;
@@ -522,6 +528,20 @@ hr {
 
 }
 
+.second-class-potrait {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1440px;
+  gap: 2rem;
+}
+
+.second-class-potrait img {
+  width: 100%;
+  max-width: 310px;
+}
+
 .potrait-images-exhibition img {
   width: 100%;
   max-width: 425px;
@@ -542,6 +562,29 @@ hr {
 
 .child-images img {
   max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.child-images-last {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1440px;
+  gap: 1rem;
+}
+
+.child-images-more {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.child-images-more img {}
+
+.child-images-last img {
+  max-width: 430px;
   margin: 0 auto;
   width: 100%;
 }

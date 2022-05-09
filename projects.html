@@ -111,6 +111,7 @@
     <!-- End of Navbar-->
 
     <!-- Start of Project-->
+    
 
     <div class="blockquote-div">
         <blockquote>
@@ -274,33 +275,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script>
 
-        gsap.from(".extra", {
-            scrollTrigger: {
-                trigger: ".blockquote-div",
-                start: -50, // when the top of the trigger hits the top of the viewport
-                end: "+=300", // end after scrolling 100px beyond the start
-                // markers: true
-                scrub: 1
-            },
-            stagger: { amount: 0.5 },
-            scale: 0.8,
-            duration: 1
-        });
+     
 
-
-        gsap.from(".footer-container", {
-            scrollTrigger: {
-                trigger: ".blockquote-div",
-                start: 500, // when the top of the trigger hits the top of the viewport
-                end: "+=700", // end after scrolling 100px beyond the start
-                // markers: true
-                scrub: 1
-            },
-            stagger: { amount: 0.5 },
-            scale: 0.5,
-            duration: 1,
-            ease: "power1.inOut"
-        });
+     
 
         let tl = gsap.timeline({
             scrollTrigger: {
@@ -325,6 +302,7 @@
 
     <script src="script.js" async defer></script>
     <script src="try.js" async defer></script>
+    <script src="gsap.js"></script>
 
 </body>
 
