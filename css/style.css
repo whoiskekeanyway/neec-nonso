@@ -398,6 +398,7 @@ main {
   gap: 1rem;
   position: relative;
   padding: 2.5rem;
+  height: 100vh;
 }
 
 
@@ -442,8 +443,10 @@ main {
 
 
 .exhibition-location.link {
+  font-size: 18px;
   text-decoration: none;
   color: #800020;
+    font-weight: bold;
 }
 
 .exhibition-venue {
@@ -590,10 +593,30 @@ hr {
 }
 
 
+.yanga-intro-image {
+  max-width: 600px;
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+  height: 600px;
+}
+
+.afrofuture-last-image {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.afrofuture-last-image img {
+  max-width: 1000px;
+  width: 100%;
+}
+
+
 /* Carousel */
 
 main {
- height: auto;
+  height: auto;
 }
 
 .main-exhibition {

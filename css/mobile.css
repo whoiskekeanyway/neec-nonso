@@ -323,7 +323,7 @@
   }
 
   .exhibition-location.link {
-    padding-left: 1.1rem;
+    padding-left: 3rem;
   }
 
 
@@ -336,7 +336,7 @@
     margin-bottom: 2rem !important;
     color: black;
     text-decoration: underline;
-    padding-left: 2rem;
+    padding-left: 3rem;
   }
 }
 
@@ -545,6 +545,14 @@
   }
 
   .child-images img {
+    width: 100%;
+  }
+
+  .afrofuture-last-image {
+    padding: 0;
+  }
+
+  .afrofuture-last-image img {
     width: 100%;
   }
 }
