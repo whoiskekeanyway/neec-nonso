@@ -62,3 +62,58 @@ dotsNav.addEventListener("click", (e) => {
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 });
 
+///  Projects
+
+gsap.from(".extra", {
+  scrollTrigger: {
+    trigger: ".main-exhibition",
+    start: -50, // when the top of the trigger hits the top of the viewport
+    end: "+=300", // end after scrolling 100px beyond the start
+    // markers: true
+    scrub: 1,
+  },
+  stagger: { amount: 0.5 },
+  scale: 0.8,
+  duration: 1,
+});
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".boy-fraternity-title",
+    //   markers: true,
+  },
+});
+
+tl.from("main", { x: -200, opacity: 0.5, duration: 1.5 })
+  .from(".App-logo", { y: -200, opacity: 0.5, duration: 1.5 })
+  .from(".list-item", { y: -200, opacity: 0.5, duration: 1.5 })
+  .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
+  .from(".copyright", { y: 10, opacity: 0, duration: 1.5 });
+
+gsap.from(".footer-container", {
+  scrollTrigger: {
+    trigger: ".main-exhibition",
+    start: "top top", // when the top of the trigger hits the top of the viewport
+    end: "+=300", // end after scrolling 100px beyond the start
+    //  markers: true,
+    scrub: 1,
+  },
+  stagger: { amount: 0.5 },
+  scale: 0.6,
+  duration: 1,
+  ease: "power1.inOut",
+});
+
+gsap.from(".thelastburial-paragraph", {
+  scrollTrigger: {
+    trigger: ".boy-fraternity-div",
+    start: -50, // when the top of the trigger hits the top of the viewport
+    end: "+=300", // end after scrolling 100px beyond the start
+    // markers: true
+    scrub: 1,
+  },
+  stagger: { amount: 0.5 },
+  scale: 0.95,
+  duration: 1,
+  ease: "power1.inOut",
+});

@@ -291,6 +291,8 @@
   blockquote cite:before {
     content: "\2013";
   }
+
+
 }
 
 /* Exhibition Page */
@@ -321,7 +323,7 @@
   }
 
   .exhibition-location.link {
-    padding-left: 2rem;
+    padding-left: 1.1rem;
   }
 
 
@@ -341,6 +343,10 @@
 /* Project Individual Mobile Page */
 
 @media only screen and (max-width: 450px) {
+
+  .exhibition-main-container {
+    height: auto;
+  }
 
   .projects-each {
     display: flex;
@@ -370,7 +376,8 @@
     color: #800020;
     display: inline-block;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
   }
 
   .thelastburial-paragraph {
@@ -380,17 +387,12 @@
   }
 
 
-
   .boy-fraternity-title.boys::after {
     width: 60% !important;
   }
 
   .main-exhibition {
-    height: 10vh;
-  }
-
-  .carousel {
-    display: none;
+    display: none !important;
   }
 
   .mobile {
@@ -515,11 +517,15 @@
 
 @media screen and (max-width: 1020px) {}
 
+
+/* Exhibition Pages */
 @media only screen and (max-width: 450px) {
   .items-container {
     height: auto;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  }
+
+  .items-container.wana {
+    height: 100vh !important;
   }
 
   .slider-image {

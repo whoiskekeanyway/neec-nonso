@@ -9,35 +9,37 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
-    
+
     <meta name="robots" content="index, follow">
-    <meta name="description" content=" he captures everyday life and its nuances in communities across nigeria. he works predominantly with photography and aims to inspire conversations">
+    <meta name="description"
+        content=" he captures everyday life and its nuances in communities across nigeria. he works predominantly with photography and aims to inspire conversations">
     <meta name="keywords"
         content="photographer, documentaryphotographer, visualartist, lagos, nigeria, northisnotnot, streetphotography, ekoforsale, neec, neecnonso, photography, abuja, documentary">
-    
-    
+
+
     <!-- Open Graph Meta Tags -->
-    
+
     <meta property="og:type" content="article" />
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
     <meta property="og:url" content="http://neecnonso.com" />
     <meta property="og:image" content="../images/ogimage.png" />
-    
-    
+
+
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
-    
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@neecnonso" />
     <meta name="twitter:title" content="neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist based in lagos,nigeria">
     <meta name="twitter:image" content="images/ogimage.png" />
-    
+
     <!-- Style Links 
     
         <link rel="stylesheet" href="minify.css"> 
     -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
 
 
 </head>
@@ -61,7 +63,7 @@
                 <li class='list-item'>
                     <a href='../bio'> bio</a>
                 </li>
-                
+
                 <li class='list-item'>
                     <a href='../projects'>projects </a>
                 </li>
@@ -113,33 +115,33 @@
     </div>
 
     <!-- End of Navbar-->
-<main class="exhibition-main-container">
+
 
     <div class="items-container">
 
         <section class="exhibition-intro">
 
-            <p class="exhibition-title"><a href="./exhibitions/no-victor-no-vanquished:theworldatthecrossroads">
+            <p class="exhibition-title"><a href="./no-victor-no-vanquished:theworldatthecrossroads">
                     no
                     victor,no vanquished:<br>
                     the world at the crossroads.</a></p>
             <p class="exhibition-venue">iwaya community art biennale,</p>
             <p class="exhibition-location">lagos,nigeria</p>
         </section>
+        <section>
+            <img class="slider-image" name="slide" />
+        </section>
 
-    
 
         <section class="child-images">
             <img src="../exhibition/no victor/3.jpg" alt="no-victor-no-vanquished">
             <img src="../exhibition/no victor/4.jpg" alt="no-victor-no-vanquished">
             <img src="../exhibition/no victor/5.jpg" alt="no-victor-no-vanquished">
-           
-
         </section>
 
     </div>
 
-</main>
+
 
 
     <!-- Start of Footer -->
@@ -163,10 +165,46 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+
+        var i = 0; // Start Point
+        var time = 3000; // Time Between Switch
+
+           function checkLength(array) {
+                // Check If Index Is Under Max
+                if (i < array.length - 1) {
+                    // Add 1 to Index
+                    i++;
+                } else {
+                    // Reset Back To O
+                    i = 0;
+                }
+            }
+
+        var images4 = [
+            "../exhibition/no victor/1.jpg",
+            "../exhibition/no victor/6.jpg",
+            "../exhibition/no victor/7.jpg",
+        ];
+
+        function changeImg4() {
+            document.slide.src = images4[i];
+            checkLength(images4);
+            setTimeout("changeImg4()", time);
+        }
+
+        // Run function when page loads
 
 
-<script src="../script.js" async defer></script>
-<script src="../gsap.js"></script>
+
+        window.onload = changeImg4;
+
+    </script>
+
+    <script src="../script.js" async defer></script>
+    <script src="../scripts/exhibitions.js"></script>
+    <script src="../scripts/gsap.js"></script>
+
 
 </body>
 

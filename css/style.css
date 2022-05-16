@@ -456,13 +456,6 @@ hr {
 
 /* Exhibition Page Items */
 
-.exhibition-main-container {
-  background-color: inherit;
-  height: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  height: 100vh;
-}
 
 .items-container {
   display: flex;
@@ -470,10 +463,10 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  height: auto;
   padding-top: 5rem;
   padding-bottom: 5rem;
   padding: 1rem;
+  height: auto;
 }
 
 .nigeria-trending-lagos-fringe {
@@ -501,7 +494,14 @@ hr {
 .slider-image {
   max-width: 500px;
   margin: 0 auto;
-  height: auto;
+  height: 500px;
+  padding: 5px;
+  width: 100%;
+}
+
+.boundariesofreason {
+  margin: 0 auto;
+  height: 500px;
   padding: 5px;
   width: 100%;
 }
@@ -581,7 +581,7 @@ hr {
   gap: 2rem;
 }
 
-.child-images-more img {}
+
 
 .child-images-last img {
   max-width: 430px;
@@ -591,6 +591,10 @@ hr {
 
 
 /* Carousel */
+
+main {
+ height: auto;
+}
 
 .main-exhibition {
   display: flex;

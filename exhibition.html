@@ -209,7 +209,7 @@
                     </p>
                     <p class="exhibition-venue">virtual exhibition,</p>
                     <a class="exhibition-location link" target="_blank" rel="noreferrer"
-                        href="https://thepeaceexhibit.com/">thepeaceexhibit.com</a>
+                        href="https://thepeaceexhibit.com/exhibitor/neec-nonso-pain-a-discomfort-or-a-trigger/">thepeaceexhibit.com</a>
                     <hr color="#800020">
                 </div>
 
@@ -264,10 +264,70 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-   
+   <script>
+       gsap.from(".extra", {
+  scrollTrigger: {
+    trigger: ".exhibition-main-container",
+    start: -50, // when the top of the trigger hits the top of the viewport
+    end: "+=300", // end after scrolling 100px beyond the start
+    // markers: true
+    scrub: 1,
+  },
+  stagger: { amount: 0.5 },
+  scale: 0.8,
+  duration: 1,
+  ease: "power1.inOut",
+});
 
-    <script src="script.js" async defer></script>
-    <script src="gsap.js"></script>
+// Footer animation in and out
+
+gsap.from(".footer-container", {
+  scrollTrigger: {
+    trigger: ".exhibition-main-container",
+    start: -50, // when the top of the trigger hits the top of the viewport
+    end: "+=300", // end after scrolling 100px beyond the start
+    // markers: true
+    scrub: 1,
+  },
+  stagger: { amount: 0.5 },
+  scale: 0.5,
+  duration: 1,
+  ease: "power1.inOut",
+});
+
+// Main exhibition animation in and out
+gsap.from(".exhibition-main-container", {
+  scrollTrigger: {
+    trigger: ".exhibition-main-container",
+    start: -100, // when the top of the trigger hits the top of the viewport
+    end: "+=300", // end after scrolling 100px beyond the start
+    // markers: true
+    scrub: 1,
+  },
+  stagger: { amount: 0.5 },
+  scale: 0.9,
+  duration: 1,
+  ease: "power1.inOut",
+});
+
+// Timeline animation of the exhibition content on the whole page
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".exhibition-main-container",
+    //   markers: true,
+  },
+});
+
+tl.from(".exhibition-main-container", { x: -200, opacity: 0.5, duration: 1.5 })
+  .from(".App-logo", { y: -200, opacity: 0.5, duration: 1.5 })
+  .from(".list-item", { y: -200, opacity: 0.5, duration: 1.5 })
+  .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
+  .from(".copyright", { y: 10, opacity: 0, duration: 1.5 });
+   </script>
+
+    <script src="script.js" async defer>
+    </script>
+
 
 </body>
 
