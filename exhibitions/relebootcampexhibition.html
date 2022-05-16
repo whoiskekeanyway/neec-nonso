@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> young contemporaries | neec nonso | visual artist</title>
+    <title> rele boot camp exhibition | neec nonso | visual artist</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
 
     <meta name="robots" content="index, follow">
-    <meta name="description"
-        content="he captures everyday life and its nuances in communities across nigeria. he works predominantly with photography and aims to inspire conversations">
+    <meta name="description" content="neec nonso is a nigerian visual artist. he was born in aguleri, anambra state.">
     <meta name="keywords"
         content="photographer, documentaryphotographer, visualartist, lagos, nigeria, northisnotnot, streetphotography, ekoforsale, neec, neecnonso, photography, abuja, documentary">
 
@@ -42,11 +41,9 @@
     <link rel="stylesheet" href="../css/mobile.css">
 
 
-
 </head>
 
 <body>
-
     <!-- Back to top button -->
     <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
 
@@ -127,7 +124,7 @@
 
             <p class="exhibition-title">
                 <a href="./youngcontemporaries">
-                    young contemporaries.
+                   rele bootcamp exhibition.
                 </a>
             </p>
             <p class="exhibition-venue">rele arts foundation </p>
@@ -135,20 +132,24 @@
         </section>
 
         <section>
-            <img class="slider-image" name="slide" />
+           <img class="relebootcamp" src="../exhibition/rele boot camp exhibition/1 rele arts foundation yc bootcamp 2021.jpg" alt="relebootcampexhibition">
         </section>
 
         <section class="child-images">
 
-            <img src="../exhibition/young contemporaries/2.webp" alt="young contemporaries">
-            <img src="../exhibition/young contemporaries/3.webp" alt="young contemporaries">
-            <img src="../exhibition/young contemporaries/4.webp" alt="young contemporaries">
-            <img src="../exhibition/young contemporaries/5.webp" alt="young contemporaries">
-            <img src="../exhibition/young contemporaries/6.webp" alt="young contemporaries">
-            <img src="../exhibition/young contemporaries/7.webp" alt="young contemporaries">
-            <img src="../exhibition/young contemporaries/8.webp" alt="young contemporaries">
-            <img src="../exhibition/young contemporaries/9.webp" alt="young contemporaries">
-            <img src="../exhibition/young contemporaries/10.webp" alt="young contemporaries">
+            <img src="../exhibition/rele boot camp exhibition/1.jpg" alt="rele bootcamp exhibition">
+            <img src="../exhibition/rele boot camp exhibition/2.jpg" alt="rele bootcamp exhibition">
+
+        </section>
+        <section>
+            <img src="../exhibition/rele boot camp exhibition/3.jpg" alt="rele bootcamp exhibition">
+        </section>
+        <section class="child-images">
+            <img src="../exhibition/rele boot camp exhibition/4.jpg" alt="rele bootcamp exhibition">
+            <img src="../exhibition/rele boot camp exhibition/5.jpg" alt="rele bootcamp exhibition">
+            <img src="../exhibition/rele boot camp exhibition/6.jpg" alt="rele bootcamp exhibition">
+            <img src="../exhibition/rele boot camp exhibition/7.jpg" alt="rele bootcamp exhibition">
+
 
         </section>
 
@@ -157,6 +158,7 @@
 
 
     <!-- End of Exhibition-->
+
 
     <!-- Start of Footer -->
 
@@ -174,45 +176,15 @@
 
     </footer>
 
+
     <!-- End of Footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script>
-        var i = 0; // Start Point
-        var time = 3000; // Time Between Switch
-        var images = [
-            "../exhibition/young contemporaries/1.webp",
-            "../exhibition/young contemporaries/11.webp",
-        ];
 
-        function checkLength(array) {
-            // Check If Index Is Under Max
-            if (i < array.length - 1) {
-                // Add 1 to Index
-                i++;
-            } else {
-                // Reset Back To O
-                i = 0;
-            }
-        }
-
-
-
-        // Change Image
-        function changeImg() {
-            document.slide.src = images[i];
-            checkLength(images);
-            setTimeout("changeImg()", time);
-        }
-
-        window.onload = changeImg;
-    </script>
 
     <script src="../script.js" async defer></script>
     <script src="../scripts/exhibitions.js"></script>
- 
-
 
 </body>
 

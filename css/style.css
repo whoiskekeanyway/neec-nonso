@@ -453,6 +453,10 @@ main {
   margin: 0;
 }
 
+.relebootcamp {
+  width: 600px;
+}
+
 hr {
   color: #800020 !important;
 }
