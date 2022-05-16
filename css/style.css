@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Reset margins */
 body,
 h1,
 h2,
@@ -36,7 +35,6 @@ a:active {
   text-decoration: none;
 }
 
-/* set up the body */
 body {
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
@@ -45,14 +43,12 @@ body {
   overflow-x: hidden;
 }
 
-/* make images easier to work with */
 img,
 picutre {
   max-width: 100%;
   display: block;
 }
 
-/* make form elements easier to work with */
 input,
 button,
 textarea,
@@ -60,7 +56,6 @@ select {
   font: inherit;
 }
 
-/* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
 
   *,
@@ -101,12 +96,9 @@ select {
   }
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
-/* Navbar */
 
 .header {
   max-width: 1440px;
@@ -125,6 +117,7 @@ html {
 .App-logo {
   pointer-events: auto;
   max-width: 100px;
+  width: 100%;
   height: auto;
   margin-left: 5rem;
   cursor: pointer;
@@ -151,7 +144,6 @@ html {
   padding: 20px 10px;
   margin-left: 1rem;
 }
-
 
 .list-item a::after {
   content: "";
@@ -242,7 +234,6 @@ html {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Buttons */
 #myBtn {
   display: none;
   position: fixed;
@@ -267,8 +258,6 @@ html {
   font-size: 20px;
 }
 
-/* Landing Page */
-
 .index-main {
   height: 100vh !important;
 }
@@ -291,8 +280,6 @@ html {
   margin-bottom: 4rem;
 }
 
-/* Main */
-
 main {
   display: flex;
   flex-direction: column;
@@ -302,8 +289,6 @@ main {
   width: 100%;
   padding: 20px;
 }
-
-/* About Me Page */
 
 .about-page {
   max-width: 1200px;
@@ -378,15 +363,12 @@ main {
   font-size: 16px;
 }
 
-/* Exhibition Page */
-
 .exhibition-container {
   background-color: inherit;
   height: auto;
   padding-top: 5rem;
   padding-bottom: 5rem;
   height: 100vh;
-
 }
 
 .exhibitions-info {
@@ -400,7 +382,6 @@ main {
   padding: 2.5rem;
   height: 100vh;
 }
-
 
 .exhibitions {
   display: flex;
@@ -441,12 +422,11 @@ main {
   font-weight: bold;
 }
 
-
 .exhibition-location.link {
   font-size: 18px;
   text-decoration: none;
   color: #800020;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .exhibition-venue {
@@ -460,9 +440,6 @@ main {
 hr {
   color: #800020 !important;
 }
-
-/* Exhibition Page Items */
-
 
 .items-container {
   display: flex;
@@ -532,7 +509,6 @@ hr {
   max-width: 1440px;
   margin: 0 auto;
   gap: 1rem;
-
 }
 
 .second-class-potrait {
@@ -588,14 +564,11 @@ hr {
   gap: 2rem;
 }
 
-
-
 .child-images-last img {
   max-width: 430px;
   margin: 0 auto;
   width: 100%;
 }
-
 
 .yanga-intro-image {
   max-width: 600px;
@@ -615,9 +588,6 @@ hr {
   max-width: 1000px;
   width: 100%;
 }
-
-
-/* Carousel */
 
 main {
   height: auto;
@@ -748,8 +718,6 @@ main {
   display: none;
 }
 
-/* Project Individual Page */
-
 .projects-each {
   display: flex;
   flex-direction: column;
@@ -778,7 +746,6 @@ main {
   justify-content: center;
   gap: 2rem;
   padding-top: 5rem;
-
 }
 
 .boy-fraternity-title {
@@ -814,15 +781,12 @@ main {
   color: #800020;
 }
 
-/* Projects Page */
-
 .blockquote-div {
   max-width: 800px;
   height: 350px;
   margin: 0 auto;
   position: relative;
   padding: 50px;
-
 }
 
 blockquote {
@@ -866,27 +830,11 @@ blockquote:after {
   font-weight: 900;
 }
 
-/* 
-
-.blockquote-link {
-  text-decoration: none;
-  color: black;
-}
-.jumbotron-button {
-
-  text-decoration: none;
-}
-
-*/
-
-
 .projectnames:before {
   color: black;
   content: "\2013";
   margin-right: 0.5rem;
 }
-
-/* Project Page Contact Card */
 
 .card-container {
   display: flex;
@@ -947,10 +895,6 @@ blockquote:after {
   transform-origin: left;
 }
 
-
-
-/* Video Portfolio Page */
-
 .video-main {
   display: flex;
   flex-direction: column;
@@ -974,8 +918,6 @@ blockquote:after {
   height: 230px;
 }
 
-/* Videos Items */
-
 .video-main-container {
   display: flex;
   flex-direction: column;
@@ -992,7 +934,6 @@ blockquote:after {
   justify-content: center;
   gap: 1rem;
   padding: 2.5rem;
-
 }
 
 .video-item-title {
@@ -1043,8 +984,6 @@ blockquote:after {
   align-items: center;
 }
 
-
-
 .video-container {
   display: flex;
   justify-content: center;
@@ -1055,8 +994,6 @@ iframe {
   width: 600px;
   height: 400px;
 }
-
-/* Contact Page */
 
 .contact-container {
   max-width: 1440px;
@@ -1103,10 +1040,6 @@ iframe {
   margin-bottom: 1rem;
 }
 
-
-
-/* Footer */
-
 .footer-content {
   font-weight: 300;
   display: flex;
@@ -1144,8 +1077,6 @@ iframe {
   text-decoration: none;
   color: steelblue;
 }
-
-/* Error Page  */
 
 .error-container {
   display: flex;

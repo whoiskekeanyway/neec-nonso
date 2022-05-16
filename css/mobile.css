@@ -156,6 +156,10 @@
   }
 
   .landing-page.mobile img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
     padding: 0.5rem;
     max-height: 450px;
   }
