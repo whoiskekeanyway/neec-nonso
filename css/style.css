@@ -214,7 +214,13 @@ html {
   cursor: pointer;
 }
 
-
+.menu div {
+  width: 35px;
+  height: 5px;
+  background-color: #800020;
+  margin-bottom: 4px;
+  transition: all 0.3s ease;
+}
 
 .toggle .menu-line1 {
   transform: rotate(-45deg) translate(-5px, 6px);

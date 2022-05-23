@@ -25,13 +25,6 @@
     margin-bottom: 5px;
   }
 
-  .menu div {
-    width: 35px;
-    height: 5px;
-    background-color: #800020;
-    margin-bottom: 4px;
-    transition: all 0.3s ease;
-  }
 
   .menu {
     display: block;
@@ -324,6 +317,7 @@
     margin: 0 auto;
     height: auto;
     padding: 0.1rem;
+    padding-bottom: 5rem;
 
   }
 
@@ -568,6 +562,11 @@
   }
 
   .afrofuture-last-image img {
+    width: 100%;
+  }
+
+  .boundariesofreason {
+    height: auto;
     width: 100%;
   }
 }
