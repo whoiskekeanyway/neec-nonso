@@ -25,6 +25,14 @@
     margin-bottom: 5px;
   }
 
+  .menu div {
+    width: 35px;
+    height: 5px;
+    background-color: #800020;
+    margin-bottom: 4px;
+    transition: all 0.3s ease;
+  }
+
   .menu {
     display: block;
     position: absolute;
@@ -228,6 +236,10 @@
 
 @media only screen and (max-width: 450px) {
 
+  .topline {
+    margin-top: 2rem;
+  }
+
   .blockquote-div {
     max-width: 100%;
     height: auto;
@@ -244,7 +256,7 @@
     position: relative;
     width: 322px;
     margin: 0 auto;
-    height: auto;
+    height: 364px;
   }
 
   blockquote:before {
@@ -274,7 +286,7 @@
     font-size: 1rem;
     font-weight: 900;
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     right: 0;
     text-align: center;
   }

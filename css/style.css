@@ -214,13 +214,7 @@ html {
   cursor: pointer;
 }
 
-.menu div {
-  width: 35px;
-  height: 5px;
-  background-color: #800020;
-  margin-bottom: 4px;
-  transition: all 0.3s ease;
-}
+
 
 .toggle .menu-line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
@@ -781,6 +775,10 @@ main {
   color: #800020;
 }
 
+.fixing-padding {
+  padding: 5rem 0rem;
+}
+
 .blockquote-div {
   max-width: 800px;
   height: 350px;
@@ -791,7 +789,7 @@ main {
 
 blockquote {
   position: relative;
-  padding: 40px;
+  padding: 50px;
   text-align: center;
   max-width: 620px;
   height: 200px;
@@ -845,7 +843,7 @@ blockquote:after {
   margin: 0 auto;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
