@@ -571,3 +571,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 540px) {
+  .exhibitions-info {
+    height: auto;
+  }
+}

@@ -236,6 +236,17 @@
 
 /* Exhibition Page */
 
+@media screen and (max-width: 540px) {
+  .exhibitions-info {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: auto;
+    width: 720px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .exhibitions-info {
     display: flex;
