@@ -905,7 +905,6 @@ blockquote:after {
 .video-main {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
   height: 100vh;
   padding-top: 5rem;
 }
