@@ -482,6 +482,8 @@
 /* Videos */
 
 @media only screen and (max-width: 450px) {
+
+  /* Hide Video Title
   .video-main-container {
     height: auto;
     padding-top: 5rem;
@@ -509,13 +511,35 @@
     width: 100%;
   }
 
+ */
+
+ .video-main {
+   gap: 2.5rem;
+   height: auto;
+
+   
+ }
+
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+  .container-video {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+
   iframe {
     width: 100%;
     height: 200px;
-  }
-
-  .container-video {
-    gap: 2rem;
   }
 
   .projects-video {
