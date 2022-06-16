@@ -959,6 +959,7 @@ iframe {
   justify-content: center;
   gap: 1rem;
   padding: 2.5rem;
+  height: fit-content;
 }
 
 .video-item-title {
