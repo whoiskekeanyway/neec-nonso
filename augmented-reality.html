@@ -116,7 +116,7 @@
 
     <!-- Start of Videos -->
 
-    <div class="video-main">
+    <main class="video-main">
 
         <hr class="topline" color="#800020" width="60%">
 
@@ -158,7 +158,7 @@
 
 
             </div>
-            
+
             <div class="video-card">
 
                 <iframe src="https://www.youtube.com/embed/rxeBbI0qsNA" title="YouTube video player" frameborder="0"
@@ -175,7 +175,7 @@
 
         <hr class="bottom-line" color="#800020" width="60%">
 
-    </div>
+    </main>
 
 
     <!-- End of Videos -->
@@ -204,19 +204,32 @@
 
     <script>
 
-            gsap.from(".extra", {
+        gsap.from(".extra", {
+            scrollTrigger: {
+                trigger: ".video-main",
+                start: -50, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.8,
+            duration: 1
+        });
+
+             gsap.from(".footer-container", {
                     scrollTrigger: {
                         trigger: ".video-main",
-                        start: -50, // when the top of the trigger hits the top of the viewport
-                        end: "+=300", // end after scrolling 100px beyond the start
+                        start: 1, // when the top of the trigger hits the top of the viewport
+                        end: "+=200", // end after scrolling 100px beyond the start
                         // markers: true
                         scrub: 1
                     },
                     stagger: { amount: 0.5 },
-                    scale: 0.8,
-                    duration: 1
+                    scale: 0.5,
+                    duration: 1,
+                    ease: "power1.inOut"
                 });
-
         gsap.from(".footer-container", {
             scrollTrigger: {
                 trigger: ".topline",

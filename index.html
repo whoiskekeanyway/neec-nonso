@@ -131,14 +131,15 @@
     <!--- Start of Main Content -->
 
     <main class="index-main">
-        <div class="landing-page mobile">
-            <a href="projects">
-                <img class="mobile-homepage" src="images/homepage-mobile.webp" alt="homepage-image-mobile">
-            </a>
-        </div>
-
+    
         <div class="landing-page">
             <img  src="images/homepage.webp" alt="homepage-image">
+        </div>
+
+        <div class="landing-page mobile">
+            <a href="projects">
+                <img class="mobile-homepage" src="images/the boys fraternity/1.webp" alt="homepage-image-mobile">
+            </a>
         </div>
 
     </main>
@@ -181,7 +182,7 @@
             scrollTrigger: {
                 trigger: ".index-main",
                 start: -50, // when the top of the trigger hits the top of the viewport
-                end: "+=300", // end after scrolling 100px beyond the start
+                end: "+=200", // end after scrolling 100px beyond the start
                 // markers: true
                 scrub: 1,
             },
@@ -204,19 +205,7 @@
             duration: 1,
             ease: "power1.inOut"
         });
-        gsap.from(".index-main", {
-            scrollTrigger: {
-                trigger: ".index-main",
-                start: -100, // when the top of the trigger hits the top of the viewport
-                end: "+=300", // end after scrolling 100px beyond the start
-                // markers: true
-                scrub: 1
-            },
-            stagger: { amount: 0.5 },
-            scale: 0.9,
-            duration: 1,
-            ease: "power1.inOut"
-        });
+     
 
         let tl = gsap.timeline({
             scrollTrigger: {

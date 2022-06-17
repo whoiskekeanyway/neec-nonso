@@ -259,8 +259,11 @@ html {
   font-size: 20px;
 }
 
+/* Landing Page */
+
 .index-main {
   height: 100vh !important;
+  padding-bottom: 5rem;
 }
 
 .landing-page {
@@ -278,7 +281,6 @@ html {
   max-width: 1200px;
   max-height: 800px;
   margin: 0 auto;
-  margin-bottom: 4rem;
 }
 
 main {
@@ -902,11 +904,12 @@ blockquote:after {
   transform-origin: left;
 }
 
+/* Augumented Reality */
+
 .video-main {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding-top: 5rem;
 }
 
 .container-video {
@@ -916,9 +919,10 @@ blockquote:after {
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .video-card {
@@ -1019,18 +1023,26 @@ iframe {
 
 /* Contact page */
 
+.contact-main-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
 .contact-container {
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .contact-container div {
-  margin: 10px;
   padding: 10px;
 }
 
@@ -1042,10 +1054,6 @@ iframe {
 .image-div {
   max-width: 600px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
 }
 
 .image-div img {
@@ -1063,6 +1071,8 @@ iframe {
   font-weight: 900;
   margin-bottom: 1rem;
 }
+
+/* Footer */
 
 .footer-content {
   font-weight: 300;
