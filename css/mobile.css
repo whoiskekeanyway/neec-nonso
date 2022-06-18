@@ -376,26 +376,21 @@
     display: none;
   }
 
-  .boy-fraternity-div {
-    font-family: "Roboto Mono", monospace;
+  .carousel-image.square {
     width: 100%;
-    margin: 0 auto;
-    position: relative;
-    height: auto;
   }
 
-  .boy-fraternity-title {
+  .project-items-words {
+    width: 100%;
+
+  }
+
+  .project-items-words-title {
     color: #800020;
     display: inline-block;
     position: relative;
     font-size: 18px;
     text-align: center;
-  }
-
-  .thelastburial-paragraph {
-    line-height: 2rem;
-    width: 100%;
-    padding: 1rem;
   }
 
 
@@ -407,18 +402,17 @@
     display: none !important;
   }
 
-  .mobile {
+  .project-items-words-mobile {
     display: block;
-    padding: 10px;
     margin-bottom: 2rem;
   }
 
-  .mobile li {
+  .project-items-words-mobile li {
     list-style: none;
   }
 
   .carousel-image {
-    margin-bottom: 2rem;
+    padding: 0.5rem;
   }
 }
 
@@ -474,6 +468,7 @@
 @media only screen and (max-width: 450px) {
   footer {
     float: left;
+    padding-bottom: 1.5rem;
   }
 }
 

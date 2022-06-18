@@ -66,7 +66,10 @@ prevButton.addEventListener("click", (e) => {
     scale: 0.8,
     duration: 1,
   });
-let tl = gsap.timeline({ scrollTrigger: { trigger: ".boy-fraternity-title" } });
+
+let tl = gsap.timeline({
+  scrollTrigger: { trigger: ".project-items-words" },
+});
 tl
   .from("main", { x: -200, opacity: 0.5, duration: 1.5 })
   .from(".App-logo", { y: -200, opacity: 0.5, duration: 1.5 })
@@ -81,19 +84,21 @@ tl
       scrub: 1,
     },
     stagger: { amount: 0.5 },
-    scale: 0.6,
-    duration: 1,
-    ease: "power1.inOut",
-  }),
-  gsap.from(".thelastburial-paragraph", {
-    scrollTrigger: {
-      trigger: ".boy-fraternity-div",
-      start: -50,
-      end: "+=300",
-      scrub: 1,
-    },
-    stagger: { amount: 0.5 },
-    scale: 0.95,
+    scale: 0.9,
     duration: 1,
     ease: "power1.inOut",
   });
+
+
+ gsap.from(".project-items-words-paragraph", {
+   scrollTrigger: {
+     trigger: ".project-items-words",
+     start: -50,
+     end: "+=300",
+     scrub: 1,
+   },
+   stagger: { amount: 0.5 },
+   scale: 0.95,
+   duration: 1,
+   ease: "power1.inOut",
+ });

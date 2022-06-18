@@ -283,6 +283,7 @@ html {
   margin: 0 auto;
 }
 
+
 main {
   display: flex;
   flex-direction: column;
@@ -368,6 +369,347 @@ main {
 
 .biography {
   font-size: 16px;
+}
+
+
+/* Projects Pages */
+
+.blockquote-div {
+  max-width: 800px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  padding: 50px;
+}
+
+blockquote {
+  position: relative;
+  padding: 50px;
+  text-align: center;
+  max-width: 620px;
+  height: 200px;
+}
+
+blockquote:before {
+  position: absolute;
+  font-size: 100px;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+  color: #800020;
+}
+
+blockquote:after {
+  position: absolute;
+  float: right;
+  font-size: 100px;
+  line-height: 1;
+  right: 0;
+  bottom: -0.3em;
+  content: "\201D";
+}
+
+.blockquote-footer {
+  padding: 1rem;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+
+.projectnames {
+  color: #800020;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.projectnames:before {
+  color: black;
+  content: "\2013";
+  margin-right: 0.5rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 350px;
+  height: auto;
+  margin: 10px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-description {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.project-title {
+  color: #800020;
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+}
+
+.project-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.project-title:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Projects Items Page */
+
+.project-items-main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 5rem 0;
+}
+
+
+.project-items-words {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-items-words-title {
+  color: #800020;
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+
+.project-items-words-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.project-items-words-title:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.project-items-words-paragraph {
+  padding: 1rem;
+}
+
+.main-exhibition {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: auto;
+  padding: 3rem;
+}
+
+.main-exhibition.square {
+  height: 80vh !important;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.carousel {
+  position: relative;
+  height: 700px;
+  width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+.carousel.potrait {
+  position: relative;
+  min-height: 700px !important;
+  width: 467px !important;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+
+#carousel-square {
+  position: relative;
+  height: 500px !important;
+  width: 500px !important;
+  margin: 0 auto;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+}
+
+
+.carousel-track-container {
+  background: steelblue;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel--button-left {
+  left: -40px;
+}
+
+.carousel--button-right {
+  right: -40px;
+}
+
+.carousel-button img {
+  width: 20px;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #f8cdd8;
+  margin: 0 12px;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-indicator.current-slide {
+  background: #800020;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.project-items-words-mobile {
+  display: none;
+}
+
+.projects-each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: bisque;
+}
+
+
+/* Augumented Reality */
+
+.video-main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 550px;
+  padding: 1rem;
+
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.projects-video {
+  max-width: 350px !important;
+  height: 230px;
 }
 
 /* Exhibition Page */
@@ -606,145 +948,6 @@ hr {
   width: 100%;
 }
 
-main {
-  height: auto;
-}
-
-.main-exhibition {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  width: 100%;
-  height: 100vh;
-  padding-top: 5rem;
-}
-
-.carousel {
-  position: relative;
-  height: 700px;
-  width: 1000px;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  display: block;
-}
-
-.carousel.potrait {
-  position: relative;
-  height: 700px !important;
-  width: 467px !important;
-  margin: 0 auto;
-  margin-bottom: 10rem;
-}
-
-.main-exhibition.square {
-  height: 100vh !important;
-}
-
-#carousel-square {
-  position: relative;
-  height: 600px !important;
-  width: 600px !important;
-  margin: 0 auto;
-}
-
-.carousel-image {
-  width: 100%;
-  height: 100%;
-}
-
-.landing-page img {
-  width: 100%;
-  max-width: 1200px;
-  max-height: 800px;
-  margin: 0 auto;
-  margin-bottom: 4rem;
-}
-
-.carousel-track-container {
-  background: steelblue;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel-track {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  height: 100%;
-  transition: transform 250ms ease-in;
-}
-
-.carousel-slide {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-
-.carousel--button-left {
-  left: -40px;
-}
-
-.carousel--button-right {
-  right: -40px;
-}
-
-.carousel-button img {
-  width: 20px;
-}
-
-.carousel-nav {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.carousel-indicator {
-  border: 0;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background: #f8cdd8;
-  margin: 0 12px;
-  cursor: pointer;
-  margin-top: 5rem;
-}
-
-.carousel-indicator.current-slide {
-  background: #800020;
-}
-
-.is-hidden {
-  display: none;
-}
-
-.mobile {
-  display: none;
-}
-
-.projects-each {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 
 .topline {
   margin-bottom: 3rem;
@@ -754,283 +957,13 @@ main {
   margin-top: 3rem;
 }
 
-.boy-fraternity-div {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding-top: 5rem;
-}
 
-.boy-fraternity-title {
-  color: #800020;
-  display: inline-block;
-  position: relative;
-  max-width: 100%;
-}
 
-.boy-fraternity-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.5px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-}
-
-.boy-fraternity-title:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.thelastburial-paragraph {
-  line-height: 2rem;
-}
-
-.linktocontinuation {
-  color: #800020;
-}
 
 .fixing-padding {
   padding: 5rem 0rem;
 }
 
-.blockquote-div {
-  max-width: 800px;
-  height: 350px;
-  margin: 0 auto;
-  position: relative;
-  padding: 50px;
-}
-
-blockquote {
-  position: relative;
-  padding: 50px;
-  text-align: center;
-  max-width: 620px;
-  height: 200px;
-}
-
-blockquote:before {
-  position: absolute;
-  font-size: 100px;
-  line-height: 1;
-  top: 0;
-  left: 0;
-  content: "\201C";
-  color: #800020;
-}
-
-blockquote:after {
-  position: absolute;
-  float: right;
-  font-size: 100px;
-  line-height: 1;
-  right: 0;
-  bottom: -0.3em;
-  content: "\201D";
-}
-
-.blockquote-footer {
-  padding: 1rem;
-  position: absolute;
-  bottom: 20px;
-  right: 0;
-}
-
-.projectnames {
-  color: #800020;
-  text-decoration: none;
-  font-weight: 900;
-}
-
-.projectnames:before {
-  color: black;
-  content: "\2013";
-  margin-right: 0.5rem;
-}
-
-.card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 350px;
-  height: auto;
-  margin: 10px;
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
-}
-
-.card-description {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
-
-.project-title {
-  color: #800020;
-  text-decoration: none;
-  position: relative;
-  width: fit-content;
-}
-
-.project-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.5px;
-  background: black;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-}
-
-.project-title:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-/* Augumented Reality */
-
-.video-main {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.container-video {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.video-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 550px;
-  padding: 1rem;
-
-}
-
-iframe {
-  display: block;
-  width: 100%;
-  height: 300px;
-}
-
-.projects-video {
-  max-width: 350px !important;
-  height: 230px;
-}
-
-/* Video Items */
-
-.video-main-container {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  height: 100vh;
-}
-
-.video-item {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2.5rem;
-  height: fit-content;
-}
-
-.video-item-title {
-  color: #800020;
-  display: inline-block;
-  position: relative;
-  max-width: 100%;
-}
-
-.video-item-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.5px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-}
-
-.video-item-title:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.video-item-paragraph {
-  line-height: 2rem;
-  padding: 5px;
-}
-
-.video-main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  max-width: 1440px;
-  margin: 0 auto;
-  gap: 5rem;
-}
-
-.video-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 /* Contact page */
@@ -1123,6 +1056,8 @@ iframe {
   text-decoration: none;
   color: steelblue;
 }
+
+/* Error Page */
 
 .error-container {
   display: flex;
