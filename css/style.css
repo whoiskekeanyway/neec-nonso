@@ -293,6 +293,8 @@ main {
   padding: 20px;
 }
 
+/* Bio Page */
+
 .about-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -367,6 +369,8 @@ main {
 .biography {
   font-size: 16px;
 }
+
+/* Exhibition Page */
 
 .exhibition-container {
   background-color: inherit;
@@ -446,16 +450,24 @@ hr {
   color: #800020 !important;
 }
 
-.items-container {
+.exhibition-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding-top: 2.5rem;
+  height: 100vh;
+  padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
-  height: auto;
 }
 
 .nigeria-trending-lagos-fringe {
