@@ -968,44 +968,45 @@ hr {
 
 /* Contact page */
 
-.contact-main-div {
+.contact-main {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 2rem;
 }
 
 .contact-container {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.contact-container div {
-  padding: 10px;
-}
 
-.contact-title {
-  font-weight: 900;
-  font-size: 16px;
-}
-
-.image-div {
+.contact-image-container {
   max-width: 600px;
-  margin: 0 auto;
 }
 
-.image-div img {
+.contact-image {
   max-width: 350px;
 }
 
-.namename {
+.contact-words-container {
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.contact-words-title,.contact-words-gallery-title {
+  font-weight: 900;
+  font-size: 16px;
+
+}
+
+.contact-words-artist-name,.contact-words-gallery-name {
   color: #800020;
   font-weight: 900;
 }

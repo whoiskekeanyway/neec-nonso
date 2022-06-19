@@ -111,31 +111,36 @@
     </div>
 
     <!-- End of Navbar-->
-    <main class="contact-main-div">
+    <main class="contact-main">
 
         <div class="contact-container">
 
-            <div class="image-div">
+            <div class="contact-image-container">
                 <img class="contact-image" src="images/contact-photo.webp" alt="">
             </div>
 
-            <div class="contact-main">
+            <div class="contact-words-container">
 
-                <div class="contact">
-                    <h1 class="contact-title">contact</h1>
+                <div class="contact-words">
+
+                    <h1 class="contact-words-title">contact</h1>
+
                     <p>
-                        <span class="namename">neec nonso</span><br>
-                        lagos,<br> nigeria<br> <br>
+                        <span class="contact-words-artist-name">neec nonso</span>
+                        <br>lagos,
+                        <br>nigeria<br><br>
                         <a class="email-contact" href="mailto:neecnonso@gmail.com">
                             neecnonso@gmail.com
-                        </a> <br> <br> <br>
+                        </a> 
 
                     </p>
-                    <p class="contact-title">gallery</p>
-                    <p class="email-contact">rele gallery</p>
+
+                    <p class="contact-words-gallery-title">gallery</p>
+                    <p class="contact-words-gallery-name">rele gallery</p>
                     <p>32 thompson avenue ikoyi, <br>lagos, <br> nigeria.</p>
                     <a rel='noreferrer noopener' target='_blank' class="email-contact"
-                        href="https://www.rele.co/">www.rele.co</a>
+                        href="https://www.rele.co/">www.rele.co
+                    </a>
 
 
                 </div>
@@ -232,7 +237,7 @@
 
             }
         });
-        tl.from(".image-div", { x: -200, opacity: 0, duration: 1.5 })
+        tl.from(".contact-image-container", { x: -200, opacity: 0, duration: 1.5 })
         tl.from(".contact-main", { x: 200, opacity: 0, duration: 1.5 })
 
         tl.from(".extra", { x: 200, opacity: 0, duration: 1.5 })
