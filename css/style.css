@@ -853,11 +853,13 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 1440px;
-  margin: 0 auto;
-  gap: 1rem;
-  padding: 2rem;
+}
+
+.child-images-photos {
+  width: 50%;
+  padding: 0.5rem;
 }
 
 .potrait-images-exhibition {
@@ -902,11 +904,7 @@ hr {
   padding: 10px;
 }
 
-.child-images img {
-  max-width: 600px;
-  margin: 0 auto;
-  width: 100%;
-}
+
 
 .child-images-last {
   display: flex;
