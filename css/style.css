@@ -862,6 +862,21 @@ hr {
   padding: 0.5rem;
 }
 
+.no-victor-no-vanquished-images {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  padding-bottom: 5rem;
+}
+
+.no-victor-no-vanquished {
+  width: 70%;
+  padding: 0.5rem;
+}
+
 .potrait-images-exhibition {
   display: flex;
   flex-direction: row;
@@ -998,13 +1013,15 @@ hr {
   padding: 1rem;
 }
 
-.contact-words-title,.contact-words-gallery-title {
+.contact-words-title,
+.contact-words-gallery-title {
   font-weight: 900;
   font-size: 16px;
 
 }
 
-.contact-words-artist-name,.contact-words-gallery-name {
+.contact-words-artist-name,
+.contact-words-gallery-name {
   color: #800020;
   font-weight: 900;
 }
