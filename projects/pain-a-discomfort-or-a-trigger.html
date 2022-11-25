@@ -9,7 +9,7 @@
 
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.png">
 
     <meta name="robots" content="index, follow">
     <meta name="description" content="neec nonso is a nigerian visual artist">
@@ -23,7 +23,7 @@
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
     <meta property="og:url" content="https://www.neecnonso.com/projects/pain-a-discomfort-or-a-trigger" />
-    <meta property="og:image" content="../images/ogimage.png" />
+    <meta property="og:image" content="../assets/icons/ogimage.png" />
 
 
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
@@ -32,7 +32,7 @@
     <meta name="twitter:site" content="@neecnonso" />
     <meta name="twitter:title" content="neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist based in lagos,nigeria">
-    <meta name="twitter:image" content="../images/ogimage.png" />
+    <meta name="twitter:image" content="../assets/icons/ogimage.png" />
     <!-- Style Links 
     
         <link rel="stylesheet" href="minify.css"> 
@@ -44,7 +44,8 @@
 
 <body>
     <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+    <img class="back-to-top-btn" onclick="topFunction()" id="myBtn" width="50px"
+        src="../assets/chevron-up-circle-outline.svg" alt="back to top icon">
 
     <!--- Start of Navbar -->
 
@@ -53,7 +54,7 @@
         <nav class='navbar'>
 
             <a class="logo-link" href='/'>
-                <img src="../images/neec nonso logo.png" class='App-logo' alt='logo' />
+                <img src="../assets/icons/neec-nonso-logo.png" class='logo-image' alt='logo' />
             </a>
 
             <ul class='nav-list'>
@@ -85,30 +86,26 @@
 
         </nav>
 
-        <ul class='extra'>
+        <div class='extra'>
 
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-instagram.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-facebook.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-linkedin.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
-                    <img class="extra-icon-image" src="../images/logo-twitter.svg" alt='extra-icon-image' />
-                </a>
-            </li>
+            <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-instagram.svg" alt='extra-icon-image' />
+            </a>
 
-        </ul>
+            <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-facebook.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-linkedin.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
+                <img class="extra-icon-image" src="../assets/icons/logo-twitter.svg" alt='extra-icon-image' />
+            </a>
+
+
+        </div>
 
     </div>
 
@@ -118,12 +115,52 @@
 
     <main class="project-items-main">
 
+        <div class="project-items-words">
+
+            <h1 class="boy-fraternity-title">pain: a discomfort or a trigger</h1>
+
+            <p class="project-items-words-paragraph">
+                what is pain, how relative are our responses to pain, can the notion that one man’s meat is another’s
+                poison
+                a mitigator
+                of this axiom?
+
+                these probes came as a result of a discomfort in my eyes; conjunctivitis (apollo), during the period of
+                my
+                residency at
+                the alexander academy of arts, design and alternative methods, badagry. this was spontaneously ascribed
+                to
+                me as the
+                project theme for the residency, to apply the experience as a point of departure.
+
+
+
+            </p>
+
+            <p class="project-items-words-paragraph">
+                as a postulation, we begin to probe into the notion of pain and how relative it could be. the saying:
+                one
+                man's meat is
+                another's poison aptly describes the elasticity and the acceptance of pain either as a growth factor or
+                as
+                an inhibitor.
+
+                using a performative approach as my narrative technique, pulled me through instantaneous reflexes, using
+                my
+                body as a
+                burden of pain. the question remains; is my pain a punishment or a spur to my advancement? how do we as
+                people relate,
+                interpret, and translate pain(s).
+            </p>
+
+        </div>
+
         <div class="main-exhibition">
 
             <div class="carousel potrait">
 
                 <button class="carousel-button carousel--button-left is-hidden">
-                    <img src="../images/arrow-back-circle.svg" alt="arrow-back-circle">
+                    <img src="../assets/icons/arrow-back-circle.svg" alt="arrow-back-circle">
                 </button>
 
                 <div class="carousel-track-container">
@@ -131,25 +168,35 @@
                     <ul class="carousel-track">
 
                         <li class="carousel-slide current-slide"><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/1.webp" alt="pain-a-discomfort-or-a-trigger-1"></li>
+                                src="../assets/projects/pain a discomfort/1.webp"
+                                alt="pain-a-discomfort-or-a-trigger-1"></li>
                         <li class="carousel-slide "><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/2.webp" alt="pain-a-discomfort-or-a-trigger-2"></li>
+                                src="../assets/projects/pain a discomfort/2.webp"
+                                alt="pain-a-discomfort-or-a-trigger-2"></li>
                         <li class="carousel-slide "><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/3.webp" alt="pain-a-discomfort-or-a-trigger-3"></li>
+                                src="../assets/projects/pain a discomfort/3.webp"
+                                alt="pain-a-discomfort-or-a-trigger-3"></li>
                         <li class="carousel-slide "><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/4.webp" alt="pain-a-discomfort-or-a-trigger-4"></li>
+                                src="../assets/projects/pain a discomfort/4.webp"
+                                alt="pain-a-discomfort-or-a-trigger-4"></li>
                         <li class="carousel-slide "><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/5.webp" alt="pain-a-discomfort-or-a-trigger-5"></li>
+                                src="../assets/projects/pain a discomfort/5.webp"
+                                alt="pain-a-discomfort-or-a-trigger-5"></li>
                         <li class="carousel-slide "><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/6.webp" alt="pain-a-discomfort-or-a-trigger-6"></li>
+                                src="../assets/projects/pain a discomfort/6.webp"
+                                alt="pain-a-discomfort-or-a-trigger-6"></li>
                         <li class="carousel-slide "><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/7.webp" alt="pain-a-discomfort-or-a-trigger-7"></li>
+                                src="../assets/projects/pain a discomfort/7.webp"
+                                alt="pain-a-discomfort-or-a-trigger-7"></li>
                         <li class="carousel-slide "><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/8.webp" alt="pain-a-discomfort-or-a-trigger-8"></li>
+                                src="../assets/projects/pain a discomfort/8.webp"
+                                alt="pain-a-discomfort-or-a-trigger-8"></li>
                         <li class="carousel-slide "><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/9.webp" alt="pain-a-discomfort-or-a-trigger-9"></li>
+                                src="../assets/projects/pain a discomfort/9.webp"
+                                alt="pain-a-discomfort-or-a-trigger-9"></li>
                         <li class="carousel-slide "><img class="carousel-image potrait"
-                                src="../images/pain a discomfort/10.webp" alt="pain-a-discomfort-or-a-trigger-10"></li>
+                                src="../assets/projects/pain a discomfort/10.webp"
+                                alt="pain-a-discomfort-or-a-trigger-10"></li>
 
 
 
@@ -158,7 +205,7 @@
                 </div>
 
                 <button class="carousel-button carousel--button-right">
-                    <img src="../images/arrow-forward-circle.svg" alt="arrow-forward-circle">
+                    <img src="../assets/icons/arrow-forward-circle.svg" alt="arrow-forward-circle">
                 </button>
 
             </div>
@@ -174,73 +221,35 @@
                 <button class="carousel-indicator"></button>
                 <button class="carousel-indicator"></button>
                 <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
+
 
             </div>
 
         </div>
 
-        <div class="project-items-words">
-        
-            <h1 class="boy-fraternity-title">pain: a discomfort or a trigger.</h1>
-        
-            <p class="project-items-words-paragraph">
-                what is pain, how relative are our responses to pain, can the notion that one man’s meat is another’s
-                poison
-                a mitigator
-                of this axiom?
-        
-                these probes came as a result of a discomfort in my eyes; conjunctivitis (apollo), during the period of
-                my
-                residency at
-                the alexander academy of arts, design and alternative methods, badagry. this was spontaneously ascribed
-                to
-                me as the
-                project theme for the residency, to apply the experience as a point of departure.
-        
-        
-        
-            </p>
-        
-            <p class="project-items-words-paragraph">
-                as a postulation, we begin to probe into the notion of pain and how relative it could be. the saying:
-                one
-                man's meat is
-                another's poison aptly describes the elasticity and the acceptance of pain either as a growth factor or
-                as
-                an inhibitor.
-        
-                using a performative approach as my narrative technique, pulled me through instantaneous reflexes, using
-                my
-                body as a
-                burden of pain. the question remains; is my pain a punishment or a spur to my advancement? how do we as
-                people relate,
-                interpret, and translate pain(s).
-            </p>
-        
-        </div>
 
-        <div class="project-items-words-mobile">
 
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/1.webp"
+        <div class="project-items-mobile-images">
+
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/1.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/2.webp"
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/2.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/3.webp"
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/3.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/4.webp"
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/4.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/5.webp"
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/5.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/6.webp"
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/6.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/7.webp"
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/7.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/8.webp"
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/8.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/9.webp"
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/9.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
-            <img class="carousel-image" src="../images/pain a discomfort/mobile/10.webp"
+            <img class="mobile-images" src="../assets/projects/pain a discomfort/mobile/10.webp"
                 alt="pain-a-discomfort-or-a-trigger-mobile">
         </div>
 
@@ -251,15 +260,9 @@
 
     <footer class="footer-container">
 
-        <div class="footer-content">
-
-            <div class="copyright">
-                <p class="footer-words"> &copy; copyright 2022 neec nonso, <br>
-                    all rights reserved.
-                </p>
-            </div>
-
-        </div>
+        <p class="copyright"> &copy; 2022 |<span class="copyright-name"><a href="/">neec nonso</a></span> | all rights
+            reserved.
+        </p>
 
     </footer>
 

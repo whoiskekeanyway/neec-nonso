@@ -1,27 +1,23 @@
 /* Navbar */
+
+
 @media screen and (max-width: 450px) {
-  .App-logo {
-    cursor: pointer;
-    max-width: 100px;
+  .logo-image {
     margin: 0 auto;
-    margin-left: 2rem;
-    margin-top: 2.5rem;
     display: inline;
+    padding: 0.25rem;
+    padding-left: 1.2rem;
   }
 
   .logo-link {
     display: inline-block;
     width: 30%;
+    margin-top: 2rem !important;
   }
 
   .navbar {
     flex-direction: column;
     position: relative;
-    padding: 5px;
-  }
-
-  .menu div {
-    margin-bottom: 5px;
   }
 
 
@@ -30,392 +26,114 @@
     position: absolute;
     right: 15px;
     top: 35px;
-  }
-
-  .list-item {
-    display: block;
-    padding: 20px 10px;
-  }
-
-  .nav-list {
-    position: relative;
-    list-style-type: none;
-    margin: 0 auto;
-    text-align: center;
-    padding: 1%;
-    margin-top: 8%;
-    display: none;
-  }
-
-  .list-item.contact a {
-    background-color: rgb(231, 231, 17);
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-  }
-
-  .active {
-    display: block;
-  }
-
-  .extra {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1020px) {
-  .App-logo {
-    cursor: pointer;
-    max-width: 100px;
-    margin: 0 auto;
-    margin-left: 2rem;
-    margin-top: 2.5rem;
-    display: inline;
-  }
-
-  .logo-link {
-    display: inline-block;
-    width: 30%;
-    align-items: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    position: relative;
-    padding: 5px;
-  }
-
-  .menu div {
-    margin-bottom: 5px;
-  }
-
-  .menu {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 35px;
-  }
-
-  .list-item {
-    display: block;
-    padding: 20px 10px;
-  }
-
-  .nav-list {
-    position: relative;
-    list-style-type: none;
-    margin: 0 auto;
-    text-align: center;
-    padding: 1%;
-    margin-top: 8%;
-    display: none;
-  }
-
-  .list-item.contact a {
-    background-color: rgb(231, 231, 17);
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-  }
-
-  .active {
-    display: block;
-  }
-
-  .extra {
-    display: none;
-  }
-}
-
-/* Landing Page */
-@media only screen and (max-width: 450px) {
-
-  .index-main {
-    height: 100vh !important;
-    width: 100% !important;
-    padding: 0;
-  }
-
-  .landing-page {
-    display: none;
-  }
-
-  .landing-page.mobile {
-    display: block;
-    padding: 0;
-
-  }
-
-  .mobile-homepage {
-    width: 100%;
-    width: 100%;
-    padding: 0.5rem;
-    max-height: 450px;
-  }
-
-
-
-  /* Main */
-
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-}
-
-/* About Me Page */
-
-@media screen and (max-width: 450px) {
-  .words-div {
-    padding: 0.5rem;
-  }
-
-  .developer {
-    width: 350px;
-    margin-bottom: 3rem;
-    padding: auto;
-  }
-
-  .about-page {
-    flex-direction: column;
-    max-width: 100%;
     padding: 1rem;
-    height: auto;
+    pointer-events: auto;
+    cursor: pointer;
   }
 
-  .biography-section {
-    font-family: "Roboto Mono", monospace;
-    font-size: 16px;
-    font-weight: 500;
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .list-item {
+    display: block;
+    padding: 0.25rem;
+    text-align: center;
+    margin-right: 5rem;
   }
 
-  .bio-image {
-    max-width: 100%;
-    margin: 0 auto;
-    height: auto;
-    padding: 5px;
+  .nav-list {
+    display: none;
+  }
+
+  .active {
     display: block;
   }
 
-  .bio-image-laptop {
-    max-width: 400px;
-    margin: 0 auto;
-    height: auto;
-    padding: 5px;
+  .extra {
     display: none;
   }
 }
 
-/* Project Page */
+@media screen and (max-width: 1025px) {
 
-@media only screen and (max-width: 450px) {
-
-  .topline {
-    margin-top: 2rem;
+  .logo-link {
+    align-items: center;
   }
 
-  .blockquote-div {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
+  .navbar {
+    flex-direction: column;
     position: relative;
-    padding: 0;
-    text-align: center;
-
   }
 
-  blockquote {
-    font-family: "Roboto Mono", monospace;
-    font-size: 16px;
-    position: relative;
-    width: 322px;
-    margin: 0 auto;
-    height: 364px;
-  }
-
-  blockquote:before {
+  .menu {
+    display: block;
     position: absolute;
-    font-size: 6em;
-    line-height: 1;
-    top: 0;
-    left: 0;
-    content: "\201C";
-    color: #800020;
+    right: 15px;
+    top: 35px;
+    padding: 1rem;
+    pointer-events: auto;
+    cursor: pointer;
   }
 
-  blockquote:after {
-    position: absolute;
-    float: right;
-    font-size: 6em;
-    line-height: 1;
-    right: 0;
-    bottom: -0.5em;
-    content: "\201D";
-    color: #800020;
+  .nav-list {
+    display: none;
+        text-align: center;
   }
 
-  .blockquote-footer {
-    padding: 1em;
-    color: #800020;
-    font-size: 1rem;
-    font-weight: 900;
-    position: absolute;
-    bottom: -25px;
-    right: 0;
-    text-align: center;
+  .list-item {
+    display: block;
+    padding: 20px 10px;
   }
 
 
-
-  .blockquote-link {
-    text-decoration: none;
-    color: black;
+  .active {
+    display: block;
   }
 
-  .jumbotron-button {
-    color: #800020;
-    text-decoration: none;
+  .extra {
+    display: none;
   }
-
-  blockquote cite:before {
-    content: "\2013";
-  }
-
-
 }
 
 /* Exhibition Page */
 
 @media only screen and (max-width: 450px) {
-  .exhibition-container {
-    height: auto;
-  }
 
   .exhibitions-info {
     display: flex;
     flex-direction: column;
+    padding-left: 2rem;
+  }
+
+  .exhibitions-info div {
     width: 100%;
-    margin: 0 auto;
-    height: auto;
-    padding: 0.1rem;
-    padding-bottom: 5rem;
-
   }
 
-  .exhibitions {
-    padding-left: 0;
-    max-width: 100%;
+  .exhibition-images {
+    width: 100%;
   }
 
-  .exhibition-venue {
-    margin: 0;
-    padding: 0;
-  }
-
-  .exhibition-location.link {
-    padding-left: 2.7rem;
-  }
-
-
-  .exhibitions-info section div {
-    padding-left: 0;
-  }
-
-  .exhibition-year {
-    font-size: 22px;
-    margin-bottom: 2rem !important;
-    color: black;
-    text-decoration: underline;
-    padding-left: 2.7rem;
-  }
 }
 
 /* Project Individual Mobile Page */
 
-@media only screen and (max-width: 450px) {
-
-  .exhibition-main-container {
-    height: auto;
-  }
-
-  .projects-each {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    width: 100%;
-    height: auto;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .main-exhibition.square {
-    display: none;
-  }
-
+@media only screen and (max-width: 600px) {
   .carousel-image.square {
     width: 100%;
-  }
-
-  .project-items-words {
-    width: 100%;
-
-  }
-
-  .project-items-words-title {
-    color: #800020;
-    display: inline-block;
-    position: relative;
-    font-size: 18px;
-    text-align: center;
-  }
-
-
-  .boy-fraternity-title.boys::after {
-    width: 60% !important;
   }
 
   .main-exhibition {
     display: none !important;
   }
 
-  .project-items-words-mobile {
+
+  .project-items-mobile-images {
     display: block;
-    margin-bottom: 2rem;
   }
 
-  .project-items-words-mobile li {
-    list-style: none;
-  }
-
-  .carousel-image {
-    padding: 0.5rem;
+  .project-items-mobile-images img {
+    margin-bottom: 1rem;
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1025px) {
   .carousel {
     position: relative;
     height: 400px;
@@ -423,23 +141,6 @@
     margin: 0 auto;
     margin-bottom: 2rem;
     display: block;
-  }
-
-  .thelastburial-paragraph {
-    line-height: 2rem;
-    width: 100%;
-    padding: 2rem;
-  }
-
-  .main-exhibition {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-    height: 80vh;
-    padding-top: 0;
   }
 }
 
@@ -473,20 +174,10 @@
 
 }
 
-/* Footer */
-
-@media only screen and (max-width: 450px) {
-  footer {
-    float: left;
-    padding-bottom: 1.5rem;
-  }
-}
-
 /* Videos */
 
 @media only screen and (max-width: 450px) {
   .video-main {
-    gap: 2.5rem;
     height: auto;
   }
 
@@ -511,7 +202,7 @@
   }
 
   .projects-video {
-    max-width: 100% !important;
+    width: 100% !important;
     height: 200px;
   }
 }
@@ -519,19 +210,9 @@
 
 /* Exhibition Pages */
 @media only screen and (max-width: 450px) {
-  .exhibition-main {
-    height: 100vh;
-    width: 100%;
-    padding: 0.5rem;
+.error-container {
+    height: auto;
   }
-
-
-  .items-container {
-    width: 100%;
-    padding: 0.5rem;
-  }
-
-
 
   .slider-image {
     max-width: 500px;
@@ -554,24 +235,3 @@
     width: 100%;
   }
 }
-
-@media screen and (min-width: 100px) and (max-width: 700px) {
-
-  .child-images-photos {
-    width: 100%;
-  }
-
-    .no-victor-no-vanquished {
-      width: 100%;
-      padding: 0.5rem;
-    }
-
-}
-
-@media screen and (max-width: 540px) {
-  .exhibitions-info {
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 1020px) {}

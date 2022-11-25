@@ -8,7 +8,7 @@
     <title> taste mystique | neec nonso | visual artist</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.png">
 
     <meta name="robots" content="index, follow">
     <meta name="description"
@@ -23,7 +23,7 @@
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
     <meta property="og:url" content="https://www.neecnonso.com/exhibitions/taste-mystique" />
-    <meta property="og:image" content="../images/ogimage.png" />
+    <meta property="og:image" content="../assets/icons/ogimage.png" />
 
 
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
@@ -46,7 +46,8 @@
 
 <body>
     <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+    <img class="back-to-top-btn" onclick="topFunction()" id="myBtn" width="50px"
+        src="../assets/chevron-up-circle-outline.svg" alt="back to top icon">
 
     <!--- Start of Navbar -->
 
@@ -55,7 +56,7 @@
         <nav class='navbar'>
 
             <a class="logo-link" href='/'>
-                <img src="../images/neec nonso logo.png" class='App-logo' alt='logo' />
+                <img src="../assets/icons/neec-nonso-logo.png" class='logo-image' alt='logo' />
             </a>
 
             <ul class='nav-list'>
@@ -86,95 +87,110 @@
 
         </nav>
 
-        <ul class='extra'>
+        <div class='extra'>
 
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-instagram.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-facebook.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-linkedin.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
-                    <img class="extra-icon-image" src="../images/logo-twitter.svg" alt='extra-icon-image' />
-                </a>
-            </li>
+            <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-instagram.svg" alt='extra-icon-image' />
+            </a>
 
-        </ul>
+            <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-facebook.svg" alt='extra-icon-image' />
+            </a>
 
+            <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-linkedin.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
+                <img class="extra-icon-image" src="../assets/icons/logo-twitter.svg" alt='extra-icon-image' />
+            </a>
+
+
+        </div>
 
     </div>
 
     <!-- End of Navbar-->
+
     <div class="items-container">
 
-        <section class="exhibition-intro">
+        <section class="jumbotron">
 
             <p class="exhibition-title"><a href="./taste-mystique"> taste:mystique <br> smithsonian
                 </a>
             </p>
             <p class="exhibition-venue">lagos photo festival,</p>
             <p class="exhibition-location">lagos,nigeria</p>
+
         </section>
 
-        <section>
-            <img class="slider-image" name="slide" />
+        <section class="exhibition-images">
+
+            <picture class="header-image">
+                <img class="slider-image" name="slide" />
+            </picture>
+
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/taste-mystique/mobile/6.webp">
+                <img src="../assets/exhibitions/taste-mystique/6.webp" alt="taste mystique exhbition by neec nonso">
+            </picture>
+
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/taste-mystique/mobile/7.webp">
+                <img src="../assets/exhibitions/taste-mystique/7.webp" alt="taste mystique exhbition by neec nonso">
+            </picture>
+
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/taste-mystique/mobile/8.webp">
+                <img src="../assets/exhibitions/taste-mystique/8.webp" alt="taste mystique exhbition by neec nonso">
+            </picture>
+
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/taste-mystique/mobile/9.webp">
+                <img src="../assets/exhibitions/taste-mystique/9.webp" alt="taste mystique exhbition by neec nonso">
+            </picture>
+
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/taste-mystique/mobile/10.webp">
+                <img src="../assets/exhibitions/taste-mystique/10.webp" alt="taste mystique exhbition by neec nonso">
+            </picture>
+
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/taste-mystique/mobile/11.webp">
+                <img src="../assets/exhibitions/taste-mystique/11.webp" alt="taste mystique exhbition by neec nonso">
+            </picture>
+
+
+
+
         </section>
-
-        <!--
-
-        <section class="taste-mystique-folder">
-            <img src="../exhibition/taste mystique/1.webp" class="slider-image" name="slides" />
-            <img src="../exhibition/taste mystique/2.webp" class="slider-image" alt="">
-        </section>
-
-        -->
 
         <section class="potrait-images-exhibition">
-            <img src="../exhibition/taste mystique/3.webp" alt="taste-mystique">
-            <img src="../exhibition/taste mystique/4.webp" alt="taste-mystique">
-            <img src="../exhibition/taste mystique/5.webp" alt="taste-mystique">
-        </section>
 
-        <section class="child-images">
-
-            <img src="../exhibition/taste mystique/6.webp" alt="taste-mystique">
-            <img src="../exhibition/taste mystique/7.webp" alt="taste-mystique">
-            <img src="../exhibition/taste mystique/8.webp" alt="taste-mystique">
-            <img src="../exhibition/taste mystique/9.webp" alt="taste-mystique">
-            <img src="../exhibition/taste mystique/10.webp" alt="taste-mystique">
-            <img src="../exhibition/taste mystique/11.webp" alt="taste-mystique">
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/taste-mystique/mobile/11.webp">
+                <img src="../assets/exhibitions/taste-mystique/3.webp" alt="taste mystique exhbition by neec nonso">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/taste-mystique/mobile/11.webp">
+                <img src="../assets/exhibitions/taste-mystique/4.webp" alt="taste mystique exhbition by neec nonso">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/taste-mystique/mobile/11.webp">
+                <img src="../assets/exhibitions/taste-mystique/5.webp" alt="taste mystique exhbition by neec nonso">
+            </picture>
 
         </section>
 
     </div>
 
-
     <!-- Start of Footer -->
 
     <footer class="footer-container">
 
-        <div class="footer-content">
-
-            <div class="copyright">
-                <p class="footer-words"> &copy; copyright 2022 neec nonso, <br>
-                    all rights reserved.
-                </p>
-            </div>
-
-        </div>
-
+        <p class="copyright"> &copy; 2022 |<span class="copyright-name"><a href="/">neec nonso</a></span> | all rights
+            reserved.</p>
     </footer>
-
 
     <!-- End of Footer -->
 
@@ -186,8 +202,8 @@
         var time = 3000; // Time Between Switch
 
         var images2 = [
-            "../exhibition/taste mystique/1.webp",
-            "../exhibition/taste mystique/2.webp",
+            "../assets/exhibitions/taste-mystique/1.webp",
+            "../assets/exhibitions/taste-mystique/2.webp",
         ];
 
         function checkLength(array) {
@@ -210,8 +226,8 @@
 
 
     <script src="../script.js" async defer></script>
-    <script src="../scripts/exhibitions.js"></script>
- 
+    <!--   <script src="../scripts/exhibitions.js"></script>-->
+
 
 
 </body>

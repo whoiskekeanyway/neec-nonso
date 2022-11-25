@@ -8,7 +8,7 @@
     <title> no victor,no vanquished | neec nonso | visual artist</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.png">
 
     <meta name="robots" content="index, follow">
     <meta name="description"
@@ -22,8 +22,9 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
-    <meta property="og:url" content="https://www.neecnonso.com/exhibitions/no-victor-no-vanquished:theworldatthecrossroads" />
-    <meta property="og:image" content="../images/ogimage.png" />
+    <meta property="og:url"
+        content="https://www.neecnonso.com/exhibitions/no-victor-no-vanquished:theworldatthecrossroads" />
+    <meta property="og:image" content="../assets/icons/ogimage.png" />
 
 
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
@@ -46,7 +47,8 @@
 
 <body>
     <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+    <img class="back-to-top-btn" onclick="topFunction()" id="myBtn" width="50px"
+        src="../assets/chevron-up-circle-outline.svg" alt="back to top icon">
 
     <!--- Start of Naobar -->
 
@@ -55,7 +57,7 @@
         <nav class='navbar'>
 
             <a class="logo-link" href='/'>
-                <img src="../images/neec nonso logo.png" class='App-logo' alt='logo' />
+                <img src="../assets/icons/neec-nonso-logo.png" class='logo-image' alt='logo' />
             </a>
 
             <ul class='nav-list'>
@@ -86,30 +88,26 @@
 
         </nav>
 
-        <ul class='extra'>
+        <div class='extra'>
 
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-instagram.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-facebook.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-linkedin.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
-                    <img class="extra-icon-image" src="../images/logo-twitter.svg" alt='extra-icon-image' />
-                </a>
-            </li>
+            <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-instagram.svg" alt='extra-icon-image' />
+            </a>
 
-        </ul>
+            <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-facebook.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-linkedin.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
+                <img class="extra-icon-image" src="../assets/icons/logo-twitter.svg" alt='extra-icon-image' />
+            </a>
+
+
+        </div>
 
 
     </div>
@@ -119,7 +117,7 @@
 
     <div class="items-container">
 
-        <section class="exhibition-intro">
+        <section class="jumbotron">
 
             <p class="exhibition-title"><a href="./no-victor-no-vanquished:theworldatthecrossroads">
                     no
@@ -129,38 +127,37 @@
             <p class="exhibition-location">lagos,nigeria</p>
         </section>
 
-        <section>
+        <section class="exhibition-images">
+
             <img class="slider-image" name="slide" />
-        </section>
+
+            <picture class="">
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/no-victor/mobile/3.webp">
+                <img class="" src="../assets/exhibitions/no-victor/3.webp" alt="no-victor-no-vanquished">
+            </picture>
+            <picture class="">
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/no-victor/mobile/3.webp">
+                <img class="" src="../assets/exhibitions/no-victor/4.webp" alt="no-victor-no-vanquished">
+            </picture>
+            <picture class="">
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/no-victor/mobile/3.webp">
+                <img class="" src="../assets/exhibitions/no-victor/5.webp" alt="no-victor-no-vanquished">
+
+            </picture>
 
 
-        <section class="no-victor-no-vanquished-images">
 
-            <img class="no-victor-no-vanquished" src="../exhibition/no victor/3.webp" alt="no-victor-no-vanquished">
-            <img class="no-victor-no-vanquished" src="../exhibition/no victor/4.webp" alt="no-victor-no-vanquished">
-            <img class="no-victor-no-vanquished" src="../exhibition/no victor/5.webp" alt="no-victor-no-vanquished">
 
         </section>
 
     </div>
 
-
-
-
     <!-- Start of Footer -->
 
     <footer class="footer-container">
 
-        <div class="footer-content">
-
-            <div class="copyright">
-                <p class="footer-words"> &copy; copyright 2022 neec nonso, <br>
-                    all rights reserved.
-                </p>
-            </div>
-
-        </div>
-
+        <p class="copyright"> &copy; 2022 |<span class="copyright-name"><a href="/">neec nonso</a></span> | all rights
+            reserved.</p>
     </footer>
 
 
@@ -173,21 +170,21 @@
         var i = 0; // Start Point
         var time = 3000; // Time Between Switch
 
-           function checkLength(array) {
-                // Check If Index Is Under Max
-                if (i < array.length - 1) {
-                    // Add 1 to Index
-                    i++;
-                } else {
-                    // Reset Back To O
-                    i = 0;
-                }
+        function checkLength(array) {
+            // Check If Index Is Under Max
+            if (i < array.length - 1) {
+                // Add 1 to Index
+                i++;
+            } else {
+                // Reset Back To O
+                i = 0;
             }
+        }
 
         var images4 = [
-            "../exhibition/no victor/1.webp",
-            "../exhibition/no victor/6.webp",
-            "../exhibition/no victor/7.webp",
+            "../assets/exhibitions/no-victor/1.webp",
+            "../assets/exhibitions/no-victor/6.webp",
+            "../assets/exhibitions/no-victor/7.webp",
         ];
 
         function changeImg4() {
@@ -205,8 +202,8 @@
     </script>
 
     <script src="../script.js" async defer></script>
-    <script src="../scripts/exhibitions.js"></script>
-   
+    <!--   <script src="../scripts/exhibitions.js"></script>-->
+
 
 
 </body>
