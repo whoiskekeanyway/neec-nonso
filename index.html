@@ -9,7 +9,7 @@
     <title> homepage | neec nonso | visual artist</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/icons/favicon.png">
 
     <meta name="robots" content="index, follow">
     <meta name="description"
@@ -24,7 +24,7 @@
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
     <meta property="og:url" content="http://neecnonso.com" />
-    <meta property="og:image" content="images/ogimage.png" />
+    <meta property="og:image" content="assets/icons/ogimage.png" />
 
 
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
@@ -33,7 +33,7 @@
     <meta name="twitter:site" content="@neecnonso" />
     <meta name="twitter:title" content="neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist based in lagos,nigeria">
-    <meta name="twitter:image" content="images/ogimage.png" />
+    <meta name="twitter:image" content="assets/icons/ogimage.png" />
 
 
     <!-- Style Links 
@@ -57,173 +57,62 @@
 
 </head>
 
-<body>
+<body onload="randombg()">
 
-    <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+    <div id="random" class="main">
 
-    <!--- Start of Navbar -->
+        <img class="back-to-top-btn" onclick="topFunction()" id="myBtn" width="50px"
+            src="./assets/chevron-up-circle-outline.svg" alt="back to top icon">
 
-    <div class="header">
 
-        <nav class='navbar'>
-            <a class="logo-link" href='/'>
-                <img src="images/neec nonso logo.png" class='App-logo' alt='logo' />
-            </a>
-
-            <ul class='nav-list'>
-
-                <li class='list-item'>
-                    <a href='bio'> bio</a>
-                </li>
-
-                <li class='list-item'>
-                    <a href='projects'>projects </a>
-                </li>
-                <li class='list-item'>
-                    <a href='augmented-reality'> augmented-reality </a>
-                </li>
-                <li class='list-item'>
-                    <a href='exhibition'>exhibitions </a>
-                </li>
-                <li class='list-item'>
-                    <a href='contact'>contact </a>
-                </li>
-
-            </ul>
-            <div class="menu">
-                <div class="menu-line1"></div>
-                <div class="menu-line2"></div>
-                <div class="menu-line3"></div>
-            </div>
-
-        </nav>
-
-        <ul class='extra'>
-
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
-                    <img class="extra-icon-image" src="images/logo-instagram.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
-                    <img class="extra-icon-image" src="images/logo-facebook.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
-                    <img class="extra-icon-image" src="images/logo-linkedin.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
-                    <img class="extra-icon-image" src="images/logo-twitter.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-
-        </ul>
+        <a class="home-btn" href="./bio">learn more</a>
 
     </div>
-
-    <!-- End of Navbar-->
-
-    <!--- Start of Main Content -->
-
-    <main class="index-main">
-    
-        <div class="landing-page">
-            <img  src="images/homepage.webp" alt="homepage-image">
-        </div>
-
-        <div class="landing-page mobile">
-            <a href="projects">
-                <img class="mobile-homepage" src="images/the boys fraternity/1.webp" alt="homepage-image-mobile">
-            </a>
-        </div>
-
-    </main>
-
-    <!--- End of Main Content -->
 
     <!-- Start of Footer -->
 
     <footer class="footer-container">
 
-        <div class="footer-content">
-
-
-            <div class="copyright">
-                <p class="footer-words"> &copy; copyright 2022 neec nonso, <br>
-                    all rights reserved.
-                </p>
-            </div>
-
-            <!-- 
-
-            <div class="designer">
-                <p class=""> Designed by <a rel='noreferrer noopener' target="_blank"
-                        href="https://www.scriptsandtags.com/">ScriptsandTags</a></p>
-            </div>
-
--->
-
-        </div>
-
+        <p class="copyright"> &copy; 2022 |<span class="copyright-name"><a href="/">neec nonso</a></span> | all rights
+            reserved.</p>
     </footer>
 
     <!-- End of Footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script>
-
-        gsap.from(".extra", {
-            scrollTrigger: {
-                trigger: ".index-main",
-                start: -50, // when the top of the trigger hits the top of the viewport
-                end: "+=200", // end after scrolling 100px beyond the start
-                // markers: true
-                scrub: 1,
-            },
-            stagger: { amount: 0.5 },
-            scale: 0.8,
-            duration: 1,
-            ease: "power1.inOut",
-        });
-
-        gsap.from(".footer-container", {
-            scrollTrigger: {
-                trigger: ".index-main",
-                start: -50, // when the top of the trigger hits the top of the viewport
-                end: "+=300", // end after scrolling 100px beyond the start
-                // markers: true
-                scrub: 1
-            },
-            stagger: { amount: 0.5 },
-            scale: 0.5,
-            duration: 1,
-            ease: "power1.inOut"
-        });
-     
-
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".index-main",
-                //   markers: true,
-
-            }
-        });
-
-        tl.from(".landing-page img", { x: -200, opacity: 0.5, duration: 1.5 })
-            .from(".App-logo", { y: -200, opacity: 0.5, duration: 1.5 })
-            .from(".list-item", { y: -200, opacity: 0.5, duration: 1.5 })
-            .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
-            .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
-
-    </script>
 
     <script src="script.js" async defer></script>
+    <script>
+
+
+
+
+        function randombg() {
+            var random = Math.floor(Math.random() * 15) + 0;
+            var backgroundImages = [
+                "url('./assets/homepage/1.jpg')",
+                "url('./assets/homepage/2.jpg')",
+                "url('./assets/homepage/3.jpg')",
+                "url('./assets/homepage/4.jpg')",
+                "url('./assets/homepage/5.jpg')",
+                "url('./assets/homepage/6.jpg')",
+                "url('./assets/homepage/7.jpg')",
+                "url('./assets/homepage/8.jpg')",
+                "url('./assets/homepage/9.jpg')",
+                "url('./assets/homepage/10.jpg')",
+                "url('./assets/homepage/11.jpg')",
+                "url('./assets/homepage/12.jpg')",
+                "url('./assets/homepage/13.jpg')",
+                "url('./assets/homepage/14.jpg')",
+                "url('./assets/homepage/15.jpg')",
+            ];
+            document.getElementById("random").style.backgroundImage = backgroundImages[random];
+        }
+
+
+        setInterval(randombg, 5000)
+    </script>
     <!-- <script src="countdown.js" async defer></script> -->
 </body>
 

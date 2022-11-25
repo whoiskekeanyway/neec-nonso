@@ -8,10 +8,11 @@
     <title> afro futures | neec nonso | visual artist</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.png">
 
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Nigerian visual artist born in 1990 in aguleri, south south nigeria works predominantly with photography reflects everyday life experiences">
+    <meta name="description"
+        content="Nigerian visual artist born in 1990 in aguleri, south south nigeria works predominantly with photography reflects everyday life experiences">
     <meta name="keywords"
         content="photographer, documentaryphotographer, visualartist, lagos, nigeria, northisnotnot, streetphotography, ekoforsale, neec, neecnonso, photography, abuja, documentary">
 
@@ -22,7 +23,7 @@
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
     <meta property="og:url" content="https://www.neecnonso.com/exhibitions/afrofutures" />
-    <meta property="og:image" content="../images/ogimage.png" />
+    <meta property="og:image" content="../assets/icons/ogimage.png" />
 
 
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
@@ -45,7 +46,8 @@
 
 <body>
     <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+    <img class="back-to-top-btn" onclick="topFunction()" id="myBtn" width="50px"
+        src="../assets/chevron-up-circle-outline.svg" alt="back to top icon">
 
     <!--- Start of Navbar -->
 
@@ -54,7 +56,7 @@
         <nav class='navbar'>
 
             <a class="logo-link" href='/'>
-                <img src="../images/neec nonso logo.png" class='App-logo' alt='logo' />
+                <img src="../assets/icons/neec-nonso-logo.png" class='logo-image' alt='logo' />
             </a>
 
             <ul class='nav-list'>
@@ -77,6 +79,7 @@
                 </li>
 
             </ul>
+
             <div class="menu">
                 <div class="menu-line1"></div>
                 <div class="menu-line2"></div>
@@ -85,40 +88,34 @@
 
         </nav>
 
-        <ul class='extra'>
+        <div class='extra'>
 
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-instagram.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-facebook.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-linkedin.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
-                    <img class="extra-icon-image" src="../images/logo-twitter.svg" alt='extra-icon-image' />
-                </a>
-            </li>
+            <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-instagram.svg" alt='extra-icon-image' />
+            </a>
 
-        </ul>
+            <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-facebook.svg" alt='extra-icon-image' />
+            </a>
 
+            <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-linkedin.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
+                <img class="extra-icon-image" src="../assets/icons/logo-twitter.svg" alt='extra-icon-image' />
+            </a>
+
+
+        </div>
 
     </div>
 
     <!-- End of Navbar-->
 
-
     <div class="items-container">
 
-        <section class="exhibition-intro">
+        <section class="jumbotron">
 
             <p class="exhibition-title"><a href="./afrofutures">afro futures.</a></p>
             <p class="exhibition-venue">kungstgewerber museum,</p>
@@ -126,53 +123,51 @@
 
         </section>
 
-        <section class="agathering-intro">
-            <img src="../exhibition/afro futures - kungstgewerber museum, berlin, germany/1.webp" alt="afrofutures">
-        </section>
-
-        <section class="child-images">
-
-            <img class="child-images-photos"
-                src="../exhibition/afro futures - kungstgewerber museum, berlin, germany/2.webp" alt="afrofutures">
-            <img class="child-images-photos"
-                src="../exhibition/afro futures - kungstgewerber museum, berlin, germany/3.webp" alt="afrofutures">
-            <img class="child-images-photos"
-                src="../exhibition/afro futures - kungstgewerber museum, berlin, germany/4.webp" alt="afrofutures">
-            <img class="child-images-photos"
-                src="../exhibition/afro futures - kungstgewerber museum, berlin, germany/5.webp" alt="afrofutures">
-            <img class="child-images-photos"
-                src="../exhibition/afro futures - kungstgewerber museum, berlin, germany/6.webp" alt="afrofutures">
-            <img class="child-images-photos"
-                src="../exhibition/afro futures - kungstgewerber museum, berlin, germany/7.webp" alt="afrofutures">
-            <img class="child-images-photos"
-                src="../exhibition/afro futures - kungstgewerber museum, berlin, germany/8.webp" alt="afrofutures">
-
-        </section>
-
-
-        <section class="afrofuture-last-image">
+        <section class="exhibition-images">
+            <picture class="header-image">
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/afro-futures/mobile/1.webp">
+                <img src="../assets/exhibitions/afro-futures/1.webp" alt="afro future exhbition by neec nonso">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/afro-futures/mobile/2.webp">
+                <img src="../assets/exhibitions/afro-futures/2.webp" alt="afro future exhbition by neec nonso">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/afro-futures/mobile/3.webp">
+                <img src="../assets/exhibitions/afro-futures/3.webp" alt="afro future exhbition by neec nonso">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/afro-futures/mobile/4.webp">
+                <img src="../assets/exhibitions/afro-futures/4.webp" alt="afro future exhbition by neec nonso">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/afro-futures/mobile/5.webp">
+                <img src="../assets/exhibitions/afro-futures/5.webp" alt="afro future exhbition by neec nonso">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/afro-futures/mobile/6.webp">
+                <img src="../assets/exhibitions/afro-futures/6.webp" alt="afro future exhbition by neec nonso">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/afro-futures/mobile/7.webp">
+                <img src="../assets/exhibitions/afro-futures/7.webp" alt="afro future exhbition by neec nonso">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="../assets/exhibitions/afro-futures/mobile/8.webp">
+                <img src="../assets/exhibitions/afro-futures/8.webp" alt="afro future exhbition by neec nonso">
+            </picture>
 
         </section>
 
     </div>
 
-
     <!-- Start of Footer -->
 
     <footer class="footer-container">
 
-        <div class="footer-content">
-
-            <div class="copyright">
-                <p class="footer-words"> &copy; copyright 2022 neec nonso, <br>
-                    all rights reserved.
-                </p>
-            </div>
-
-        </div>
-
+        <p class="copyright"> &copy; 2022 |<span class="copyright-name"><a href="/">neec nonso</a></span> | all rights
+            reserved.</p>
     </footer>
-
 
     <!-- End of Footer -->
 
@@ -180,9 +175,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
 
-
     <script src="../script.js" async defer></script>
-    <script src="../scripts/exhibitions.js"></script>
+    <!--   <script src="../scripts/exhibitions.js"></script>-->
 
 </body>
 

@@ -54,50 +54,6 @@ prevButton.addEventListener("click", (e) => {
     moveToSlide(track, r, o),
       updateDots(s, t),
       hideShowArrows(slides, prevButton, nextButton, i);
-  }),
-  gsap.from(".extra", {
-    scrollTrigger: {
-      trigger: ".main-exhibition",
-      start: -50,
-      end: "+=300",
-      scrub: 1,
-    },
-    stagger: { amount: 0.5 },
-    scale: 0.8,
-    duration: 1,
   });
 
-let tl = gsap.timeline({
-  scrollTrigger: { trigger: ".main-exhibition" },
-});
-tl
-  .from("main", { x: -200, opacity: 0.5, duration: 1.5 })
-  .from(".App-logo", { y: -200, opacity: 0.5, duration: 1.5 })
-  .from(".list-item", { y: -200, opacity: 0.5, duration: 1.5 })
-  .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
-  .from(".copyright", { y: 10, opacity: 0, duration: 1.5 }),
-  gsap.from(".footer-container", {
-    scrollTrigger: {
-      trigger: ".main-exhibition",
-      start: "bottom",
-      end: "+=300",
-      scrub: 1,
-    },
-    stagger: { amount: 0.5 },
-    scale: 0.9,
-    duration: 1,
-    ease: "power1.inOut",
-  });
 
-gsap.from(".project-items-words-paragraph", {
-  scrollTrigger: {
-    trigger: ".main-exhibition",
-    start: -50,
-    end: "+=300",
-    scrub: 1,
-  },
-  stagger: { amount: 0.5 },
-  scale: 0.95,
-  duration: 1,
-  ease: "power1.inOut",
-});

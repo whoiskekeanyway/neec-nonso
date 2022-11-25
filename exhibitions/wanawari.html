@@ -8,7 +8,7 @@
     <title> wa na wari | neec nonso | visual artist</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.png">
 
     <meta name="robots" content="index, follow">
     <meta name="description"
@@ -23,7 +23,7 @@
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
     <meta property="og:url" content="https://www.neecnonso.com/exhibitions/wanawari" />
-    <meta property="og:image" content="../images/ogimage.png" />
+    <meta property="og:image" content="../assets/icons/ogimage.png" />
 
 
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
@@ -46,7 +46,8 @@
 
 <body>
     <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+    <img class="back-to-top-btn" onclick="topFunction()" id="myBtn" width="50px"
+        src="../assets/chevron-up-circle-outline.svg" alt="back to top icon">
 
     <!--- Start of Navbar -->
 
@@ -55,7 +56,7 @@
         <nav class='navbar'>
 
             <a class="logo-link" href='/'>
-                <img src="../images/neec nonso logo.png" class='App-logo' alt='logo' />
+                <img src="../assets/icons/neec-nonso-logo.png" class='logo-image' alt='logo' />
             </a>
 
             <ul class='nav-list'>
@@ -86,30 +87,26 @@
 
         </nav>
 
-        <ul class='extra'>
+        <div class='extra'>
 
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-instagram.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-facebook.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-linkedin.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
-                    <img class="extra-icon-image" src="../images/logo-twitter.svg" alt='extra-icon-image' />
-                </a>
-            </li>
+            <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-instagram.svg" alt='extra-icon-image' />
+            </a>
 
-        </ul>
+            <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-facebook.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-linkedin.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
+                <img class="extra-icon-image" src="../assets/icons/logo-twitter.svg" alt='extra-icon-image' />
+            </a>
+
+
+        </div>
 
 
     </div>
@@ -118,29 +115,23 @@
 
     <!-- Exhibitions -->
 
-    <main class="exhibition-main">
+    <div class="items-container">
 
+        <section class="jumbotron">
 
+            <p class="exhibition-title"><a href="wanawari"> wa na wari </a>
+            </p>
+            <p class="exhibition-venue">wa na wari art space,</p>
+            <p class="exhibition-location">seatle,usa</p>
 
-        <div class="items-container wana">
+        </section>
 
-            <section class="exhibition-intro">
+        <section class="exhibition-images">
+            <img src="../assets/exhibitions/wa-na-wari/1.jpg" alt="wanawari exhibition photo">
+        </section>
 
-                <p class="exhibition-title"><a href="wanawari"> wa na wari </a>
-                </p>
-                <p class="exhibition-venue">wa na wari art space,</p>
-                <p class="exhibition-location">seatle,usa</p>
-            </section>
+    </div>
 
-            <section class="child-images">
-
-                <img src="../exhibition/wa na wari - wa na wari art space seatle,usa/271859102_10224980653095621_3753920555993396334_n.jpg"
-                    alt="wanawari exhibition photo">
-            </section>
-
-        </div>
-
-    </main>
 
     <!-- End of Exhibition-->
 
@@ -148,16 +139,8 @@
 
     <footer class="footer-container">
 
-        <div class="footer-content">
-
-            <div class="copyright">
-                <p class="footer-words"> &copy; copyright 2022 neec nonso, <br>
-                    all rights reserved.
-                </p>
-            </div>
-
-        </div>
-
+        <p class="copyright"> &copy; 2022 |<span class="copyright-name"><a href="/">neec nonso</a></span> | all rights
+            reserved.</p>
     </footer>
 
     <!-- End of Footer -->
@@ -167,7 +150,7 @@
 
 
     <script src="../script.js" async defer></script>
-    <script src="../scripts/exhibitions.js"></script>
+    <!--   <script src="../scripts/exhibitions.js"></script>-->
 
 
 </body>

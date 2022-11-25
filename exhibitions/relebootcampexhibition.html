@@ -8,10 +8,11 @@
     <title> rele boot camp exhibition | neec nonso | visual artist</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.png">
 
     <meta name="robots" content="index, follow">
-    <meta name="description" content="neec nonso is a nigerian visual artist who uses photography to create an aesthetic that explores the social structures of everyday life in communities across nigeria">
+    <meta name="description"
+        content="neec nonso is a nigerian visual artist who uses photography to create an aesthetic that explores the social structures of everyday life in communities across nigeria">
     <meta name="keywords"
         content="photographer, documentaryphotographer, visualartist, lagos, nigeria, northisnotnot, streetphotography, ekoforsale, neec, neecnonso, photography, abuja, documentary">
 
@@ -20,9 +21,10 @@
 
     <meta property="og:type" content="article" />
     <meta property="og:title" content="homepage | neec nonso | visual artist">
-    <meta property="og:description" content="neec nonso is a nigerian visual artist who uses photography to create an aesthetic that explores the social structures of everyday life in communities across nigeria.">
+    <meta property="og:description"
+        content="neec nonso is a nigerian visual artist who uses photography to create an aesthetic that explores the social structures of everyday life in communities across nigeria.">
     <meta property="og:url" content="https://www.neecnonso.com/exhibitions/relebootcampexhibition.html" />
-    <meta property="og:image" content="../images/ogimage.png" />
+    <meta property="og:image" content="../assets/icons/ogimage.png" />
 
 
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
@@ -44,8 +46,11 @@
 </head>
 
 <body>
+
     <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+
+    <img class="back-to-top-btn" onclick="topFunction()" id="myBtn" width="50px"
+        src="../assets/chevron-up-circle-outline.svg" alt="back to top icon">
 
     <!--- Start of Navbar -->
 
@@ -54,7 +59,7 @@
         <nav class='navbar'>
 
             <a class="logo-link" href='/'>
-                <img src="../images/neec nonso logo.png" class='App-logo' alt='logo' />
+                <img src="../assets/icons/neec-nonso-logo.png" class='logo-image' alt='logo' />
             </a>
 
             <ul class='nav-list'>
@@ -66,9 +71,9 @@
                 <li class='list-item'>
                     <a href='../projects'>projects </a>
                 </li>
-            <li class='list-item'>
-                <a href='../augmented-reality'> augmented-reality </a>
-            </li>
+                <li class='list-item'>
+                    <a href='../augmented-reality'> augmented-reality </a>
+                </li>
                 <li class='list-item'>
                     <a href='../exhibition'>exhibitions </a>
                 </li>
@@ -85,30 +90,26 @@
 
         </nav>
 
-        <ul class='extra'>
+        <div class='extra'>
 
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-instagram.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-facebook.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
-                    <img class="extra-icon-image" src="../images/logo-linkedin.svg" alt='extra-icon-image' />
-                </a>
-            </li>
-            <li class='list-item extra'>
-                <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
-                    <img class="extra-icon-image" src="../images/logo-twitter.svg" alt='extra-icon-image' />
-                </a>
-            </li>
+            <a rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-instagram.svg" alt='extra-icon-image' />
+            </a>
 
-        </ul>
+            <a rel='noreferrer noopener' target='_blank' href='https://web.facebook.com/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-facebook.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.linkedin.com/in/neecnonso/'>
+                <img class="extra-icon-image" src="../assets/icons/logo-linkedin.svg" alt='extra-icon-image' />
+            </a>
+
+            <a rel='noreferrer noopener' target='_blank' href='https://www.twitter.com/neecnonso'>
+                <img class="extra-icon-image" src="../assets/icons/logo-twitter.svg" alt='extra-icon-image' />
+            </a>
+
+
+        </div>
 
 
     </div>
@@ -117,65 +118,90 @@
 
     <!-- Exhibitions -->
 
-
     <div class="items-container">
 
-        <section class="exhibition-intro">
+        <section class="jumbotron">
 
             <p class="exhibition-title">
                 <a href="./youngcontemporaries">
-                   rele bootcamp exhibition.
+                    rele bootcamp exhibition.
                 </a>
             </p>
             <p class="exhibition-venue">rele arts foundation </p>
             <p class="exhibition-location">lagos,nigeria</p>
         </section>
 
-        <section>
-           <img class="relebootcamp" src="../exhibition/rele boot camp exhibition/1 rele arts foundation yc bootcamp 2021.jpg" alt="relebootcampexhibition">
-        </section>
+        <section class="exhibition-images">
 
-        <section class="child-images">
+            <picture class="">
+                <source media="(max-width: 500px)"
+                    srcset="../assets/exhibitions/rele-boot-camp-exhibition/mobile/intro.webp">
+                <img src="../assets/exhibitions/rele-boot-camp-exhibition/intro.webp"
+                    alt="rele bootcamp exhbition by neec nonso">
+            </picture>
 
-            <img src="../exhibition/rele boot camp exhibition/1.jpg" alt="rele bootcamp exhibition">
-            <img src="../exhibition/rele boot camp exhibition/2.jpg" alt="rele bootcamp exhibition">
 
-        </section>
-        <section>
-            <img src="../exhibition/rele boot camp exhibition/3.jpg" alt="rele bootcamp exhibition">
-        </section>
-        <section class="child-images">
-            <img src="../exhibition/rele boot camp exhibition/4.jpg" alt="rele bootcamp exhibition">
-            <img src="../exhibition/rele boot camp exhibition/5.jpg" alt="rele bootcamp exhibition">
-            <img src="../exhibition/rele boot camp exhibition/6.jpg" alt="rele bootcamp exhibition">
-            <img src="../exhibition/rele boot camp exhibition/7.jpg" alt="rele bootcamp exhibition">
 
+            <picture class="">
+                <source media="(max-width: 500px)"
+                    srcset="../assets/exhibitions/rele-boot-camp-exhibition/mobile/1.webp">
+                <img src="../assets/exhibitions/rele-boot-camp-exhibition/1.webp"
+                    alt="rele bootcamp exhbition by neec nonso">
+            </picture>
+
+            <picture class="">
+                <source media="(max-width: 500px)"
+                    srcset="../assets/exhibitions/rele-boot-camp-exhibition/mobile/2.webp">
+                <img src="../assets/exhibitions/rele-boot-camp-exhibition/2.webp"
+                    alt="rele bootcamp exhbition by neec nonso">
+            </picture>
+
+            <picture class="">
+                <source media="(max-width: 500px)"
+                    srcset="../assets/exhibitions/rele-boot-camp-exhibition/mobile/3.webp">
+                <img src="../assets/exhibitions/rele-boot-camp-exhibition/3.webp"
+                    alt="rele bootcamp exhbition by neec nonso">
+            </picture>
+
+            <picture class="">
+                <source media="(max-width: 500px)"
+                    srcset="../assets/exhibitions/rele-boot-camp-exhibition/mobile/4.webp">
+                <img src="../assets/exhibitions/rele-boot-camp-exhibition/4.webp"
+                    alt="rele bootcamp exhbition by neec nonso">
+            </picture>
+
+            <picture class="">
+                <source media="(max-width: 500px)"
+                    srcset="../assets/exhibitions/rele-boot-camp-exhibition/mobile/5.webp">
+                <img src="../assets/exhibitions/rele-boot-camp-exhibition/5.webp"
+                    alt="rele bootcamp exhbition by neec nonso">
+            </picture>
+            <picture class="">
+                <source media="(max-width: 500px)"
+                    srcset="../assets/exhibitions/rele-boot-camp-exhibition/mobile/6.webp">
+                <img src="../assets/exhibitions/rele-boot-camp-exhibition/6.webp"
+                    alt="rele bootcamp exhbition by neec nonso">
+            </picture>
+            <picture class="">
+                <source media="(max-width: 500px)"
+                    srcset="../assets/exhibitions/rele-boot-camp-exhibition/mobile/7.webp">
+                <img src="../assets/exhibitions/rele-boot-camp-exhibition/7.webp"
+                    alt="rele bootcamp exhbition by neec nonso">
+            </picture>
 
         </section>
 
     </div>
 
-
-
     <!-- End of Exhibition-->
-
 
     <!-- Start of Footer -->
 
     <footer class="footer-container">
 
-        <div class="footer-content">
-
-            <div class="copyright">
-                <p class="footer-words"> &copy; copyright 2022 neec nonso, <br>
-                    all rights reserved.
-                </p>
-            </div>
-
-        </div>
-
+        <p class="copyright"> &copy; 2022 |<span class="copyright-name"><a href="/">neec nonso</a></span> | all rights
+            reserved.</p>
     </footer>
-
 
     <!-- End of Footer -->
 
@@ -184,7 +210,7 @@
 
 
     <script src="../script.js" async defer></script>
-    <script src="../scripts/exhibitions.js"></script>
+    <!--   <script src="../scripts/exhibitions.js"></script>-->
 
 </body>
 
