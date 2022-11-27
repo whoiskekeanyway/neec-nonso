@@ -275,14 +275,24 @@ html {
 
 .main {
   height: 100vh !important;
-  background-image: url(../assets/homepage/1.webp);
   background-color: var(--clr-accent);
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   background-position: center center;
   background-attachment: fixed;
+  position: relative;
+}
 
-
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translatex(-50%);
 }
 
 
@@ -295,13 +305,11 @@ html {
 
 
 .home-btn {
-  position: fixed;
-  top: 50%;
-  left: 50%;
   min-width: 120px;
   height: 40px;
   color: #fff;
   padding: 5px 10px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -313,6 +321,7 @@ html {
   border: none;
   background-color: var(--clr-primary);
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .home-btn:hover {
