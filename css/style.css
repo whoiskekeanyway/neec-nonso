@@ -275,7 +275,6 @@ html {
 
 .main {
   height: 100vh !important;
-  background-image: url(../assets/homepage/1.webp);
   background-color: var(--clr-accent);
   background-repeat: no-repeat;
   background-size: cover;
