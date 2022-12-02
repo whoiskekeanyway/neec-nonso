@@ -25,8 +25,7 @@
     <meta property="og:title" content="homepage | neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist">
     <meta property="og:url" content="http://neecnonso.com" />
-    <meta property="og:image"
-        content="https://res.cloudinary.com/da93q413z/image/upload/v1669879856/icons/ogimage_r9q3lw.png" />
+    <meta property="og:image" content="https://res.cloudinary.com/da93q413z/image/upload/v1669879856/icons/ogimage_r9q3lw.png" />
 
 
     <!-- Facebook, whatsapp, instagram, twitter and other popular social media -->
@@ -35,8 +34,7 @@
     <meta name="twitter:site" content="@neecnonso" />
     <meta name="twitter:title" content="neec nonso | visual artist">
     <meta property="og:description" content="neec nonso is a nigerian visual artist based in lagos,nigeria">
-    <meta name="twitter:image"
-        content="https://res.cloudinary.com/da93q413z/image/upload/v1669879856/icons/ogimage_r9q3lw.png" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/da93q413z/image/upload/v1669879856/icons/ogimage_r9q3lw.png" />
 
 
     <!-- Style Links 
@@ -76,6 +74,8 @@
 
     </div>
 
+
+
     <!-- Start of Footer -->
 
     <footer class="footer-container">
@@ -91,6 +91,8 @@
 
 
     <script>
+
+
 
 
         function randombg() {
@@ -116,13 +118,15 @@
             ];
             document.getElementById("random").style.backgroundImage = backgroundImages[random];
 
-
+            document.getElementById("random").style.transition = 'opacity 1s';
+            document.getElementById("random").style.opacity = 0;
+            setTimeout(() => {
+                document.getElementById("random").style.opacity = 1;
+            }, 50);
         }
 
 
         setInterval(randombg, 2000)
-
-
     </script>
     <!-- <script src="countdown.js" async defer></script> -->
 </body>
