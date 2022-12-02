@@ -26,9 +26,12 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-
 let tl = gsap.timeline({ scrollTrigger: { trigger: ".logo-image" } });
 tl.from(".logo-image", { y: -200, opacity: 0.5, duration: 1.5 })
   .from(".nav-list", { y: -200, opacity: 0.5, duration: 1.5 })
   .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
   .from(".footer-container", { y: 10, opacity: 0, duration: 1.5 });
+
+
+
+
