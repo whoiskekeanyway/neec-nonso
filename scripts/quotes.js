@@ -24,10 +24,7 @@ function changeQuotes() {
 }
 window.onload = changeQuotes;
 
-
-let tl = gsap.timeline({ scrollTrigger: { trigger: ".logo-image" } });
-tl.from(".logo-image", { y: -200, opacity: 0.5, duration: 1.5 })
-  .from(".nav-list", { y: -200, opacity: 0.5, duration: 1.5 })
-  .from(".extra", { x: 200, opacity: 0, duration: 1.5 })
-  .from(".blockquote-div", { y: 10, opacity: 0, duration: 1.5 });
-
+let tll = gsap.timeline({ scrollTrigger: { trigger: ".blockquote-div" } });
+tll
+  .from(".footer-container", { y: -200, opacity: 0.5, duration: 1.5 })
+  .from(".blockquote-div", { y: 20, opacity: 0, duration: 1 });
