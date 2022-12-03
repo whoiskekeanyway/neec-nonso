@@ -60,7 +60,8 @@ Potrait Projects image cropped on Laptop
 
 AR Project 
  
-
+Full stop bigger and black
+remove linkdeen 
 
 6,8,15
  
@@ -139,3 +140,49 @@ Do you have any memories which you would like to immortalize in an artwork?Neech
 art, a universal language, speaks to everyone and allows for the exchange of ideas and lessons, for the moments when we are impressed by something that is pleasing and evocative.
 
 My Latest Work:
+
+
+////////////////////////////////////////////////
+
+ <script>
+
+
+
+
+        function randombg() {
+            var random = Math.floor(Math.random() * 15) + 0;
+
+            var backgroundImages = [
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879251/homepage/7_kqcffs.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879250/homepage/8_ay9yth.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879252/homepage/2_wvex88.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879240/homepage/6_z3htol.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879238/homepage/13_yqjebl.webp')",
+
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879237/homepage/14_aoifjj.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879236/homepage/12_yjyofs.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879235/homepage/10_akuxfa.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879228/homepage/2_wvex88.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879228/homepage/3_dkyvpc.webp')",
+
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879221/homepage/1_h9hnqx.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879221/homepage/11_eam2k4.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879220/homepage/4_f4uqdu.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879219/homepage/9_zglsme.webp')",
+                "url('https://res.cloudinary.com/da93q413z/image/upload/v1669879218/homepage/5_xcd13b.webp')",
+            ];
+            document.getElementById("random").style.backgroundImage = backgroundImages[random];
+
+            document.getElementById("random").style.transition = 'opacity 1s';
+            document.getElementById("random").style.opacity = 0;
+            setTimeout(() => {
+                document.getElementById("random").style.opacity = 1;
+            }, 50);
+        }
+
+
+        setInterval(randombg, 2000)
+    </script>
+
+
+    //////////////////
