@@ -24,7 +24,8 @@ var fadeDuration = 1000;
 var currentBackground = 0;
 
 // select the body element and save it to a variable
-var body = document.querySelector("body");
+// var body = document.querySelector("body");
+var backDiv = document.querySelector(".backgroundDiv");
 
 // preload all of the background images
 for (var i = 0; i < backgrounds.length; i++) {
@@ -33,22 +34,23 @@ for (var i = 0; i < backgrounds.length; i++) {
 }
 
 // set the initial background
-body.style.backgroundImage = "url(" + backgrounds[currentBackground] + ")";
+backDiv.style.backgroundImage = "url(" + backgrounds[currentBackground] + ")";
 
 // switch to the next background every 5 seconds
 setInterval(function () {
   // fade out the current background
-  body.style.opacity = 0.8;
+  backDiv.style.opacity = 1;
 
   // when the fade out is complete, switch to the next background
   setTimeout(function () {
     // increment the current background index, or set it to 0 if we're at the end of the array
-      currentBackground = (currentBackground + 1) % backgrounds.length;
-      
+    currentBackground = (currentBackground + 1) % backgrounds.length;
+
     // update the body's background image
-    body.style.backgroundImage = "url(" + backgrounds[currentBackground] + ")";
+    backDiv.style.backgroundImage =
+      "url(" + backgrounds[currentBackground] + ")";
 
     // fade in the new background
-    body.style.opacity = 1;
+    backDiv.style.opacity = 1;
   }, fadeDuration);
 }, 5000);

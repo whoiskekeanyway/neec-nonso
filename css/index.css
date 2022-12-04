@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+
 :root {
     --clr-primary: #800020;
     --clr-accent: #f1f1f1;
@@ -9,6 +12,101 @@
 *::after {
     box-sizing: border-box;
 }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border: 0.25em solid black;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #800020;
+    border: 0.25em solid rgb(15, 15, 15);
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: #f1f1f1 #800020;
+        scrollbar-width: thin;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -20,7 +118,9 @@ body {
     transition: opacity 1s;
 }
 
-.main {
+
+
+.backgroundDiv {
     height: 100vh !important;
     background-color: var(--clr-accent);
     background-repeat: no-repeat;
@@ -29,7 +129,7 @@ body {
     background-position: center center;
     background-attachment: fixed;
     position: relative;
-    transition: background-image 3s;
+    transition: 1s;
     -webkit-transition: background-image 0.5s linear;
 }
 
@@ -90,4 +190,22 @@ body {
     top: -7px;
     right: -20px;
     transition: 0.4s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.2rem 0rem;
+}
+
+.copyright {
+    font-size: 1.5vh;
+}
+
+
+.copyright-name a {
+    color: var(--clr-primary);
 }
