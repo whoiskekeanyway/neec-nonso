@@ -54,7 +54,7 @@ body {
     height: 35px;
     color: #fff;
     padding: 5px 5px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -67,6 +67,7 @@ body {
     background-color: var(--clr-primary);
     text-align: center;
     font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
 }
 
 .home-btn:hover {
