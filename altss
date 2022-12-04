@@ -1,0 +1,40 @@
+// array of image URLs to use as backgrounds
+var backgrounds = [    "https://example.com/background1.jpg",    "https://example.com/background2.jpg",    "https://example.com/background3.jpg"];
+
+// duration of fade effect in milliseconds
+var fadeDuration = 1000;
+
+// index of currently displayed background
+var currentBackground = 0;
+
+// select the body element and save it to a variable
+var body = document.querySelector("body");
+
+// preload all of the background images
+for (var i = 0; i < backgrounds.length; i++) {
+    var img = new Image();
+    img.src = backgrounds[i];
+}
+
+// set the initial background
+body.style.backgroundImage = "url(" + backgrounds[currentBackground] + ")";
+
+// switch to the next background every 5 seconds
+setInterval(function() {
+    // fade out the current background
+    body.style.opacity = 0;
+
+    // when the fade out is complete, switch to the next background
+    setTimeout(function() {
+        // increment the current background index, or set it to 0 if we're at the end of the array
+        currentBackground = (currentBackground + 1) % backgrounds.length;
+
+        // if we're at the last background, reset the index to 0 and update the body's background image
+        if (currentBackground === 0) {
+            body.style.backgroundImage = "url(" + backgrounds[currentBackground] + ")";
+        }
+
+        // fade in the new background
+        body.style.opacity = 1;
+    }, fadeDuration);
+}, 5000);
