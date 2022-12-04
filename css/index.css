@@ -1,3 +1,14 @@
+:root {
+    --clr-primary: #800020;
+    --clr-accent: #f1f1f1;
+    --ff-primary: 'Roboto Mono', monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -7,4 +18,75 @@ body {
     background-position: center center;
     background-size: cover;
     transition: opacity 1s;
+}
+
+.main {
+    height: 100vh !important;
+    background-color: var(--clr-accent);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    transition: background-image 3s;
+    -webkit-transition: background-image 0.5s linear;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translatex(-50%);
+}
+
+.link-to-exhibitions {
+    color: var(--clr-primary);
+    font-weight: bold;
+}
+
+.home-btn {
+    min-width: 120px;
+    height: 35px;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr-primary);
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.home-btn:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.home-btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.home-btn:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: -7px;
+    right: -20px;
+    transition: 0.4s;
 }
