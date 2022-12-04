@@ -118,7 +118,6 @@ html {
     background-attachment: fixed;
     position: relative;
     transition: all 0.5s ease-out ease-in;
-    transition: 1s;
     -webkit-transition: all 0.5s ease-out ease-in;
 }
 
