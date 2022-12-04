@@ -195,7 +195,7 @@ html {
   transition: transform 250ms;
 }
 
-.list-item.alternative a {}
+
 
 .list-item.alternative a:hover {
   color: var(--clr-accent);
@@ -297,17 +297,7 @@ html {
   transform: translatex(-50%);
 }
 
-#bg-image {
-  /* Set the background image to cover the entire element */
-  background-size: cover;
 
-  /* Center the background image */
-  background-position: center;
-
-  /* Set the height and width of the element */
-  height: 100vh;
-  width: 100%;
-}
 
 
 .link-to-exhibitions {
@@ -482,8 +472,9 @@ blockquote {
   position: relative;
   padding: 3rem 0rem;
   text-align: center;
-  max-width: 620px;
+  max-width: 600px;
   min-height: 250px;
+  width: 100%;
 }
 
 blockquote:before {
