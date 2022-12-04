@@ -53,4 +53,4 @@ setInterval(function () {
     // fade in the new background
     backDiv.style.opacity = 1;
   }, fadeDuration);
-}, 5000);
+}, 10000);
