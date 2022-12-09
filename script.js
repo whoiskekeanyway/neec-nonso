@@ -34,4 +34,4 @@ tl.from(".logo-image", { y: -200, opacity: 0.5, duration: 1.5 })
 
 
 
-setInterval(randomizeBackground, 2000);
+
