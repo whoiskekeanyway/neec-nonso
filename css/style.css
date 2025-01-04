@@ -312,11 +312,14 @@ html {
   padding: 1rem;
 }
 
+ .bio-image {
+   max-width: 800 !important;
+ }
+
 
 .biography-section {
   display: flex;
   flex-direction: column;
-
   max-width: 800px;
   margin: 0 auto;
   gap: 1rem;
@@ -367,7 +370,7 @@ html {
 
 @media screen and (min-width: 1000px) {
   .bio-image {
-    max-width: 1240px;
+    max-width: 850px;
   }
 }
 
