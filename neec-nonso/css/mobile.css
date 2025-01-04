@@ -1,0 +1,215 @@
+/* Navbar */
+
+
+@media screen and (max-width: 450px) {
+  .logo-image {
+    margin: 0 auto;
+    display: inline;
+    padding: 0.25rem;
+    padding-left: 1.2rem;
+  }
+
+  .logo-link {
+    display: inline-block;
+    width: 30%;
+    margin-top: 2rem !important;
+  }
+
+  .navbar {
+    flex-direction: column;
+    position: relative;
+  }
+
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    padding: 1rem;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  .list-item {
+    display: block;
+    padding: 0.25rem;
+    text-align: center;
+    margin-right: 5rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .active {
+    display: block;
+    padding-left: 1rem !important;
+  }
+
+  .extra {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+
+  .logo-link {
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    padding: 1rem;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    display: none;
+    text-align: center;
+  }
+
+  .list-item {
+    display: block;
+    padding: 4px 5px;
+    text-align: left;
+  }
+
+
+  .active {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 5rem;
+  }
+
+  .extra {
+    display: none;
+  }
+}
+
+/* Exhibition Page */
+
+@media only screen and (max-width: 450px) {
+
+  .exhibitions-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+
+  .exhibitions-info div {
+    width: 100%;
+  }
+
+  .exhibition-images {
+    width: 100%;
+  }
+
+}
+
+
+
+/* Contact Page */
+
+@media only screen and (max-width: 450px) {
+  .contact-main {
+    height: auto;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .contact-container {
+    height: auto;
+    padding-bottom: 5rem;
+    padding-top: 2.5rem;
+  }
+
+  .contact-image-container {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .contact-image {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+}
+
+/* Videos */
+
+@media only screen and (max-width: 450px) {
+  .video-main {
+    height: auto;
+  }
+
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-video {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .projects-video {
+    width: 100% !important;
+    height: 200px;
+  }
+}
+
+
+/* Exhibition Pages */
+@media only screen and (max-width: 450px) {
+  .error-container {
+    height: auto;
+  }
+
+  .slider-image {
+    max-width: 500px;
+    margin: 0 auto;
+    height: auto;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .afrofuture-last-image {
+    padding: 0;
+  }
+
+  .afrofuture-last-image img {
+    width: 100%;
+  }
+
+  .boundariesofreason {
+    height: auto;
+    width: 100%;
+  }
+}

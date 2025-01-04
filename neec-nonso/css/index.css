@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+
+:root {
+    --clr-primary: #800020;
+    --clr-accent: #f1f1f1;
+    --ff-primary: 'Roboto Mono', monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+img {
+    /* Disable right-click context menu */
+    pointer-events: none;
+
+    /* Prevent drag and drop */
+    -webkit-user-drag: none;
+    /* For WebKit browsers */
+    user-drag: none;
+    /* Standard property */
+
+    /* Disable highlighting */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border: 0.25em solid black;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #800020;
+    border: 0.25em solid rgb(15, 15, 15);
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: #f1f1f1 #800020;
+        scrollbar-width: thin;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-homepage {
+    min-height: 100vh;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.homepage-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.homepage-images section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.homepage-images section p {
+    color: var(--clr-primary);
+    font-size: 14px;
+}
+
+.homepage-image {
+max-width: 600px;
+
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+}
+
+.link-to-exhibitions {
+    color: var(--clr-primary) !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-btn {
+    min-width: 120px;
+    height: 35px;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr-primary);
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+
+.home-btn:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.home-btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.home-btn:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: -7px;
+    right: -20px;
+    transition: 0.4s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.2rem 0rem;
+}
+
+.copyright {
+    font-size: 1.5vh;
+}
+
+
+.copyright-name a {
+    color: var(--clr-primary);
+}
