@@ -217,6 +217,12 @@ html {
 .extra-icon-image {
   width: 30px;
   height: 30px;
+  margin: 0rem 0.10rem;
+}
+
+.twitter {
+  width: 50px;
+  height: 50px;
 }
 
 
@@ -261,43 +267,31 @@ html {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: var(--clr-accent);
-  color: white;
+  background-color: transparent;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
+  fill: var(--clr-primary);
+  /* This controls the SVG color */
 }
 
 #myBtn:hover {
   background-color: var(--clr-primary);
 }
 
+#myBtn:hover {
+  fill: white;
+}
+
 
 .creator-link {
-  color: orangered;
+  color: #ff4500;
   font-weight: bold;
 }
 
 
 /* Landing Page */
 
-.landing-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1440px;
-  margin: 0 auto;
-  height: 100vh;
-  padding: 5rem 0.25rem;
-}
-
-
-.landing-page img {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
 
 
 /* Bio Page */
@@ -322,8 +316,7 @@ html {
 .biography-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   max-width: 800px;
   margin: 0 auto;
   gap: 1rem;
@@ -331,7 +324,7 @@ html {
 }
 
 .biography-title {
-  font-size: 3vw;
+  font-size: clamp(20px, 5vw, 30px);
   text-align: center;
   color: var(--clr-primary);
   position: relative;
@@ -363,7 +356,22 @@ html {
 
 .biography {
   font-size: 16px;
+  text-decoration: line-through;
 }
+
+.link-to-exhibitions {
+  color: var(--clr-primary) !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .bio-image {
+    max-width: 1240px;
+  }
+}
+
+
 
 
 /* Projects Pages */
@@ -452,10 +460,44 @@ blockquote:after {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 350px;
-  width: 100%;
+  width: 30%;
+  /* Changed from max-width: 350px to width: 30% */
+  min-width: 280px;
+  /* Added to prevent cards from becoming too small */
   height: auto;
   padding: 0.25rem;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+    min-width: unset;
+    /* Remove min-width constraint on mobile */
+  }
+
+  .card-container {
+    padding: 0.5rem;
+    /* Optional: adjust padding for mobile */
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+  .card {
+    width: 45%;
+    /* Two cards per row at this breakpoint */
+    min-width: unset;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .card-container {
+    padding: 0.5rem;
+  }
 }
 
 .card-image {
@@ -513,11 +555,10 @@ blockquote:after {
 .project-items-words {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   gap: 1rem;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem 0.5rem;
 }
@@ -527,7 +568,8 @@ blockquote:after {
   display: inline-block;
   position: relative;
   max-width: 100%;
-  text-align: center;
+  width: fit-content;
+  padding: 8px;
 }
 
 .project-items-words-title::after {
@@ -552,6 +594,10 @@ blockquote:after {
   padding: 0.5rem;
 }
 
+.italic {}
+
+/* main exhibition */
+
 .main-exhibition {
   display: flex;
   flex-direction: column;
@@ -563,108 +609,41 @@ blockquote:after {
 
 
 .carousel {
-  position: relative;
-  height: 700px;
-  width: 1000px;
+  max-width: 1440px;
   margin: 0 auto;
   display: block;
-}
-
-.carousel.potrait {
-  position: relative;
-  min-height: 700px !important;
-  width: 467px !important;
-  margin: 0 auto;
-  ;
-  padding: 1rem;
-}
-
-
-#carousel-square {
-  position: relative;
-  height: 500px !important;
-  width: 500px !important;
-  margin: 0 auto;
-}
-
-.carousel-image {
-  width: 100%;
-  height: 100%;
-}
-
-
-.carousel-track-container {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel-track {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  height: 100%;
-  transition: transform 250ms ease-in;
-}
-
-.carousel-slide {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-
-.carousel--button-left {
-  left: -40px;
-}
-
-.carousel--button-right {
-  right: -40px;
-}
-
-.carousel-button img {
-  width: 20px;
-}
-
-.carousel-nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding: 10px 0;
+  flex-wrap: wrap;
+  padding: 3rem 0.50rem;
 }
 
-.carousel-indicator {
-  border: 0;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background: var(--clr-primary);
-  margin: 0 12px;
-  cursor: pointer;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.carousel img {
+  gap: 1rem;
+  width: 30%;
+  min-width: 280px;
+  height: auto;
+  padding: 0.25rem;
 }
 
-.carousel-indicator.current-slide {
-  background: var(--clr-accent);
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+  .carousel img {
+    width: 45%;
+    /* Two cards per row at this breakpoint */
+    min-width: unset;
+  }
 }
 
-.is-hidden {
-  display: none;
-}
+@media screen and (max-width: 700px) {
+  .carousel img {
+    width: 100%;
+    min-width: unset;
+  }
 
-.project-items-mobile-images {
-  display: none;
+  .carousel {
+    padding: 0.5rem;
+  }
 }
 
 
@@ -712,7 +691,7 @@ iframe {
 .exhibitions-info {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   max-width: 1440px;
   margin: 0 auto;
@@ -735,7 +714,7 @@ iframe {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  gap: 0.25rem;
+  gap: 0.50rem;
 
 }
 
@@ -787,6 +766,9 @@ iframe {
 hr {
   color: var(--clr-primary) !important;
 }
+.potrait-images {
+  max-width: 500px;
+}
 
 
 .items-container {
@@ -823,7 +805,7 @@ hr {
   align-items: center;
   gap: 1rem;
   padding: 2.5rem 0.25rem;
-  max-width: 1440px;
+  max-width: 1040px;
   width: 100%;
   margin: 0 auto;
 }
@@ -919,6 +901,10 @@ hr {
 .contact-words-container {
   max-width: 600px;
   padding: 1rem;
+}
+
+.contact-words-title {
+  text-decoration: underline;
 }
 
 .contact-words-title,
