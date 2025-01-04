@@ -44,6 +44,7 @@
 
   .active {
     display: block;
+    padding-left: 1rem !important;
   }
 
   .extra {
@@ -55,6 +56,7 @@
 
   .logo-link {
     align-items: center;
+    width: 100%;
   }
 
   .navbar {
@@ -74,17 +76,23 @@
 
   .nav-list {
     display: none;
-        text-align: center;
+    text-align: center;
   }
 
   .list-item {
     display: block;
-    padding: 20px 10px;
+    padding: 4px 5px;
+    text-align: left;
   }
 
 
   .active {
     display: block;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 5rem;
   }
 
   .extra {
@@ -112,39 +120,7 @@
 
 }
 
-/* Project Individual Mobile Page */
 
-@media only screen and (max-width: 600px) {
-  .carousel-image.square {
-    width: 100%;
-  }
-
-  .main-exhibition {
-    display: none !important;
-  }
-
-
-  .project-items-mobile-images {
-    display: block;
-  }
-
-  .project-items-mobile-images img {
-    margin-bottom: 1rem;
-  }
-}
-
-@media screen and (max-width: 1025px) {
-  .carousel {
-    position: relative;
-    height: 400px;
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    display: block;
-  }
-
-
-}
 
 /* Contact Page */
 
@@ -212,7 +188,7 @@
 
 /* Exhibition Pages */
 @media only screen and (max-width: 450px) {
-.error-container {
+  .error-container {
     height: auto;
   }
 

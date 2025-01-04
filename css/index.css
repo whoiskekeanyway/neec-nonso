@@ -56,6 +56,23 @@ picutre {
     display: block;
 }
 
+img {
+    /* Disable right-click context menu */
+    pointer-events: none;
+
+    /* Prevent drag and drop */
+    -webkit-user-drag: none;
+    /* For WebKit browsers */
+    user-drag: none;
+    /* Standard property */
+
+    /* Disable highlighting */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 input,
 button,
 textarea,
@@ -107,34 +124,51 @@ html {
     scroll-behavior: smooth;
 }
 
+.main-homepage {
+    min-height: 100vh;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 
-.backgroundDiv {
-    height: 100vh !important;
-    background-color: var(--clr-accent);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    position: relative;
-    transition: all 0.5s ease-out ease-in;
-    -webkit-transition: all 0.5s ease-out ease-in;
+
+.homepage-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.homepage-images section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.homepage-images section p {
+    color: var(--clr-primary);
+    font-size: 14px;
+}
+
+.homepage-image {
+max-width: 600px;
+
 }
 
 .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translatex(-50%);
+    display: flex;
+    justify-content: center;
 }
 
 .link-to-exhibitions {
-    color: var(--clr-primary);
+    color: var(--clr-primary) !important;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .home-btn {

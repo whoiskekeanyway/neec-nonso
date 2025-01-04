@@ -11,9 +11,16 @@ const quotes = [],
   (projectNames[1] = " from what was dead was never dead."),
   (hrefstring[1] = "projects/whatwasdeadwasneverdead"),
   (quotes[2] =
-    " what is pain, how relative are our responses to pain, can the notion that one man`s meat is another`s poison a mitigator  of this axiom?"),
-  (projectNames[2] = " from pain: a discomfort or a trigger."),
-  (hrefstring[2] = "projects/pain-a-discomfort-or-a-trigger");
+    "heads of state” is a raw confrontation with the leaders who fail us, exposing the damage they cause and the corruption they hid"),
+  (projectNames[2] = " head of state"),
+  (hrefstring[2] = "projects/headsofstate"),
+  (quotes[3] =
+    "ten years later, i visited ikogosi town and noticed that the residents buried their deceased within their homes."),
+  (projectNames[3] = " the last burial "),
+  (hrefstring[3] = "projects/thelastburial");
+
+
+
 const projectName = document.getElementById("projectnames");
 function changeQuotes() {
   (document.querySelector("blockquote").innerHTML = quotes[i]),
@@ -22,8 +29,9 @@ function changeQuotes() {
     i < quotes.length - 1 ? i++ : (i = 0),
     setTimeout("changeQuotes()", 5e3);
 }
+
+
 window.onload = changeQuotes;
 
 let tll = gsap.timeline({ scrollTrigger: { trigger: ".blockquote-div" } });
-tll
-  .from(".blockquote-div", { y: 20, opacity: 0, duration: 1.5 });
+tll.from(".blockquote-div", { y: 20, opacity: 0, duration: 1.5 });
